@@ -1,0 +1,66 @@
+import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, EffectFade } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+import Autoplay from 'embla-carousel-autoplay';
+
+const BannerHome = () => {
+	const images = [
+		'/asset/home/bannersliderimg.png',
+		'/asset/home/bannersliderimg.png',
+		'/asset/home/bannersliderimg.png',
+		'/asset/home/bannersliderimg.png',
+	];
+
+	return (
+		<div>
+			<div className='flex justify-center items-center'>
+				<div className='w-[60%] h-screen'>
+					<div className="relative h-screen w-full">
+						<Swiper
+							modules={[Pagination, EffectFade, Autoplay]}
+							pagination={{
+								clickable: true,
+								el: '.custom-pagination', // This MUST match the className below
+							}}
+							effect="fade"
+							fadeEffect={{ crossFade: true }} // Smooth transition
+							loop
+							speed={1000}
+							autoplay={{
+								delay: 1000,
+								disableOnInteraction: false,
+							}}
+							className="h-full w-full"
+						>
+							{images.map((src, i) => (
+								<SwiperSlide key={i}>
+									<img
+										src={src}
+										alt={`Slide ${i}`}
+										className="w-full h-full object-cover"
+									/>
+								</SwiperSlide>
+							))}
+						</Swiper>
+
+						{/* Custom Pagination */}
+						<div className="custom-pagination absolute bottom-[5%] left-[5%] z-10 flex gap-2"></div>
+					</div>
+
+				</div>
+				<div className='w-[40%] bg-primary h-screen flex justify-end items-start px-[5%] py-[5%] gap-5 flex-col'>
+					<h1 className='text-[26px] w-[80%] text-left font-light font-helvetica text-white'>
+						Inspired by our work?
+						We would be delighted to give your space a dream entrance!
+					</h1>
+					<a href="#" className='px-2 py-2 border-[1px] border-white text-white'>REQUEST CONSULTATION</a>
+				</div>
+			</div>
+		</div>
+	)
+}
+
+export default BannerHome

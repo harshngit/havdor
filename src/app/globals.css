@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .custom-transform {
+    transform: translateX(381px) translateY(0) translateZ(0) !important;
+} */
+
+/* Add in global CSS or a Tailwind plugin setup */
+.custom-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 1;
+    transition: opacity 0.3s;
+    border-radius: 1px;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #000;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #FFF1EA;
+}
+
+.carousel-3d {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white !important;
+    font-size: 20px !important;
+    background: #565449;
+    border-radius: 100%;
+
+    width: 40px !important;
+    height: 40px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.swiper-button-prev {
+    top: 470px !important;
+    left: 10px !important;
+}
+
+.swiper-button-next {
+    top: 470px !important;
+    left: 60px !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-family: swiper-icons;
+    font-size: 22px !important;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.swiper-pagination {
+    display: none;
+    position: absolute;
+    text-align: center;
+    transition: 300ms opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10 !important;
+    bottom: 39px !important;
+}
+
+@font-face {
+    font-family: "NeueBold";
+    src: local("NeueBold"),
+        url("../webfonts/NeueHaasDisplayBold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "NeueMedium";
+    src: local("NeueMedium"),
+        url("../webfonts/NeueHaasDisplayMediu.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "NeueRegular";
+    src: local("NeueRegular"),
+        url("../webfonts/NeueHaasDisplayRoman.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "NeueBlack";
+    src: local("NeueBlack"),
+        url("../webfonts/NeueHaasDisplayBlack.ttf") format("truetype");
+    font-weight: bold;
+}
