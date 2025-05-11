@@ -54,7 +54,37 @@ export default function NavbarTwo() {
       </li>
     </ul>
   );
+  const navListMobile = (
+    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-[40px] lg:gap-4 text-white uppercase font-medium !text-sm tracking-wide">
+      <Menu>
+        <MenuHandler>
+          <li className="cursor-pointer text-[20px] text-[#2F3435] font-helvetica ">
+            About Us
+          </li>
+        </MenuHandler>
+      </Menu>
 
+      {["Door", "Experience Centre", "Contact"].map((item, i) => (
+        <li key={i}>
+          <Link
+            href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
+            className="cursor-pointer text-[20px] text-[#2F3435] font-helvetica  transition"
+          >
+            {item}
+          </Link>
+        </li>
+      ))}
+
+      <li>
+        <Link
+          href="/brand-story"
+          className="cursor-pointer text-[20px] text-[#2F3435] font-helvetica "
+        >
+          Brand Story
+        </Link>
+      </li>
+    </ul>
+  );
   return (
     <div className="fixed top-0 left-0 w-screen z-[9999]">
       <div
@@ -63,7 +93,7 @@ export default function NavbarTwo() {
       >
         <div className="w-full lg:pt-[10px] lg:pl-[35px] lg:pb-[20px] flex items-center justify-between">
           {/* Logo */}
-          <div className="lg:w-[60%] xl:w-[70%] w-full">
+          <div className="lg:w-[60%] xl:w-[70%] w-[50%]">
             <img
               className="lg:w-[150px] w-[10px] lg:block hidden"
               src="/asset/navbar/havdorwhitelogo.png"
@@ -80,12 +110,12 @@ export default function NavbarTwo() {
           <div className="hidden lg:block w-[40%]">{navList}</div>
 
           {/* Mobile Icon */}
-          <IconButton
+          <div
             variant="text"
-            className="text-black lg:hidden"
+            className="text-black lg:hidden w-[50px] h-[50px] flex justify-center items-center"
             onClick={() => setOpenDrawer(true)}
           >
-            <svg
+            {/* <svg
               className="h-6 pt-0 w-6"
               fill="none"
               stroke="currentColor"
@@ -97,26 +127,27 @@ export default function NavbarTwo() {
                 strokeLinejoin="round"
                 d="M4 6h16M4 12h16M4 18h16"
               />
-            </svg>
-          </IconButton>
+            </svg> */}
+            <img className="w-[28px]" src="/asset/navbar/hamburger.png" alt="" />
+          </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 w-screen h-screen bg-[#C24E1F] z-[9998] px-6 pt-6 transform transition-transform duration-300 ${openDrawer ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 right-0 w-screen h-screen bg-[#FFFFFF] z-[9998] px-6 pt-6 transform transition-transform duration-300 ${openDrawer ? "translate-x-0" : "translate-x-full"
           }`}
       >
-        <div className="flex justify-between items-center mb-4">
-          <Typography variant="h5" className="text-white">
+        <div className="flex justify-end items-center mb-4">
+          {/* <Typography variant="h5" className="text-white">
             Menu
-          </Typography>
-          <IconButton
+          </Typography> */}
+          <div
             variant="text"
             className="text-white"
             onClick={() => setOpenDrawer(false)}
           >
-            <svg
+            {/* <svg
               className="h-6 w-6"
               fill="none"
               stroke="currentColor"
@@ -128,8 +159,33 @@ export default function NavbarTwo() {
                 strokeLinejoin="round"
                 d="M6 18L18 6M6 6l12 12"
               />
-            </svg>
-          </IconButton>
+            </svg> */}
+            <img className="w-[28px]" src="/asset/navbar/cancel.png" alt="" />
+          </div>
+        </div>
+        {navListMobile}
+        <div className="mt-5">
+          <ul className="flex flex-col justify-start items-start gap-[15px]">
+            <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">FAQS</li>
+            <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Testimonials</li>
+            <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">We work with</li>
+            <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Send Inquiry</li>
+            <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Book your visit</li>
+          </ul>
+        </div>
+        <div className="flex justify-start item-center gap-5 mt-5">
+          <Link href="">
+            <img className="w-[24px]" src="/asset/navbar/Facebook.png" alt="" />
+          </Link>
+          <Link href="">
+            <img className="w-[24px]" src="/asset/navbar/Instagram.png" alt="" />
+          </Link>
+          <Link href="">
+            <img className="w-[24px]" src="/asset/navbar/Linkedin.png" alt="" />
+          </Link>
+        </div>
+        <div className="flex justify-center item-center">
+          <img className="w-screen h-[134px]" src="/asset/navbar/havdorblack.png" alt="" />
         </div>
       </div>
     </div>

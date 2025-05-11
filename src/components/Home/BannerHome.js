@@ -16,8 +16,8 @@ const BannerHome = () => {
 
 	return (
 		<div>
-			<div className='flex justify-center items-center'>
-				<div className='w-[60%] h-screen'>
+			<div className='flex justify-center items-center lg:flex-row flex-col'>
+				<div className='lg:w-[60%] w-full h-screen'>
 					<div className="relative h-screen w-full">
 						<Swiper
 							modules={[Pagination, EffectFade, Autoplay]}
@@ -51,7 +51,7 @@ const BannerHome = () => {
 					</div>
 
 				</div>
-				<div className='w-[40%] bg-primary h-screen flex justify-end items-start px-[5%] py-[5%] gap-5 flex-col'>
+				<div className='lg:w-[40%] w-full bg-primary lg:h-screen h-[50%] flex justify-end items-start px-[5%] py-[5%] gap-5 flex-col'>
 					<h1 className='text-[26px] w-[80%] text-left font-light font-helvetica text-white'>
 						Inspired by our work?
 						We would be delighted to give your space a dream entrance!
