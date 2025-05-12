@@ -1,10 +1,9 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, EffectFade } from 'swiper/modules';
+import { Pagination, EffectFade, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
-import Autoplay from 'embla-carousel-autoplay';
 
 const BannerHome = () => {
 	const images = [

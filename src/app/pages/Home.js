@@ -8,6 +8,11 @@ import { ThemeProvider } from "@material-tailwind/react";
 import BannerHome from '@/components/Home/BannerHome.js'
 import AboutHome from '@/components/Home/AboutHome.js'
 import IndustriesHome from '@/components/Home/IndustriesHome.js'
+import Testinomial from '@/components/Home/testinomial.js'
+import Reviews from '@/components/Home/Reviews.js'
+import AboutHome2 from '@/components/Home/AboutHome2.js'
+import CTA from '@/components/CTA.js'
+import Footer from '@/components/Layout/Footer.js'
 const Home = () => {
   return (
     <div className='relative'>
@@ -16,7 +21,10 @@ const Home = () => {
       <BannerHome />
       <AboutHome />
       <IndustriesHome />
-      {/* <Footer /> */}
+      <Reviews />
+      <AboutHome2 />
+      <CTA />
+      <Footer />
       {/* </ThemeProvider> */}
     </div>
   )
