@@ -96,7 +96,7 @@ export default function NavbarTwo() {
           <div className="lg:w-[60%] xl:w-[70%] w-[50%]">
             <img
               className="lg:w-[150px] w-[10px] lg:block hidden"
-              src="/asset/navbar/havdorwhitelogo.png"
+              src="/asset/navbar/havdorblack.png"
               alt="logo"
             />
             <img

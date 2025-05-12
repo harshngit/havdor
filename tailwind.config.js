@@ -30,6 +30,7 @@ export default withMT({
       colors: {
         primary: "#CA622A",
         secondary: "#11120D",
+        lightgrey: "#2F3435",
       },
     },
   },
