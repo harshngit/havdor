@@ -25,13 +25,32 @@ export default function NavbarTwo() {
 
   const navList = (
     <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-3 lg:gap-4 text-white uppercase font-medium !text-sm tracking-wide">
-      <Menu>
+      {/* <Menu>
         <MenuHandler>
-          <li className="cursor-pointer px-3 py-2 bg-[#C24E1F] hover:bg-[#a7411a] transition">
-            About Us
-          </li>
+          <Link href="/about">
+            <li className="cursor-pointer px-3 py-2 bg-[#C24E1F] hover:bg-[#a7411a] transition">
+              About Us
+            </li>
+          </Link>
         </MenuHandler>
-      </Menu>
+      </Menu> */}
+
+      <div className="relative group">
+        <Link href="/about" className="cursor-pointer px-3 py-2 bg-[#C24E1F] hover:bg-[#a7411a] transition-all duration-150 ">
+          About Us
+        </Link>
+
+        <div className="absolute left-0 mt-3 hidden group-hover:block z-10">
+          <ul className="bg-[#C24E1F] w-40 shadow-md">
+            <Link href="/brand-story">
+              <li className="px-4 py-2 hover:bg-[#a7411a] transition cursor-pointer">
+                Brand Story
+              </li>
+            </Link>
+          </ul>
+        </div>
+      </div>
+
 
       {["Door", "Experience Centre", "Contact"].map((item, i) => (
         <li key={i}>
@@ -44,14 +63,14 @@ export default function NavbarTwo() {
         </li>
       ))}
 
-      <li>
+      {/* <li>
         <Link
           href="/brand-story"
           className="px-3 py-2 bg-[#C24E1F] hover:bg-[#913c18] transition"
         >
           Brand Story
         </Link>
-      </li>
+      </li> */}
     </ul>
   );
   const navListMobile = (

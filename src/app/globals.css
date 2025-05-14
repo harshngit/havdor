@@ -6,6 +6,16 @@
     transform: translateX(381px) translateY(0) translateZ(0) !important;
 } */
 
+
+/* Banner About*/
+
+.banner_about {
+    background: url('/asset/about/aboutbannerhav.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* Add in global CSS or a Tailwind plugin setup */
 .custom-pagination .swiper-pagination-bullet {
     width: 10px;
