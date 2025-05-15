@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   IconButton,
   Menu,
@@ -10,10 +10,35 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import Link from "next/link";
-
+import { usePathname } from 'next/navigation';
+const navItems = [
+  {
+    label: "About Us",
+    href: "/about",
+    children: [
+      { label: "Brand Story", href: "/brand-story" },
+    ],
+  },
+  {
+    label: "Door",
+    href: "/door",
+  },
+  {
+    label: "Experience Centre",
+    href: "/experience-centre",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+  },
+];
 export default function NavbarTwo() {
   const [scrolling, setScrolling] = useState(false);
   const [openDrawer, setOpenDrawer] = useState(false);
+  const pathname = usePathname();
+  const [openDropdown, setOpenDropdown] = useState(false);
+
+  const isActive = (href) => pathname === href;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,69 +47,99 @@ export default function NavbarTwo() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  const [isOpen, setIsOpen] = useState(false);
+  const timeoutRef = useRef(null);
+
+  const handleMouseEnter = (label) => {
+    clearTimeout(timeoutRef.current);
+    setOpenDropdown(label);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setOpenDropdown(false);
+    }, 150); // delay to allow smooth mouse movement
+  };
+
+  useEffect(() => {
+    return () => clearTimeout(timeoutRef.current);
+  }, []);
+
 
   const navList = (
     <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-3 lg:gap-4 text-white uppercase font-medium !text-sm tracking-wide">
-      {/* <Menu>
-        <MenuHandler>
-          <Link href="/about">
-            <li className="cursor-pointer px-3 py-2 bg-[#C24E1F] hover:bg-[#a7411a] transition">
-              About Us
-            </li>
-          </Link>
-        </MenuHandler>
-      </Menu> */}
+      {navItems.map((item, idx) => {
+        const hasChildren = item.children && item.children.length > 0;
+        const isParentActive =
+          isActive(item.href) || item.children?.some((child) => isActive(child.href));
 
-      <div className="relative group">
-        <Link href="/about" className="cursor-pointer px-3 py-2 bg-[#C24E1F] hover:bg-[#a7411a] transition-all duration-150 ">
-          About Us
-        </Link>
+        return (
+          <li key={idx} className="relative">
+            <div
+              onMouseEnter={() => handleMouseEnter(item.label)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <Link
+                href={item.href}
+                className={`px-3 py-2 transition block ${isParentActive ? "bg-[#91431A]" : "bg-[#C24E1F] hover:bg-[#a7411a]"
+                  }`}
+              >
+                {item.label}
+              </Link>
 
-        <div className="absolute left-0 mt-3 hidden group-hover:block z-10">
-          <ul className="bg-[#C24E1F] w-40 shadow-md">
-            <Link href="/brand-story">
-              <li className="px-4 py-2 hover:bg-[#a7411a] transition cursor-pointer">
-                Brand Story
-              </li>
-            </Link>
-          </ul>
-        </div>
-      </div>
-
-
-      {["Door", "Experience Centre", "Contact"].map((item, i) => (
-        <li key={i}>
-          <Link
-            href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
-            className="px-3 py-2 bg-[#C24E1F] hover:bg-[#a7411a] transition"
-          >
-            {item}
-          </Link>
-        </li>
-      ))}
-
-      {/* <li>
-        <Link
-          href="/brand-story"
-          className="px-3 py-2 bg-[#C24E1F] hover:bg-[#913c18] transition"
-        >
-          Brand Story
-        </Link>
-      </li> */}
+              {/* Dropdown */}
+              {hasChildren && openDropdown === item.label && (
+                <div className="absolute left-0 mt-1 z-20 bg-[#C24E1F] shadow-lg w-48">
+                  {item.children.map((child, i) => (
+                    <Link key={i} href={child.href}>
+                      <div
+                        className={`px-4 py-2 transition cursor-pointer text-white ${isActive(child.href)
+                          ? "bg-[#91431A]"
+                          : "hover:bg-[#91431A]"
+                          }`}
+                      >
+                        {child.label}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          </li>
+        );
+      })}
     </ul>
   );
   const navListMobile = (
     <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-[40px] lg:gap-4 text-white uppercase font-medium !text-sm tracking-wide">
-      <Menu>
-        <MenuHandler>
-          <li className="cursor-pointer text-[20px] text-[#2F3435] font-helvetica ">
+
+      <div className="flex flex-col items-center relative">
+        <div className="flex justify-center items-center gap-2">
+          <li className="cursor-pointer text-[20px] text-[#2F3435] font-helvetica">
             About Us
           </li>
-        </MenuHandler>
-      </Menu>
+          <div onClick={() => setIsOpen(!isOpen)} className="cursor-pointer">
+            {isOpen ? <img className="w-[20px]" src="asset/up.png" alt="dropdown icon" /> : <img className="w-[20px]" src="asset/down.png" alt="dropdown icon" />}
+          </div>
+        </div>
+
+        {isOpen && (
+          <div className="absolute top-4 mt-2 left-0 rounded w-[200px] z-10">
+            <li>
+              <Link
+                href="/brand-story"
+                className="block px-4 py-2 text-[15px] text-[#2F3435] hover:bg-gray-100 font-helvetica"
+              >
+                Brand Story
+              </Link>
+            </li>
+          </div>
+        )}
+      </div>
+
 
       {["Door", "Experience Centre", "Contact"].map((item, i) => (
-        <li key={i}>
+        <li key={i} className="">
           <Link
             href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
             className="cursor-pointer text-[20px] text-[#2F3435] font-helvetica  transition"
@@ -94,14 +149,7 @@ export default function NavbarTwo() {
         </li>
       ))}
 
-      <li>
-        <Link
-          href="/brand-story"
-          className="cursor-pointer text-[20px] text-[#2F3435] font-helvetica "
-        >
-          Brand Story
-        </Link>
-      </li>
+
     </ul>
   );
   return (
@@ -112,18 +160,21 @@ export default function NavbarTwo() {
       >
         <div className="w-full lg:pt-[10px] lg:pl-[35px] lg:pb-[20px] flex items-center justify-between">
           {/* Logo */}
-          <div className="lg:w-[60%] xl:w-[70%] w-[50%]">
-            <img
-              className="lg:w-[150px] w-[10px] lg:block hidden"
-              src="/asset/navbar/havdorblack.png"
-              alt="logo"
-            />
-            <img
-              className="w-[100px] lg:hidden block"
-              src="/asset/navbar/havdorblack.png"
-              alt="logo"
-            />
-          </div>
+          <Link href="/"
+          >
+            <div className="lg:w-[60%] xl:w-[70%] w-[50%]">
+              <img
+                className="lg:w-[180px] w-[10px] lg:block hidden"
+                src="/asset/navbar/havdorblack.png"
+                alt="logo"
+              />
+              <img
+                className="w-[100px] lg:hidden block"
+                src="/asset/navbar/havdorblack.png"
+                alt="logo"
+              />
+            </div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden lg:block w-[40%]">{navList}</div>
