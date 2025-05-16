@@ -7,12 +7,12 @@ const AccordionAboutmob = () => {
 		{
 			id: "01",
 			title: 'Standardization and Quality Control',
-			description: 'Ensuring uniformity across production to meet industry standards.',
+			description: 'We can standardize their production processes, ensuring consistent quality and reducing errors.',
 		},
 		{
 			id: "02",
 			title: 'Efficiency and Speed',
-			description: 'Optimizing workflows to reduce lead time and improve delivery speed.',
+			description: 'Our production allows for faster assembly and installation, reducing project timelines.',
 		},
 		{
 			id: "03",
@@ -22,12 +22,12 @@ const AccordionAboutmob = () => {
 		{
 			id: "04",
 			title: 'Design Expertise',
-			description: 'Combining innovative design with functionality to create unique products.',
+			description: 'We employ experienced designers who can create functional and aesthetically pleasing designs.',
 		},
 		{
 			id: "05",
 			title: 'Warranty and After-Sales Support',
-			description: 'Providing long-term support for products after they are sold.',
+			description: 'We typically offer warranties and after-sales support, providing customers with peace of mind.',
 		},
 	]
 	const [openIndex, setOpenIndex] = useState(null)

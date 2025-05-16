@@ -68,7 +68,7 @@ export default function NavbarTwo() {
 
 
   const navList = (
-    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-3 lg:gap-4 text-white uppercase font-medium !text-sm tracking-wide">
+    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-3 lg:gap-3 text-white uppercase font-medium !text-sm tracking-wide">
       {navItems.map((item, idx) => {
         const hasChildren = item.children && item.children.length > 0;
         const isParentActive =

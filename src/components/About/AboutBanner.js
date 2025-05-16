@@ -8,7 +8,7 @@ const AboutBanner = () => {
 			{/* Text content */}
 			<div className="absolute bottom-10 lg:left-10 left-5 z-20  lg:px-4 flex lg:flex-row flex-col-reverse justify-start items-end">
 				<div className='flex justify-start items-end lg:w-[40%] w-[100%]'>
-					<h1 className="text-white font-helvetica xl:text-[36px]  text-[26px] font-semibold mb-4 ">
+					<h1 className="text-white font-helvetica xl:text-[36px]  text-[26px] font-normal ">
 						About HAV’DOR
 					</h1>
 				</div>

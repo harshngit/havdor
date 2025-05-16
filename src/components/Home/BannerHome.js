@@ -46,7 +46,7 @@ const BannerHome = () => {
 						</Swiper>
 
 						{/* Custom Pagination */}
-						<div className="custom-pagination absolute !bottom-[2%] !left-[5%] z-10 flex gap-2"></div>
+						<div className="custom-pagination absolute !bottom-[2%] !left-[4%] z-10 flex gap-2"></div>
 					</div>
 
 				</div>

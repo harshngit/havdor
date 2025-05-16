@@ -5,13 +5,14 @@ import KeyPoints from '@/components/About/KeyPoints'
 import AboutHome2 from '@/components/Home/AboutHome2'
 import Footer from '@/components/Layout/Footer'
 import NavbarTwo from '@/components/Layout/Navbar'
+import Navbar from '@/components/Layout/NavbarWhite'
 import React from 'react'
 
 const About = () => {
 	return (
 		<div className='relative'>
 			{/* <ThemeProvider> */}
-			<NavbarTwo />
+			<Navbar />
 			<AboutBanner />
 			<DefineSec />
 			<KeyPoints />
