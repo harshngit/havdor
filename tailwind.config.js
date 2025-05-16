@@ -10,10 +10,10 @@ export default withMT({
   theme: {
     extend: {
       fontFamily: {
-        helvetica: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+        helvetica: ['HelveticaNeue', 'sans-serif'],
       },
       screens: {
-        xxl: '1408px', // Custom screen at ~110% of 1280px
+        xxl: '1728px', // Custom screen at ~110% of 1280px
       },
       keyframes: {
         marquee: {

@@ -42,8 +42,9 @@ export default function NavbarTwo() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolling(window.scrollY > 10);
+      setScrolling(window.scrollY > window.innerHeight);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -81,10 +82,16 @@ export default function NavbarTwo() {
             >
               <Link
                 href={item.href}
-                className={`px-3 py-2 transition block ${isParentActive ? "bg-[#91431A]" : "bg-[#C24E1F] hover:bg-[#a7411a]"
+                className={`group px-3 py-2 transition block ${isParentActive ? "bg-[#91431A]" : "bg-[#C24E1F] hover:bg-[#a7411a]"
                   }`}
               >
-                {item.label}
+                {item.label === "About" ? (
+                  <span className="group-hover:after:content-['+'] after:ml-1 transition-all">
+                    {item.label}
+                  </span>
+                ) : (
+                  item.label
+                )}
               </Link>
 
               {/* Dropdown */}
@@ -163,16 +170,16 @@ export default function NavbarTwo() {
           <Link href="/"
           >
             <div className="lg:w-[60%] xl:w-[70%] w-[50%]">
-              <img
-                className="lg:w-[180px] w-[10px] lg:block hidden"
+              {!scrolling && <img
+                className="lg:w-[250px] w-[10px] lg:block hidden"
+                src="/asset/navbar/havdorwhitelogo.png"
+                alt="logo"
+              />}
+              {scrolling && <img
+                className="w-[250px] "
                 src="/asset/navbar/havdorblack.png"
                 alt="logo"
-              />
-              <img
-                className="w-[100px] lg:hidden block"
-                src="/asset/navbar/havdorblack.png"
-                alt="logo"
-              />
+              />}
             </div>
           </Link>
 

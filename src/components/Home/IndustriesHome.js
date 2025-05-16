@@ -29,7 +29,7 @@ const IndustriesHome = () => {
 
 						{/* Overlay that slides up */}
 						{item.content && (
-							<div className="absolute bottom-0 left-0 w-full h-full bg-[#2F3435CC] text-[#FFF1EA] px-4 py-5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-10">
+							<div className="absolute bottom-0 left-0 w-full h-full bg-[#2F3435CC] text-[#FFF1EA] px-4 py-5 translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out z-10">
 								<div className='flex justify-between flex-col h-full'>
 									<p className="text-sm">{item.content}</p>
 									<h3 className="text-base text-[#FFF1EA] font-medium ">{item.title}</h3>

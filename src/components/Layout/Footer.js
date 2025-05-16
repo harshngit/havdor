@@ -70,7 +70,7 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* Vertical Text on Right */}
-                <div className="absolute lg:w-[30%] w-full lg:left-[79rem] left-[195px] top-[276px] flex justify-end items-end transform -translate-y-1/2 rotate-[270deg] ">
+                <div className="absolute lg:w-[30%] w-full lg:left-[83%] left-[195px] top-[276px] flex justify-end items-end transform -translate-y-1/2 rotate-[270deg] ">
                     <img className='lg:w-full h-[200px]' src="/asset/navbar/havdorwhitelogo.png" alt="" />
                 </div>
             </div>

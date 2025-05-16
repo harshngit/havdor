@@ -44,13 +44,13 @@ const Reviews = () => {
 				</div>
 				{/* Text Swiper */}
 				<Swiper
-					modules={[Controller, Navigation, Autoplay]}
+					modules={[Controller, Navigation]}
 					onSwiper={setTextSwiper}
-					speed={700}
-					autoplay={{
-						delay: 5000,
-						disableOnInteraction: true,
-					}}
+					// speed={700}
+					// autoplay={{
+					// 	delay: 5000,
+					// 	disableOnInteraction: true,
+					// }}
 					controller={{ control: imageSwiper }}
 					allowTouchMove={false}
 					className="lg:w-[40%] w-full h-full"
@@ -82,11 +82,11 @@ const Reviews = () => {
 							nextEl: ".swiper-button-next",
 							prevEl: ".swiper-button-prev",
 						}}
-						speed={700}
-						autoplay={{
-							delay: 5000,
-							disableOnInteraction: true,
-						}}
+						// speed={700}
+						// autoplay={{
+						// 	delay: 5000,
+						// 	disableOnInteraction: true,
+						// }}
 						className="h-full w-full"
 					>
 						{testimonials.map((item, index) => (

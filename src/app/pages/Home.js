@@ -10,6 +10,7 @@ import Reviews from '@/components/Home/Reviews.js'
 import AboutHome2 from '@/components/Home/AboutHome2.js'
 import CTA from '@/components/CTA.js'
 import Footer from '@/components/Layout/Footer.js'
+import FooterFigma from '@/components/Layout/FooterFigma.js';
 const Home = () => {
   return (
     <div className='relative'>
