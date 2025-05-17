@@ -2,10 +2,10 @@ import React from 'react'
 
 const BSBanner = () => {
 	return (
-		<div className='w-full lg:px-10 lg:pb-10 lg:pt-[12%] px-5 py-5  bg-[#FFF1EA99]'>
-			<div className='flex flex-col lg:w-[70%] gap-16 justify-start items-start'>
+		<div className='w-full lg:px-10 lg:pb-10 lg:pt-[12%] pt-[30%] px-5 py-5  bg-[#FFF1EA99]'>
+			<div className='flex flex-col lg:w-[70%] lg:gap-16 gap-5 justify-start items-start'>
 				<div className=''>
-					<h2 className='font-normal font-helvetica text-lightgrey lg:text-[64px]'>
+					<h2 className='font-normal font-helvetica text-lightgrey lg:text-[64px] text-[26px]'>
 						The HAV’DOR Story
 					</h2>
 				</div>
