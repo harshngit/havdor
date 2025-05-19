@@ -64,7 +64,7 @@ const Reviews = () => {
 									<p className="italic font-thin lg:text-[22px] text-gray-500">{item.title}</p>
 								</div>
 								<p className="relative text-lightgrey italic pl-10">
-									<span className="absolute left-0 top-[-20px] text-[60px] text-black leading-none font-helveticaN">❝</span>
+									<span className="absolute left-7 top-[-10px] w-2 text-black leading-none font-helveticaN"><img src="/asset/comma.png" alt="comma" /></span>
 									{item.text}
 								</p>
 							</div>
@@ -91,7 +91,7 @@ const Reviews = () => {
 						className="h-full w-full"
 					>
 						{testimonials.map((item, index) => (
-							<SwiperSlide key={index} className='flex justify-start items-start !lg:w-[90%] w-full'>
+							<SwiperSlide key={index} className='flex justify-start items-start lg:!w-[90%] w-full'>
 								<img
 									src={item.image}
 									alt={item.name}

@@ -34,33 +34,39 @@ const AccordionAbout = () => {
 			{items.map((item, index) => (
 				<div
 					key={index}
-					className="group border-b-2 border-gray-300 transition-all duration-300"
+					className="group border-b-2 border-gray-300 group-hover:transition-all duration-700 ease-in-out"
 				>
 					{/* Main row */}
-					<div className="flex items-center gap-6 py-4 px-2 transition-all duration-300">
+					<div className="flex items-center gap-6 py-4 px-2 transition-all duration-700 ease-in-out">
 						{/* Number */}
-						<h3 className='font-thin font-helvetica lg:text-[24px] text-[18px] w-[40%] group-hover:w-[5%]'>
+						<h3 className="font-thin font-helvetica lg:text-[24px] text-[18px] w-[20%] transition-all duration-700 ease-in-out">
 							{item.id}
 						</h3>
 
 						{/* Image appears on hover */}
-						<div className="hidden group-hover:flex w-[380px] h-[250px] items-center justify-center transition duration-300 ">
-							<img src="/asset/about/Rectangle18.png" alt="Preview" className="w-full object-cover h-full rounded shadow" />
+						<div className="opacity-0 group-hover:opacity-100 w-[380px] h-[250px] items-center justify-center transition-opacity duration-700 ease-in-out hidden group-hover:flex">
+							<img
+								src="/asset/about/Rectangle18.png"
+								alt="Preview"
+								className="w-full object-cover h-full rounded shadow"
+							/>
 						</div>
 
 						{/* Title */}
-						<h3 className="font-thin  font-helvetica lg:text-[24px] text-[18px] group-hover:w-[30%] w-[60%]">
+						<h3 className="font-thin font-helvetica lg:text-[24px] text-[18px] w-[40%] transition-all duration-700 ease-in-out">
 							{item.title}
 						</h3>
 
 						{/* Description appears on hover */}
-						<p className="hidden group-hover:block text-gray-700 w-[50%] transition-all duration-300">
+						<p className="opacity-0 group-hover:opacity-100 text-gray-700 w-[40%] transition-opacity duration-700 ease-in-out">
 							{item.description}
 						</p>
 					</div>
 				</div>
 			))}
 		</div>
+
+
 	)
 }
 

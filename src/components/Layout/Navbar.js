@@ -82,7 +82,7 @@ export default function NavbarTwo() {
             >
               <Link
                 href={item.href}
-                className={`group px-3 py-2 transition block ${isParentActive ? "bg-[#91431A]" : "bg-[#C24E1F] hover:bg-[#a7411a]"
+                className={`group px-3 py-2 transition block ${isParentActive ? "bg-[#91431A]" : "bg-[#C24E1F] hover:border-[1px] border-[#91431A]"
                   }`}
               >
                 {item.label === "About" ? (
@@ -159,32 +159,77 @@ export default function NavbarTwo() {
 
     </ul>
   );
+  const navListScroll = (
+    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-3 lg:gap-3 text-white uppercase font-medium !text-sm tracking-wide">
+      {navItems.map((item, idx) => {
+        const hasChildren = item.children && item.children.length > 0;
+        const isParentActive =
+          isActive(item.href) || item.children?.some((child) => isActive(child.href));
+
+        return (
+          <li key={idx} className="relative">
+            <div
+              onMouseEnter={() => handleMouseEnter(item.label)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <Link
+                href={item.href}
+                className={`group px-3 py-2 transition block ${isParentActive ? "bg-[#89898933] text-lightgrey" : "bg-[#DDDDDD33] hover:bg-[#DDDDDD33] hover:border-[1px] text-lightgrey border-[#89898933]"
+                  }`}
+              >
+                {item.label}
+              </Link>
+
+              {/* Dropdown */}
+              {hasChildren && openDropdown === item.label && (
+                <div className="absolute left-0 mt-1 z-20 shadow-lg w-48">
+                  {item.children.map((child, i) => (
+                    <Link key={i} href={child.href}>
+                      <div
+                        className={`px-4 py-2 transition cursor-pointer ${isActive(child.href)
+                          ? "bg-[#89898933] text-lightgrey"
+                          : "bg-[#DDDDDD33] hover:bg-[#DDDDDD33] hover:border-[1px] text-lightgrey border-[#89898933]"
+                          }`}
+                      >
+                        {child.label}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  )
   return (
     <div className="fixed top-0 left-0 w-screen z-[9999]">
       <div
         className={`w-full px-4 lg:px-0 py-4 lg:py-0 transition-all duration-300 ${scrolling ? "!backdrop-blur-3xl " : ""
           }`}
       >
-        <div className="w-full lg:pt-[10px] lg:pl-[35px] lg:pb-[20px] flex items-center justify-between">
+        <div className="w-full lg:pt-[30px] lg:pl-[35px] lg:pb-[20px] flex items-center justify-between">
           {/* Logo */}
           <Link href="/"
           >
             <div className="lg:w-[60%] xl:w-[70%] w-[50%]">
               {!scrolling && <img
                 className="lg:w-[250px] w-[10px] lg:block hidden"
-                src="/asset/navbar/havdorwhitelogo.png"
+                src="/asset/navbar/whitelogo.png"
                 alt="logo"
               />}
               {scrolling && <img
                 className="w-[250px] "
-                src="/asset/navbar/havdorblack.png"
+                src="/asset/navbar/blacklogo.png"
                 alt="logo"
               />}
             </div>
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:block w-[40%]">{navList}</div>
+
+          {scrolling ? <div className="hidden lg:block w-[40%]">{navListScroll}</div> : <div className="hidden lg:block w-[40%]">{navList}</div>}
 
           {/* Mobile Icon */}
           <div

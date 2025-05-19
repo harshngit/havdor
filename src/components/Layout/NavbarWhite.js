@@ -158,14 +158,14 @@ export default function Navbar() {
 				className={`w-full px-4 lg:px-0 py-4 lg:py-0 transition-all duration-300 ${scrolling ? "!backdrop-blur-3xl " : ""
 					}`}
 			>
-				<div className="w-full lg:pt-[10px] lg:pl-[35px] lg:pb-[20px] flex items-center justify-between">
+				<div className="w-full lg:pt-[30px] lg:pl-[35px] lg:pb-[20px] flex items-center justify-between">
 					{/* Logo */}
 					<Link href="/"
 					>
 						<div className="lg:w-[60%] xl:w-[70%] w-[50%]">
 							<img
 								className="w-[250px] "
-								src="/asset/navbar/havdorblack.png"
+								src="/asset/navbar/blacklogo.png"
 								alt="logo"
 							/>
 						</div>

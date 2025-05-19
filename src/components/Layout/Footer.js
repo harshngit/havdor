@@ -14,10 +14,12 @@ const Footer = () => {
                     {/* Column 1 */}
                     <div className="flex justify-between gap-5 items-start flex-col">
                         <ul className="space-y-4 lg:text-[36px] text-[26px]">
-                            <li>About Us</li>
+                            <li>
+                                <Link href="/about">About Us</Link>
+                            </li>
                             <li>Doors</li>
                             <li>Experience Centre</li>
-                            <li>Contact</li>
+                            <li><Link href="/contact">Contact</Link></li>
                         </ul>
                         <div className="flex gap-4 pt-4">
                             <Link href="">
@@ -70,8 +72,8 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* Vertical Text on Right */}
-                <div className="absolute lg:w-[30%] w-full lg:left-[83%] left-[195px] top-[276px] flex justify-end items-end transform -translate-y-1/2 rotate-[270deg] ">
-                    <img className='lg:w-full h-[200px]' src="/asset/navbar/havdorwhitelogo.png" alt="" />
+                <div className="absolute lg:w-[30%] w-full lg:left-[82%] left-[45%] top-[276px] flex justify-end items-end transform -translate-y-1/2 rotate-[270deg] ">
+                    <img className='lg:w-full w-[50%]' src="/asset/navbar/whitelogo.png" alt="" />
                 </div>
             </div>
         </footer>

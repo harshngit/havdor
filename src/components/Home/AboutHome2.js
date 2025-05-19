@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const AboutHome2 = () => {
@@ -13,7 +14,7 @@ const AboutHome2 = () => {
 						<p className='font-helvetica font-thin tracking-wider text-[20px]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
 					</div>
 					<div className='flex justify-start item-start mt-[10px]'>
-						<a href="#" className='px-2 py-2 border-[1px] border-black text-black uppercase'>About us</a>
+						<Link href="/about" className='px-2 py-2 border-[1px] border-black text-black uppercase'>About Us </Link>
 					</div>
 				</div>
 			</div>

@@ -17,7 +17,7 @@ const BSGallery = () => {
 				<div className='lg:w-[50%] flex justify-start items-start'>
 					<p className='font-thin lg:w-[70%] font-helvetica text-lightgrey lg:text-[20px]'>
 						We began extensive research into door-making—studying the gaps, the challenges faced during on-site execution, and the limitations of traditional methods. What we discovered reinforced our belief: a door is not just a component. It is a statement. A threshold. An introduction to the soul of a space.
-						And so, our journey toward <span className='font-bold font-helvetica text-lightgrey lg:text-[20px]'>
+						And so, our journey toward <span className='font-medium font-helvetica text-lightgrey lg:text-[20px]'>
 							reinventing the modern Indian door began.
 						</span>
 					</p>

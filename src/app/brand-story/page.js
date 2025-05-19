@@ -4,13 +4,14 @@ import OurTeam from '@/components/About/BrandStory/OurTeam'
 import ReviewsBS from '@/components/About/BrandStory/ReviewsBS'
 import Reviews from '@/components/Home/Reviews'
 import Footer from '@/components/Layout/Footer'
+import NavbarBrandStory from '@/components/Layout/NavbarBrandStory'
 import Navbar from '@/components/Layout/NavbarWhite'
 import React from 'react'
 
 const BrandStory = () => {
 	return (
 		<div className='relative'>
-			<Navbar />
+			<NavbarBrandStory />
 			<BSBanner />
 			<BSGallery />
 			<OurTeam />
