@@ -206,7 +206,7 @@ export default function NavbarTwo() {
   return (
     <div className="fixed top-0 left-0 w-screen z-[9999]">
       <div
-        className={`w-full px-4 lg:px-0 py-4 lg:py-0 transition-all duration-300 ${scrolling ? "!backdrop-blur-3xl " : ""
+        className={`w-full px-4 lg:px-0 py-4 lg:py-0 transition-all  duration-300 ${scrolling ? "!backdrop-blur-3xl bg-[#eeeeee40] " : ""
           }`}
       >
         <div className="w-full lg:pt-[30px] lg:pl-[35px] lg:pb-[20px] flex items-center justify-between">
