@@ -50,7 +50,7 @@ const FAQ = () => {
 
 	return (
 		<div className='w-full lg:px-10 lg:py-10 px-5 py-5 flex justify-center items-center '>
-			<div className='flex justify-start items-start flex-col lg:w-[60%] w-full gap-6'>
+			<div className='flex justify-start items-start flex-col lg:w-[60%] w-full gap-6 transition-all ease-in-out duration-500'>
 				<h2 className='font-normal font-helvetica lg:text-[36px] text-[26px]'>
 					Frequently Asked Questions
 				</h2>
@@ -87,7 +87,17 @@ const FAQ = () => {
 							onClick={() => setShowAll(true)}
 							className='border-[1px] border-lightgrey p-[15px] font-thin font-helvetica text-[20px]'
 						>
-							VIEW ALL FAQs
+							VIEW ALL
+						</button>
+					</div>
+				)}
+				{showAll && (
+					<div>
+						<button
+							onClick={() => setShowAll(false)}
+							className='border-[1px] border-lightgrey p-[15px] font-thin font-helvetica text-[20px]'
+						>
+							VIEW LESS
 						</button>
 					</div>
 				)}

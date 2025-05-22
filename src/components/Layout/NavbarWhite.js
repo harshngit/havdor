@@ -158,7 +158,7 @@ export default function Navbar() {
 				className={`w-full px-4 lg:px-0 py-4 lg:py-0 transition-all  duration-300 ${scrolling ? "!backdrop-blur-3xl bg-[#eeeeee40] " : ""
 					}`}
 			>
-				<div className="w-full lg:pt-[30px] lg:pl-[35px] lg:pb-[20px] flex items-center justify-between">
+				<div className={`w-full ${scrolling ? "lg:pt-[44px] lg:pl-[35px] lg:pb-[44px]" : "lg:pt-[30px] lg:pl-[35px] lg:pb-[30px]"} flex items-center justify-between`}>
 					{/* Logo */}
 					<Link href="/"
 					>

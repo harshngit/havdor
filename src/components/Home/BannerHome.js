@@ -21,7 +21,7 @@ const BannerHome = () => {
 				<div className='lg:w-[60%] w-full h-screen'>
 					<div className="relative h-screen w-full">
 						<Swiper
-							modules={[Pagination, EffectFade, Autoplay]}
+							modules={[Pagination, Autoplay]}
 							pagination={{
 								clickable: true,
 								el: '.custom-pagination', // This MUST match the className below
@@ -29,9 +29,10 @@ const BannerHome = () => {
 							effect="fade"
 							fadeEffect={{ crossFade: true }} // Smooth transition
 							loop
-							speed={1000}
+							speed={2000}
+							direction="horizontal"
 							autoplay={{
-								delay: 1000,
+								delay: 2000,
 								disableOnInteraction: false,
 							}}
 							className="h-full w-full"
