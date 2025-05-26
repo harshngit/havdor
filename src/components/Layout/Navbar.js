@@ -96,7 +96,7 @@ export default function NavbarTwo() {
 
               {/* Dropdown */}
               {hasChildren && openDropdown === item.label && (
-                <div className="absolute left-0 mt-1 z-20 bg-[#C24E1F] shadow-lg w-48">
+                <div className="absolute left-0 mt-1 z-20 bg-[#C24E1F] w-48">
                   {item.children.map((child, i) => (
                     <Link key={i} href={child.href}>
                       <div
@@ -206,10 +206,10 @@ export default function NavbarTwo() {
   return (
     <div className="fixed top-0 left-0 w-screen z-[9999]">
       <div
-        className={`w-full px-4 lg:px-0 py-4 lg:py-0 transition-all  duration-300 ${scrolling ? "!backdrop-blur-3xl bg-[#eeeeee40] " : ""
+        className={`w-full px-4 lg:px-0 py-4 lg:py-0 transition-all  duration-300 ${scrolling ? "!backdrop-blur-3xl bg-[#EEEEEE66] " : ""
           }`}
       >
-        <div className={`w-full ${scrolling ? "lg:pt-[44px] lg:pl-[35px] lg:pb-[44px]" : "lg:pt-[30px] lg:pl-[35px] lg:pb-[30px]"} flex items-center justify-between`}>
+        <div className={`w-full ${scrolling ? "lg:pt-[3%] lg:pl-[3%] lg:pb-[3%]" : "lg:pt-[3%] lg:pl-[3%] lg:pb-[2%]"} flex items-center justify-between`}>
           {/* Logo */}
           <Link href="/"
           >

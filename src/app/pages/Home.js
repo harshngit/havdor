@@ -13,7 +13,7 @@ import Footer from '@/components/Layout/Footer.js'
 import FooterFigma from '@/components/Layout/FooterFigma.js';
 const Home = () => {
   return (
-    <div className='relative'>
+    <div className='relative '>
       {/* <ThemeProvider> */}
       <NavbarTwo />
       <BannerHome />

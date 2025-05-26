@@ -21,7 +21,7 @@ const Footer = () => {
                             <li>Experience Centre</li>
                             <li><Link href="/contact">Contact</Link></li>
                         </ul>
-                        <div className="flex gap-4 pt-4">
+                        <div className="lg:flex hidden gap-4 pt-4">
                             <Link href="">
                                 <img className="w-[24px]" src="/asset/footer/Facebookp.png" alt="" />
                             </Link>
@@ -32,7 +32,7 @@ const Footer = () => {
                                 <img className="w-[24px]" src="/asset/footer/Linkedinp.png" alt="" />
                             </Link>
                         </div>
-                        <div className='flex justify-start items-end mt-[116px]'>
+                        <div className='lg:flex hidden justify-start items-end mt-[116px]'>
                             <p className='text-[#ACACAC] font-helvetica text-[20px]'>All rights reserved</p>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ const Footer = () => {
                             <p>SEND INQUIRY</p>
                             <p>BOOK YOUR VISIT</p>
                         </div>
-                        <div className='flex justify-start items-end mt-[116px]'>
+                        <div className='lg:flex hidden justify-start items-end mt-[116px]'>
                             <p className='text-[#ACACAC] font-helvetica text-[20px]'>Terms & Conditions</p>
                         </div>
                     </div>
@@ -66,14 +66,40 @@ const Footer = () => {
                             <p className="uppercase text-[20px] text-[#FFF1EA]">Visit us</p>
                             <p className="text-[#FFF1EA] text-[24px]">xxxxxxxxxxx<br />xxxxxxx</p>
                         </div>
-                        <div className='flex justify-start items-end mt-[116px]'>
-                            <p className='text-[#ACACAC] font-helvetica text-[20px]'>Privacy Policy</p>
+                        <div className='lg:flex hidden justify-start items-end mt-[116px]'>
+                            <Link href="/privacy-policy">
+                                <p className='text-[#ACACAC] font-helvetica text-[20px]'>Privacy Policy</p>
+                            </Link>
                         </div>
                     </div>
-                    <div className="w-[20%] flex justify-end">
+                    <div className="lg:hidden flex gap-4 pt-4">
+                        <Link href="">
+                            <img className="w-[24px]" src="/asset/footer/Facebookp.png" alt="" />
+                        </Link>
+                        <Link href="">
+                            <img className="w-[24px]" src="/asset/footer/Instagramp.png" alt="" />
+                        </Link>
+                        <Link href="">
+                            <img className="w-[24px]" src="/asset/footer/Linkedinp.png" alt="" />
+                        </Link>
+                    </div>
+                    <div className="flex lg:w-[30%] justify-between gap-5 items-start flex-col">
+                        <ul className="space-y-2 font-300 lg:text-[14px]">
+                            <li>
+                                All rights reserved
+                            </li>
+                            <li>Terms & Conditions</li>
+                            <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+                        </ul>
+                    </div>
+                    <div className="w-[20%] lg:flex hidden justify-end">
                         <img className='lg:w-[20%] h-[532px]' src="/asset/footer/footernav.png" alt="" />
                     </div>
+
                 </div>
+            </div>
+            <div className="w-[20%] lg:hidden absolute -right-[10%] top-[4%]">
+                <img className='lg:w-[20%] h-[200px]' src="/asset/footer/footernav.png" alt="" />
             </div>
 
         </footer>

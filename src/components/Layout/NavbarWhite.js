@@ -89,7 +89,7 @@ export default function Navbar() {
 
 							{/* Dropdown */}
 							{hasChildren && openDropdown === item.label && (
-								<div className="absolute left-0 mt-1 z-20 shadow-lg w-48">
+								<div className="absolute left-0 mt-1 z-20 w-48">
 									{item.children.map((child, i) => (
 										<Link key={i} href={child.href}>
 											<div

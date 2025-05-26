@@ -9,7 +9,7 @@ const ExperienceCenterGallery = () => {
 		<div>
 			<div className='w-full bg-white lg:flex hidden justify-center mt-10 lg:py-10 items-center gap-5'>
 				<div className='lg:w-[40%] w-full h-[800px] bg-[#FFF1EA]'></div>
-				<div className='w-[40%] mt-[5%] h-[800px] bg-[#FFF1EA]'></div>
+				<div className='w-[40%] h-[800px] bg-[#FFF1EA]'></div>
 				<div className='w-[20%] h-[800px] bg-[#FFF1EA]'></div>
 			</div>
 			<div className='lg:hidden w-full py-5'>

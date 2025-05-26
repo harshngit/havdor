@@ -3,6 +3,7 @@ import AccordionAbout from '@/components/About/AccordionAbout'
 import DefineSec from '@/components/About/DefineSec'
 import KeyPoints from '@/components/About/KeyPoints'
 import AboutHome2 from '@/components/Home/AboutHome2'
+import Reviews from '@/components/Home/Reviews'
 import Footer from '@/components/Layout/Footer'
 import NavbarTwo from '@/components/Layout/Navbar'
 import Navbar from '@/components/Layout/NavbarWhite'
@@ -16,8 +17,8 @@ const About = () => {
 			<AboutBanner />
 			<DefineSec />
 			<KeyPoints />
-			<AboutHome2 />
-
+			{/* <AboutHome2 /> */}
+			<Reviews />
 			<Footer />
 			{/* </ThemeProvider> */}
 		</div>

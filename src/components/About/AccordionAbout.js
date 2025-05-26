@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+
+import React, { useRef } from 'react'
 
 const AccordionAbout = () => {
 	const items = [
@@ -29,26 +31,51 @@ const AccordionAbout = () => {
 		},
 	]
 
+	// Create refs for each image container
+	const imageRefs = useRef({})
+
+	const handleMouseEnter = (index) => {
+		const el = imageRefs.current[index]
+		if (el) {
+			const scrollHeight = el.scrollHeight
+			el.style.height = scrollHeight + 'px'
+			el.style.opacity = 1
+		}
+	}
+
+	const handleMouseLeave = (index) => {
+		const el = imageRefs.current[index]
+		if (el) {
+			el.style.height = '0px'
+			el.style.opacity = 0
+		}
+	}
+
 	return (
 		<div className="space-y-6 w-full">
 			{items.map((item, index) => (
 				<div
 					key={index}
-					className="group border-b-2 border-gray-300 group-hover:transition-all duration-700 ease-in-out"
+					className="group border-b-2 border-gray-300 transition-all duration-700 ease-in-out"
+					onMouseEnter={() => handleMouseEnter(index)}
+					onMouseLeave={() => handleMouseLeave(index)}
 				>
 					{/* Main row */}
 					<div className="flex items-center gap-6 py-4 px-2 transition-all duration-700 ease-in-out">
 						{/* Number */}
-						<h3 className="font-thin font-helvetica lg:text-[24px] text-[18px] w-[20%] transition-all duration-700 ease-in-out">
+						<h3 className="font-thin font-helvetica lg:text-[24px] text-[18px] w-[20%] group-hover:w-[5%] transition-all duration-700 ease-in-out">
 							{item.id}
 						</h3>
 
-						{/* Image appears on hover */}
-						<div className="opacity-0 group-hover:opacity-100 w-[380px] h-[250px] items-center justify-center transition-opacity duration-700 ease-in-out hidden group-hover:flex">
+						{/* Image: Smooth height animation with JS */}
+						<div
+							ref={(el) => (imageRefs.current[index] = el)}
+							className="w-[380px] overflow-hidden opacity-0 transition-all duration-700 ease-in-out h-0"
+						>
 							<img
 								src="/asset/about/Rectangle18.png"
 								alt="Preview"
-								className="w-full object-cover h-full rounded shadow"
+								className="w-full object-cover h-[250px] rounded shadow"
 							/>
 						</div>
 

@@ -49,19 +49,19 @@ const FAQ = () => {
 	}
 
 	return (
-		<div className='w-full lg:px-10 lg:py-10 px-5 py-5 flex justify-center items-center '>
+		<div className='w-full lg:mt-[80px] lg:px-10 lg:py-10 px-5 py-5 flex justify-center items-center '>
 			<div className='flex justify-start items-start flex-col lg:w-[60%] w-full gap-6 transition-all ease-in-out duration-500'>
 				<h2 className='font-normal font-helvetica lg:text-[36px] text-[26px]'>
 					Frequently Asked Questions
 				</h2>
 
 				{(showAll ? items : items.slice(0, 5)).map((item, index) => (
-					<div key={index} className='w-full border-lightgrey border-b-[1px] transition-all ease-in-out duration-500'>
+					<div key={index} className='w-full px-[40px] py-[40px] border-lightgrey border-b-[1px] transition-all ease-in-out duration-500'>
 						<div
-							className='flex px-5 py-5 justify-between items-center w-full cursor-pointer'
+							className='flex justify-between items-center w-full cursor-pointer'
 							onClick={() => toggleIndex(index)}
 						>
-							<h3 className='font-thin font-helvetica lg:text-[28px] text-[18px]'>
+							<h3 className='font-thin font-helvetica lg:text-[24px] text-[18px]'>
 								{item?.title}
 							</h3>
 							<img
@@ -72,7 +72,7 @@ const FAQ = () => {
 						</div>
 
 						<div className={`overflow-hidden transition-all duration-700 ease-in-out ${openIndex === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}>
-							<div className="px-4 space-y-3 pb-2">
+							<div className="pt-[40px]">
 								<p className="text-[20px] text-lightgrey font-helvetica font-thin">
 									{item.description}
 								</p>
@@ -85,7 +85,7 @@ const FAQ = () => {
 					<div>
 						<button
 							onClick={() => setShowAll(true)}
-							className='border-[1px] border-lightgrey p-[15px] font-thin font-helvetica text-[20px]'
+							className='border-[1px] border-lightgrey p-[15px] w-[181px] font-thin font-helvetica text-[20px]'
 						>
 							VIEW ALL
 						</button>
@@ -95,7 +95,7 @@ const FAQ = () => {
 					<div>
 						<button
 							onClick={() => setShowAll(false)}
-							className='border-[1px] border-lightgrey p-[15px] font-thin font-helvetica text-[20px]'
+							className='border-[1px] border-lightgrey p-[15px] w-[181px] font-thin font-helvetica text-[20px]'
 						>
 							VIEW LESS
 						</button>

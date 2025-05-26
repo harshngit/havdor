@@ -49,11 +49,11 @@ const BannerHome = () => {
 						</Swiper>
 
 						{/* Custom Pagination */}
-						<div className="custom-pagination absolute !bottom-[2%] !left-[4%] z-10 flex gap-2"></div>
+						<div className="custom-pagination absolute !bottom-[2%] !left-[5%] z-10 flex gap-2"></div>
 					</div>
 
 				</div>
-				<div className='lg:w-[40%] w-full bg-primary lg:h-screen h-[50%] flex justify-end items-start px-[2%] py-[5%] gap-5 flex-col'>
+				<div className='lg:w-[40%] w-full bg-primary lg:h-screen h-[50%] flex justify-end items-start px-[1.6%] py-[5%] gap-5 flex-col'>
 					<h1 className='text-[26px] w-[80%] text-left font-helvetica font-thin text-white'>
 						Inspired by our work? <br />
 						We would be delighted to give your space a dream entrance!

@@ -9,7 +9,7 @@ const ContactBanner = () => {
 			</div>
 			<div className='lg:w-[50%]  lg:px-10 lg:py-0 px-5 py-5  w-full flex flex-col justify-center items-start'>
 				<h2 className='font-normal font-helvetica lg:text-[36px] text-[26px]'>Get in Touch</h2>
-				<div className='flex lg:flex-row flex-col mt-5 justify-center items-start lg:gap-20 gap-5 w-full'>
+				<div className='flex lg:flex-col flex-col mt-5 justify-center items-start lg:gap-10 gap-5 w-full'>
 					<div className='lg:w-[50%] w-full'>
 						<h3 className='font-thin font-helvetica lg:text-[20px] text-[18px]'>CALL US</h3>
 						<p className='font-thin font-helvetica lg:text-[20px] text-[18px]'>702 702 9188</p>
@@ -19,7 +19,7 @@ const ContactBanner = () => {
 						<p className='font-thin font-helvetica lg:text-[20px] text-[18px]'>contact@havdor.com</p>
 					</div>
 				</div>
-				<div className='flex mt-[10%] lg:flex-row flex-col justify-center items-start lg:gap-20 gap-5 w-full'>
+				<div className='flex lg:flex-col flex-col mt-5 justify-center items-start lg:gap-10 gap-5 w-full'>
 					<div className='lg:w-[50%] w-full'>
 						<h3 className='font-thin font-helvetica lg:text-[20px] text-[18px]'>VISIT US</h3>
 						<p className='font-thin font-helvetica lg:text-[20px] text-[18px]'>254/255, 3rd floor, MCC-2,
