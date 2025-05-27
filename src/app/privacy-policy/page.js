@@ -1,6 +1,5 @@
 import Footer from '@/components/Layout/Footer'
 import NavbarBrandStory from '@/components/Layout/NavbarBrandStory'
-import Privacy from '@/components/Privacy/privacy'
 import PrivacyContent from '@/components/Privacy/PrivacyContent'
 import React from 'react'
 
