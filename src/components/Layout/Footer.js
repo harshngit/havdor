@@ -83,7 +83,7 @@ const Footer = () => {
                             <img className="w-[24px]" src="/asset/footer/Linkedinp.png" alt="" />
                         </Link>
                     </div>
-                    <div className="flex lg:w-[30%] justify-between gap-5 items-start flex-col">
+                    <div className="lg:hidden flex lg:w-[30%] justify-between gap-5 items-start flex-col">
                         <ul className="space-y-2 font-300 lg:text-[14px]">
                             <li>
                                 All rights reserved

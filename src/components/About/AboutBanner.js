@@ -14,7 +14,7 @@ const AboutBanner = () => {
 				</div>
 
 				<div className='flex justify-start items-center lg:w-[60%] w-full'>
-					<p className="text-white font-helvetica font-thin lg:text-[26px] text-[20px] w-[100%] ">
+					<p className="text-white font-helvetica font-regular lg:text-[26px] text-[20px] w-[100%] ">
 						As a pioneer in the premium Indian market,<br />
 						HAV’DOR combines exceptional design, exquisite craftsmanship, and an unparalleled attention to detail to deliver unique door solutions for mansions, villas, boutique hotels, and high-end commercial spaces.
 					</p>

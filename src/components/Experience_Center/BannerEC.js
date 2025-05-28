@@ -17,19 +17,19 @@ const BannerEC = () => {
 				{/* Large headline lines */}
 				<div className='text-[clamp(2rem,8vw,6rem)]  font-light text-center leading-tight space-y-2'>
 					<div className='flex lg:justify-between justify-start gap-2 items-center'>
-						<span className='font-normal font-helvetica'>EXPERIENCE</span>{' '}
-						<span className='font-normal font-helvetica'>CENTRE</span>
+						<span className='font-light tracking-wider font-helvetica'>EXPERIENCE</span>{' '}
+						<span className='font-light tracking-wider font-helvetica'>CENTRE</span>
 					</div>
 					<div className='lg:block hidden'>
-						<span className='italic font-helvetica'>for your</span>{' '}
-						<span className='font-normal font-helvetica'>LUXURIOUS</span>{' '}
-						<span className='font-normal font-helvetica'>DOORS</span>
+						<span className='italic tracking-wider font-light font-helvetica'>for your</span>{' '}
+						<span className='font-normal tracking-wider font-helvetica'>LUXURIOUS</span>{' '}
+						<span className='font-normal tracking-wider font-helvetica'>DOORS</span>
 					</div>
 					<div className='lg:hidden flex justify-start flex-col gap-2 items-start'>
-						<span className='italic font-helvetica'>for your</span>{' '}
+						<span className='italic tracking-wider font-helvetica'>for your</span>{' '}
 						<div>
-							<span className='font-normal font-helvetica'>LUXURIOUS</span>{' '}
-							<span className='font-normal font-helvetica'>DOORS</span>
+							<span className='font-normal tracking-wider font-helvetica'>LUXURIOUS</span>{' '}
+							<span className='font-normal tracking-wider font-helvetica'>DOORS</span>
 						</div>
 					</div>
 				</div>

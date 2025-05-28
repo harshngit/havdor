@@ -56,7 +56,7 @@ const FAQ = () => {
 				</h2>
 
 				{(showAll ? items : items.slice(0, 5)).map((item, index) => (
-					<div key={index} className='w-full px-[40px] py-[40px] border-lightgrey border-b-[1px] transition-all ease-in-out duration-500'>
+					<div key={index} className='w-full px-[0px] py-[40px] border-lightgrey border-b-[1px] transition-all ease-in-out duration-500'>
 						<div
 							className='flex justify-between items-center w-full cursor-pointer'
 							onClick={() => toggleIndex(index)}
@@ -85,9 +85,9 @@ const FAQ = () => {
 					<div>
 						<button
 							onClick={() => setShowAll(true)}
-							className='border-[1px] border-lightgrey p-[15px] w-[181px] font-thin font-helvetica text-[20px]'
+							className='border-[1px] tracking-wider font-normal hover:bg-[#DDDDDD33] hover:border-[1px] hover:border-[#89898933] text-[#2F3435] border-lightgrey p-[15px] w-[200px] font-helvetica text-[20px]'
 						>
-							VIEW ALL
+							VIEW ALL FAQS
 						</button>
 					</div>
 				)}
@@ -95,7 +95,7 @@ const FAQ = () => {
 					<div>
 						<button
 							onClick={() => setShowAll(false)}
-							className='border-[1px] border-lightgrey p-[15px] w-[181px] font-thin font-helvetica text-[20px]'
+							className='border-[1px] tracking-wider font-normal hover:bg-[#DDDDDD33] hover:border-[1px] hover:border-[#89898933] text-[#2F3435] border-lightgrey p-[15px] w-[200px] font-helvetica text-[20px]'
 						>
 							VIEW LESS
 						</button>

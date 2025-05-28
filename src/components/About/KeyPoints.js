@@ -2,7 +2,7 @@ import React from 'react'
 
 const KeyPoints = () => {
 	return (
-		<div className='w-full lg:py-10 lg:px-10 py-5 px-5 bg-primary flex lg:relative'>
+		<div className='w-full lg:py-10 lg:pl-10 lg:pr-0 py-5 px-5 bg-primary flex lg:relative overflow-hidden'>
 			<div className='lg:w-[90%] flex flex-col justify-start items-start gap-[50px]'>
 				<div className='lg:w-[80%] flex flex-col justify-start items-start '>
 					<h3 className='font-normal lg:text-[36px] text-[26px] font-helvetica text-[#FFF1EA]'>
@@ -109,8 +109,8 @@ const KeyPoints = () => {
 					</div>
 				</div>
 			</div>
-			<div className='lg:block hidden absolute bottom-2 left-[80%]'>
-				<img src="/asset/about/logoa.png" className='w-[400px] opacity-[10%]' alt="logoa" />
+			<div className='lg:block hidden absolute -bottom-[5%] -right-[65px] w-[400px]'>
+				<img src="/asset/about/logoa.png" className=' opacity-[10%]' alt="logoa" />
 			</div>
 		</div>
 	)

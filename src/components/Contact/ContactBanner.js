@@ -4,10 +4,10 @@ import React from 'react'
 const ContactBanner = () => {
 	return (
 		<div className='flex w-full lg:flex-row flex-col'>
-			<div className='lg:w-[50%] w-full object-cover'>
+			<div className='lg:w-[60%] w-full object-cover'>
 				<img src="/asset/contact/contactimg.png" className='h-[100vh] w-full ' alt="" />
 			</div>
-			<div className='lg:w-[50%]  lg:px-10 lg:py-0 px-5 py-5  w-full flex flex-col justify-center items-start'>
+			<div className='lg:w-[40%]  lg:px-6 lg:py-0 px-5 py-5  w-full flex flex-col justify-center items-start'>
 				<h2 className='font-normal font-helvetica lg:text-[36px] text-[26px]'>Get in Touch</h2>
 				<div className='flex lg:flex-col flex-col mt-5 justify-center items-start lg:gap-10 gap-5 w-full'>
 					<div className='lg:w-[50%] w-full'>

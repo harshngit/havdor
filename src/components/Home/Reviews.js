@@ -31,8 +31,8 @@ const Reviews = () => {
 	const [imageSwiper, setImageSwiper] = useState(null);
 
 	return (
-		<div className="w-full lg:px-10 lg:py-10 py-10 px-5 font-helvetica">
-			<h2 className="lg:text-[36px] text-[24px] lg:font-light font-light font-helvetica lg:text-center text-left mb-10">Our Proud Supporters Say</h2>
+		<div className="w-full lg:pl-10 lg:pr-0 lg:py-10 py-10 px-5 font-helvetica">
+			<h2 className="lg:text-[36px] text-[24px] lg:font-light font-light font-helvetica mb-10 lg:ml-[41%]">Our Proud Supporters Say</h2>
 
 			<div className="flex relative justify-center lg:flex-row flex-col gap-10 lg:items-start items-center ">
 				<div className="absolute lg:left-4 left-[30%] lg:bottom-[32rem] bottom-[31rem] z-10 lg:flex justify-center items-center gap-5 hidden">

@@ -63,7 +63,7 @@ const AccordionAbout = () => {
 					{/* Main row */}
 					<div className="flex items-center gap-6 py-4 px-2 transition-all duration-700 ease-in-out">
 						{/* Number */}
-						<h3 className="font-thin font-helvetica lg:text-[24px] text-[18px] w-[20%] group-hover:w-[5%] transition-all duration-700 ease-in-out">
+						<h3 className="font-thin font-helvetica lg:text-[24px] text-[18px] w-[12%] group-hover:w-[5%] transition-all duration-700 ease-in-out">
 							{item.id}
 						</h3>
 
@@ -80,12 +80,12 @@ const AccordionAbout = () => {
 						</div>
 
 						{/* Title */}
-						<h3 className="font-thin font-helvetica lg:text-[24px] text-[18px] w-[40%] transition-all duration-700 ease-in-out">
+						<h3 className="font-thin font-helvetica lg:text-[24px] text-[18px] w-[60%] transition-all duration-700 ease-in-out group-hover:w-[40%] group-hover:pl-5">
 							{item.title}
 						</h3>
 
 						{/* Description appears on hover */}
-						<p className="opacity-0 group-hover:opacity-100 text-gray-700 w-[40%] transition-opacity duration-700 ease-in-out">
+						<p className="opacity-0 group-hover:opacity-100 text-gray-700 w-[40%] transition-opacity duration-700 ease-in-out font-light text-[20px]">
 							{item.description}
 						</p>
 					</div>
