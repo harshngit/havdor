@@ -7,8 +7,8 @@ const AboutHome = () => {
 				<h2 className='font-helvetica font-normal lg:text-[36px] text-[22px] text-lightgrey'> We are the guardians of your homes & hearts </h2>
 			</div>
 			<div className='lg:w-[720px] w-full'>
-				<p className='text-[20px] font-helvetica text-lightgrey font-thin tracking-wide'>HAV’DOR is a luxury Indian brand crafting high-end doors that are as enduring as they arepxlegant. More than a functional piece, each door is a statement where design meets heritage, and craftsmanship protects what matters most. </p>
-				<p className='text-[20px] font-helvetica text-lightgrey font-thin tracking-wide'>With bespoke creations tailored for villas, mansions, boutique hotels, and refined spaces, HAV’DOR curates entrances to grandeur and guardianship for the home and heart.</p>
+				<p className='text-[20px] font-helvetica text-lightgrey font-thin tracking-wide'>HAV'DOR is a luxury Indian brand specializing in the design and manufacturing of high-end wooden doors, tailored for discerning individuals who seek both quality and sophistication.</p>
+				<p className='text-[20px] font-helvetica text-lightgrey font-thin tracking-wide'>As a pioneer in the premium Indian market, HAV'DOR combines excetional design, exquisite craftsmanship, and an unparalleled attention to detail to deliver unique door solutions for mansions, villas, boutique, hotels, and high-end commercial spaces. HAV'DOR is more than a door designer; it is a guardian of homes and hearts. Each door embodies elegance, warmth, and a sense of belonging, where life and art converge</p>
 			</div>
 		</div>
 	)

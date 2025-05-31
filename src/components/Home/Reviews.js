@@ -6,9 +6,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 const Reviews = () => {
 	const testimonials = [
 		{
-			name: "John Smith",
+			name: "Rajesh S",
 			title: "Architect & Interior Designer",
-			text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+			text: "The quality of Hav'Dor doors is top-class and we loved picking our own style and finish. It was simple to select and our home now looks elegant and grand. Installation was clean and quick.",
 			image: "/asset/home/testinomial/testinomial.png",
 		},
 		{

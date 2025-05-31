@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="w-[100%] flex flex-col md:flex-row justify-start gap-10 z-10">
                     {/* Column 1 */}
                     <div className="flex lg:w-[30%] justify-between gap-5 items-start flex-col">
-                        <ul className="space-y-4 lg:text-[36px] text-[26px]">
+                        <ul className="space-y-4 lg:text-[36px] font-normal text-[26px]">
                             <li>
                                 <Link href="/about">About Us</Link>
                             </li>
@@ -21,7 +21,7 @@ const Footer = () => {
                             <li>Experience Centre</li>
                             <li><Link href="/contact">Contact</Link></li>
                         </ul>
-                        <div className="lg:flex hidden gap-4 pt-4">
+                        <div className="lg:flex hidden gap-[30px] pt-4">
                             <Link href="">
                                 <img className="w-[24px]" src="/asset/footer/Facebookp.png" alt="" />
                             </Link>
@@ -33,7 +33,7 @@ const Footer = () => {
                             </Link>
                         </div>
                         <div className='lg:flex hidden justify-start items-end mt-[116px]'>
-                            <p className='text-[#ACACAC] font-helvetica text-[20px]'>All rights reserved</p>
+                            <p className='text-[#ACACAC] font-helvetica font-light text-[20px]'>All rights reserved</p>
                         </div>
                     </div>
 
@@ -53,18 +53,19 @@ const Footer = () => {
 
                     {/* Column 3 */}
                     <div className="flex lg:w-[20%] items-start flex-col gap-[30px] ">
-                        <h3 className="uppercase font-semibold lg:text-[24px] text-[18px]">Get in touch</h3>
+                        <h3 className="uppercase font-normal lg:text-[24px] text-[18px]">Get in touch</h3>
                         <div className=' font-helvetica'>
-                            <p className="uppercase text-[20px] text-[#FFF1EA]">Call us</p>
-                            <p className="text-[#FFF1EA] text-[24px]">Text here</p>
+                            <p className="uppercase font-light text-[16px] text-[#FFF1EA]">Call us</p>
+                            <p className="text-[#FFF1EA] font-light text-[24px]">702 702 9188</p>
                         </div>
                         <div className=' font-helvetica'>
-                            <p className="uppercase text-[20px] text-[#FFF1EA]">Email us</p>
-                            <p className="text-[#FFF1EA] text-[24px]">Text here</p>
+                            <p className="uppercase text-[16px]  font-light  text-[#FFF1EA]">Email us</p>
+                            <p className="text-[#FFF1EA] font-light text-[24px]">contact@havdor.com</p>
                         </div>
                         <div className=' font-helvetica'>
-                            <p className="uppercase text-[20px] text-[#FFF1EA]">Visit us</p>
-                            <p className="text-[#FFF1EA] text-[24px]">xxxxxxxxxxx<br />xxxxxxx</p>
+                            <p className="uppercase text-[16px] font-thin text-[#FFF1EA]">Visit us</p>
+                            <p className="text-[#FFF1EA] font-light text-[24px]">254/255, 3rd floor, MCC-2,
+                                <br /> Airport Road, Mohali, Punjab</p>
                         </div>
                         <div className='lg:flex hidden justify-start items-end mt-[116px]'>
                             <Link href="/privacy-policy">
@@ -92,8 +93,8 @@ const Footer = () => {
                             <li><Link href="/privacy-policy">Privacy Policy</Link></li>
                         </ul>
                     </div>
-                    <div className="w-[20%] lg:flex hidden justify-end">
-                        <img className='lg:w-[20%] h-[532px]' src="/asset/footer/footernav.png" alt="" />
+                    <div className="w-[20%] absolute right-2 lg:flex hidden justify-end">
+                        <img className='lg:w-[20%] h-[35rem]' src="/asset/footer/footernav.png" alt="" />
                     </div>
 
                 </div>

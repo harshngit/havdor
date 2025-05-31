@@ -13,7 +13,7 @@ const CTA = () => {
 						<p className='font-helvetica font-thin tracking-wider lg:text-[20px] text-[18px]'>At HAV’DOR, we don’t just build doors—we shape experiences that embody luxury, warmth, and lasting strength.Explore our curated collections up close and witness the artistry behind India's finest handcrafted entrances.</p>
 					</div>
 					<div className='flex justify-start item-start mt-[10px]'>
-						<a href="#" className='px-2 tracking-[.25em] font-thin py-2 border-[1px] border-white hover:bg-[#DDDDDD33] hover:border-[1px] hover:border-[#89898933] text-white uppercase'>book your visit</a>
+						<a href="#" className='px-2 tracking-[.25em] font-thin py-2 border-[1px] border-white hover:bg-[#FFF1EA1A] hover:border-[1px] hover:border-[#FFF1EA] text-white uppercase'>book your visit</a>
 					</div>
 				</div>
 			</div>
