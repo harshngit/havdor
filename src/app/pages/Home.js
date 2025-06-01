@@ -18,10 +18,10 @@ const Home = () => {
   return (
     <>
       <ConsultationSidebar open={isSidebarOpen} setOpen={setIsSidebarOpen} />
-      <div className=''>
+      <div className=' overflow-hidden'>
         {/* <ThemeProvider> */}
         <NavbarTwo />
-        <BannerHome />
+        <BannerHome onOpenSidebar={() => setIsSidebarOpen(true)} />
         <AboutHome />
         <IndustriesHome />
         <Reviews />
