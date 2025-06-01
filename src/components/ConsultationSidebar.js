@@ -97,7 +97,7 @@ const ConsultationSidebar = ({ open, setOpen }) => {
 
 			{/* Desktop Sidebar */}
 			<div
-				className={`fixed bg-white font-helvetica z-[10000] w-[667px] overflow-y-scroll h-[1117px] pl-[20px] pr-[20px] pt-[20px] transition-transform duration-300 ease-in-out
+				className={`fixed bg-white font-helvetica z-[10000] w-[667px] overflow-y-scroll h-full pl-[20px] pr-[20px] pt-[20px] transition-transform duration-300 ease-in-out
           top-0 right-0
           ${open ? "translate-x-0" : "translate-x-full"}
           rounded-none shadow-xl hidden lg:block
