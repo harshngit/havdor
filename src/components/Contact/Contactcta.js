@@ -57,7 +57,7 @@ const Contactcta = () => {
 							We would be delighted to give your space a dream entrance!</p>
 					</div>
 					<div className='flex justify-start item-start lg:mb-[5rem]'>
-						<a href="#" className='px-2 py-2 tracking-wider lg:text-[20px] text-[18px] border-[1px] border-[#FFF1EA] text-[#FFF1EA] uppercase  hover:bg-[#DDDDDD33] hover:border-[1px] hover:border-[#89898933] '>REQUEST CONSULTATION</a>
+						<a href="#" className='px-2 py-2 tracking-wider lg:text-[20px] text-[18px] border-[1px] border-[#FFF1EA] text-[#FFF1EA] uppercase  hover:bg-[#B55622] hover:border-[1px] hover:border-[#91431A] '>REQUEST CONSULTATION</a>
 					</div>
 				</div>
 			</div>

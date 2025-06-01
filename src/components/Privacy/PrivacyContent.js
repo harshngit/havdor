@@ -5,14 +5,14 @@ const PrivacyContent = () => {
 		<div>
 			<div className="max-w-4xl mx-auto lg:px-10 px-5 py-[10rem] text-[#2F3435] font-helvetica">
 				{/* Heading Section */}
-				<div className="mb-6  p-4">
+				<div className="mb-6   p-4">
 					<h1 className="font-300 mb-2 lg:text-[36px] text-[26px]">Our Privacy Policy</h1>
 					<p className="lg:text-[18px] font-light text-[15px] leading-relaxed">
 						Havdor India Pvt Ltd ("we," "our," or "us") is committed to protecting the privacy of our customers. This Privacy Policy outlines how we collect, use, store, share, and protect your personal information when you interact with our website, purchase our products, or use our services. By accessing our website and services, you agree to the collection and use of information in accordance with this policy.
 					</p>
 				</div>
 
-				<hr className="border-t border-black w-36 mb-6 mt-6" />
+				<hr className="border-t lg: pt-[50px] lg:pt-[50px] border-black w-36 mb-6 mt-6" />
 
 				{/* Collected Data Section */}
 				<h2 className="lg:text-[24px] text-[20px] font-600 mb-4">We collect the following personal data:</h2>
@@ -26,7 +26,7 @@ const PrivacyContent = () => {
 					<li>Social Media Data: Information shared via social media interactions, such as likes, comments, and direct messages.</li>
 					<li>User-Generated Content: Reviews, testimonials, and feedback provided by users on our website or social media pages.</li>
 				</ul>
-				<hr className="border-t border-black w-36 mb-6 mt-6" />
+				<hr className="border-t lg: pt-[50px] lg:pt-[50px] border-black w-36 mb-6 mt-6" />
 
 				{/* Collected Data Section */}
 				<h2 className="lg:text-[24px] text-[20px] font-600 mb-4">How we collect this data?</h2>
@@ -38,7 +38,7 @@ const PrivacyContent = () => {
 					<li>Through social media interactions and engagement with our online content</li>
 				</ul>
 
-				<hr className="border-t border-black w-36 mb-6 mt-6" />
+				<hr className="border-t lg: pt-[50px] lg:pt-[50px] border-black w-36 mb-6 mt-6" />
 
 				{/* Collected Data Section */}
 				<h2 className="lg:text-[24px] text-[20px] font-600 mb-4">How we use your data?</h2>
@@ -56,7 +56,7 @@ const PrivacyContent = () => {
 
 				</ul>
 
-				<hr className="border-t border-black w-36 mb-6 mt-6" />
+				<hr className="border-t lg: pt-[50px] lg:pt-[50px] border-black w-36 mb-6 mt-6" />
 
 				{/* Collected Data Section */}
 				<h2 className="lg:text-[24px] text-[20px] font-600 mb-4">Data sharing and disclosure</h2>
@@ -71,7 +71,7 @@ const PrivacyContent = () => {
 				</ul>
 
 
-				<hr className="border-t border-black w-36 mb-6 mt-6" />
+				<hr className="border-t lg: pt-[50px] lg:pt-[50px] border-black w-36 mb-6 mt-6" />
 
 				{/* Collected Data Section */}
 				<h2 className="lg:text-[24px] text-[20px] font-600 mb-4">Data Security</h2>
@@ -82,7 +82,7 @@ const PrivacyContent = () => {
 					If we detect a security breach that affects your personal information, we will notify you and relevant authorities in compliance with applicable laws.
 				</p>
 
-				<hr className="border-t border-black w-36 mb-6 mt-6" />
+				<hr className="border-t lg: pt-[50px] lg:pt-[50px] border-black w-36 mb-6 mt-6" />
 
 				{/* Collected Data Section */}
 				<h2 className="lg:text-[24px] text-[20px] font-600 mb-4">Retention of data</h2>
@@ -90,7 +90,7 @@ const PrivacyContent = () => {
 					We retain personal data only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law. Once data is no longer needed, we securely delete or anonymize it.
 				</p>
 
-				<hr className="border-t border-black w-36 mb-6 mt-6" />
+				<hr className="border-t lg: pt-[50px] lg:pt-[50px] border-black w-36 mb-6 mt-6" />
 
 				{/* Collected Data Section */}
 				<h2 className="lg:text-[24px] text-[20px] font-600 mb-4">Your rights & choices</h2>
@@ -106,7 +106,7 @@ const PrivacyContent = () => {
 					To exercise these rights, contact us using the details provided in Section 14.
 				</p>
 
-				<hr className="border-t border-black w-36 mb-6 mt-6" />
+				<hr className="border-t lg: pt-[50px] lg:pt-[50px] border-black w-36 mb-6 mt-6" />
 
 				{/* Collected Data Section */}
 				<h2 className="lg:text-[24px] text-[20px] font-600 mb-4">Cookies and tracking technologies</h2>
@@ -120,7 +120,7 @@ const PrivacyContent = () => {
 					<li>Website performance.</li>
 				</ul>
 
-				<hr className="border-t border-black w-36 mb-6 mt-6" />
+				<hr className="border-t lg: pt-[50px] lg:pt-[50px] border-black w-36 mb-6 mt-6" />
 
 				{/* Collected Data Section */}
 				<h2 className="lg:text-[24px] text-[20px] font-600 mb-4">Third party links</h2>
@@ -128,26 +128,26 @@ const PrivacyContent = () => {
 					Our website may contain links to third-party sites. Clicking on these links may allow third parties to collect your data. We are not responsible for their privacy policies or practices and encourage users to review third-party privacy policies before interacting with them.
 				</p>
 
-				<hr className="border-t border-black w-36 mb-6 mt-6" />
+				<hr className="border-t lg: pt-[50px] lg:pt-[50px] border-black w-36 mb-6 mt-6" />
 
 				{/* Collected Data Section */}
 				<h2 className="lg:text-[24px] text-[20px] font-600 mb-4">International data transfers</h2>
 				<p className="lg:text-[18px] font-light text-[15px] leading-relaxed">
 					If you are accessing our services from outside India, please be aware that your data may be transferred to and stored in India. By using our services, you consent to this transfer.
 				</p>
-				<hr className="border-t border-black w-36 mb-6 mt-6" />
+				<hr className="border-t lg: pt-[50px] lg:pt-[50px] border-black w-36 mb-6 mt-6" />
 
 				<h2 className="lg:text-[24px] text-[20px] font-600 mb-4">Children’s Privacy</h2>
 				<p className="lg:text-[18px] font-light text-[15px] leading-relaxed">
 					Our services are not directed toward children under 18. We do not knowingly collect or store data from children. If we discover that we have unintentionally collected data from a minor, we will delete it immediately.
 				</p>
 
-				<hr className="border-t border-black w-36 mb-6 mt-6" />
+				<hr className="border-t lg: pt-[50px] lg:pt-[50px] border-black w-36 mb-6 mt-6" />
 				<h2 className="lg:text-[24px] text-[20px] font-600 mb-4">Changes to this privacy policy</h2>
 				<p className="lg:text-[18px] font-light text-[15px] leading-relaxed">
 					We reserve the right to update this policy at any time. Changes will be posted on our website with an updated "Effective Date." Users are encouraged to review the policy periodically. If there are significant changes, we may notify you via email or other communication channels.
 				</p>
-				<hr className="border-t border-black w-36 mb-6 mt-6" />
+				<hr className="border-t lg: pt-[50px] lg:pt-[50px] border-black w-36 mb-6 mt-6" />
 				<h2 className="lg:text-[24px] text-[20px] font-600 mb-4">Contact Us</h2>
 				<p className="lg:text-[18px] font-light text-[15px] leading-relaxed">
 					For any privacy-related inquiries, please contact us at: <br />

@@ -2,7 +2,7 @@ import React from 'react'
 
 const BSGallery = () => {
 	return (
-		<div className='bg-[#FFF1EA] w-full lg:py-0 lg:px-0 py-5 px-5'>
+		<div className='bg-[#FFF1EA99] w-full lg:py-0 lg:px-0 py-5 px-5'>
 			<div className='flex lg:flex-row flex-col lg:mb-0 mb-2 w-full h-[800px] gap-5'>
 				<div className='lg:w-[40%] w-full h-[500px] bg-[#fbe1d5]  lg:h-[800px]'></div>
 				<div className='lg:w-[20%] w-full h-[500px] bg-[#fbe1d5] lg:h-[800px]'></div>

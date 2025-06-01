@@ -18,7 +18,9 @@ const Footer = () => {
                                 <Link href="/about">About Us</Link>
                             </li>
                             <li>Doors</li>
-                            <li>Experience Centre</li>
+                            <li>
+                                <Link href="/experience-centre">Experience Centre</Link>
+                            </li>
                             <li><Link href="/contact">Contact</Link></li>
                         </ul>
                         <div className="lg:flex hidden gap-[30px] pt-4">
@@ -39,7 +41,7 @@ const Footer = () => {
 
                     {/* Column 2 */}
                     <div className='flex lg:w-[20%] justify-between gap-5 items-start flex-col'>
-                        <div className="space-y-4 font-thin lg:text-[20px] text-[18px]">
+                        <div className="space-y-4 font-lightx lg:text-[20px] text-[18px]">
                             <p>FAQS</p>
                             <p>TESTIMONIALS</p>
                             <p>WE WORK WITH</p>

@@ -16,7 +16,8 @@ const BrandStory = () => {
 			<BSBanner />
 			<BSGallery />
 			<OurTeam />
-			<AboutHome2 />
+			<Reviews />
+			{/* <AboutHome2 /> */}
 			<Footer />
 		</div>
 	)

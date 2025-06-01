@@ -6,38 +6,53 @@ const FAQ = () => {
 	const items = [
 		{
 			id: "01",
-			title: 'Frequently Asked Questions 1',
-			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry...',
+			title: 'Still Stuck on Flush Doors? Let’s Clear the Air!',
+			description: "Thinking of switching to engineered wooden doors but feeling unsure? We've taken your most common concerns and turned them into straight answers—with a dash of clarity and confidence!",
 		},
 		{
 			id: "02",
-			title: 'Frequently Asked Questions 2',
-			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry...',
+			title: 'Are engineered doors as strong as my good old flush doors—or just fancy talk?',
+			description: "They’re not just strong—they’re smarter.Engineered doors are made with high - density cores like HDF / Hem - Fir, Tubular  built to handle daily wear, heavy use, and even the occasional slam.",
 		},
 		{
 			id: "03",
-			title: 'Frequently Asked Questions 3',
-			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry...',
+			title: 'Wait... don’t these doors swell or chip when it rains?',
+			description: "Only if you buy the cheap knock-offs! Quality engineered doors are made for Indian conditions.With proper sealing and a moisture- resistant core, they’re designed to stay in shape—even when the monsoon knocks on your door.",
 		},
 		{
 			id: "04",
-			title: 'Frequently Asked Questions 4',
-			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry...',
+			title: 'Are these doors a pain to maintain? I don’t want high-maintenance drama.',
+			description: 'Tey’re super chill. Just wipe them to clean.No polishing marathons, no peeling nightmares.They stay looking fresh for years with minimal care.',
 		},
 		{
 			id: "05",
-			title: 'Frequently Asked Questions 5',
-			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry...',
+			title: 'Aren’t engineered doors too heavy to handle or install?',
+			description: 'Surprisingly, no! They’re solid where it matters, but smartly balanced.once installed, you’ll love how smoothly they swing and shut.',
 		},
 		{
 			id: "06",
-			title: 'Frequently Asked Questions 6',
-			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry...',
+			title: 'I like simple designs. Do I really need fancy finishes and carvings?',
+			description: 'Only if you want them!From sleek modern panels to classic wood grains to bold statement doors—engineered doors give you the freedom to match your personality Or stay minimalist if that’s your vibe!',
 		},
 		{
 			id: "07",
-			title: 'Frequently Asked Questions 7',
-			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry...',
+			title: 'Can I really use them for the main door too?',
+			description: "Absolutely.Engineered doors aren't just for interiors—they're built tough for entrances too.",
+		},
+		{
+			id: "08",
+			title: 'Bottom Line: Why Switch?',
+			description: "Because you deserve a door that’s stronger, smarter, better looking, and built for India. it’s time to level up.",
+		},
+		{
+			id: "09",
+			title: 'Does it Come with any Warranty?',
+			description: "Yes, At Hav’Dor we offer three year warranty against – Termite / Moisture / Bending / Discoloration , Deformations .Can you ask for such Warranty from your Wood Seller to Carpenter.Think of it .",
+		},
+		{
+			id: "10",
+			title: 'How much time it takes to Install the Door ?',
+			description: "Just in 60 Seconds …. Yes you read it right with just two hands we install a door in 60 seconds with our High End Precision tools which are way better then tools used by your local Carpenter.",
 		},
 	]
 
