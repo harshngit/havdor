@@ -96,13 +96,13 @@ export default function NavbarTwo() {
 
               {/* Dropdown */}
               {hasChildren && openDropdown === item.label && (
-                <div className="absolute left-0 mt-1 z-20 bg-[#C24E1F] w-48">
+                <div className="absolute left-0 mt-1 z-20 bg-[#C24E1F] w-[150px]">
                   {item.children.map((child, i) => (
                     <Link key={i} href={child.href}>
                       <div
                         className={`px-4 py-2 transition cursor-pointer text-white ${isActive(child.href)
                           ? "bg-[#91431A]"
-                          : "hover:bg-[#91431A]"
+                          : " hover:border-[1px] border-[#91431A]"
                           }`}
                       >
                         {child.label}
@@ -182,7 +182,7 @@ export default function NavbarTwo() {
 
               {/* Dropdown */}
               {hasChildren && openDropdown === item.label && (
-                <div className="absolute left-0 mt-1 z-20 shadow-lg w-48">
+                <div className="absolute left-0 mt-1 z-20 w-[140px]  ">
                   {item.children.map((child, i) => (
                     <Link key={i} href={child.href}>
                       <div
@@ -215,7 +215,7 @@ export default function NavbarTwo() {
           >
             <div className="lg:w-[60%] xl:w-[70%] w-[50%]">
               {!scrolling && <img
-                className="lg:w-[250px] w-[10px] lg:block hidden"
+                className="w-[250px]"
                 src="/asset/navbar/whitelogo.png"
                 alt="logo"
               />}

@@ -97,7 +97,7 @@ const ConsultationSidebar = ({ open, setOpen }) => {
 
 			{/* Desktop Sidebar */}
 			<div
-				className={`fixed bg-white font-helvetica z-[10000] w-[667px] overflow-y-scroll h-full pl-[20px] pr-[20px] pt-[20px] transition-transform duration-300 ease-in-out
+				className={`fixed bg-white font-helvetica z-[10000] w-[40%] overflow-y-scroll h-full pl-[20px] pr-[20px] pt-[20px] transition-transform duration-300 ease-in-out
           top-0 right-0
           ${open ? "translate-x-0" : "translate-x-full"}
           rounded-none shadow-xl hidden lg:block
@@ -107,14 +107,29 @@ const ConsultationSidebar = ({ open, setOpen }) => {
 					<button onClick={() => setOpen(false)}><img className="w-[24px]" src="/asset/cross.png" /></button>
 				</div>
 				<div className="flex flex-col justify-start gap-[80px] items-start">
-					<div className="flex flex-col justify-start items-start gap-[60px]">
+					<div className="flex flex-col justify-start items-start gap-[10px]">
 						<div className="flex justify-start items-start flex-col gap-[20px]">
-							<h2 className="font-normal  text-[36px] text-lightgrey">
+							<h2 className="font-light  text-[36px] text-lightgrey">
 								Your personalised door consultation
 							</h2>
 							<p className="font-light font-helvetica text-[18px] text-lightgrey">
 								To help you find the perfect fit, we offer a personalized consultation experience tailored to your specific needs.
 							</p>
+						</div>
+						<div className=" bg-[#FFF1EA] w-full mb-10 font-helvetica mt-[40px]  px-[30px] py-[40px]">
+							<h3 className="text-[20px] font-light mb-1">
+								Why Book a HAV’DOR Consultation?
+							</h3>
+							<p className="text-[12px] font-light text-lightgrey mb-[20px]">
+								We believe in making right choices for you!
+							</p>
+							<ul className="list-disc font-light pl-5 space-y-2 text-[15px] text-lightgrey">
+								<li>Get expert advice customized to your taste, space, and functionality.</li>
+								<li>Choose the perfect combination with guided support from our team.</li>
+								<li>Understand all the ways your door can be uniquely yours.</li>
+								<li>Preview samples and visualize the final result with confidence.</li>
+								<li>From your first call to final installation—we’ve got you covered.</li>
+							</ul>
 						</div>
 						<div className="flex gap-[70px] justify-center items-center">
 							<div className="flex flex-col gap-[8px] justify-center items-center">
@@ -157,21 +172,7 @@ const ConsultationSidebar = ({ open, setOpen }) => {
 						</Link>
 					</div>
 				</div>
-				<div className=" bg-[#FFF1EA] font-helvetica mt-[40px]  px-[30px] py-[40px]">
-					<h3 className="text-[20px] font-normal mb-1">
-						Why Book a HAV’DOR Consultation?
-					</h3>
-					<p className="text-[12px] font-normal text-lightgrey mb-[20px]">
-						We believe in making right choices for you!
-					</p>
-					<ul className="list-disc pl-5 space-y-2 text-[14px] text-lightgrey">
-						<li>Get expert advice customized to your taste, space, and functionality.</li>
-						<li>Choose the perfect combination with guided support from our team.</li>
-						<li>Understand all the ways your door can be uniquely yours.</li>
-						<li>Preview samples and visualize the final result with confidence.</li>
-						<li>From your first call to final installation—we’ve got you covered.</li>
-					</ul>
-				</div>
+
 			</div>
 		</>
 	);

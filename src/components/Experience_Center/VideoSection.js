@@ -12,7 +12,7 @@ const VideoSection = () => {
 							Whether you're selecting for a luxury villa, boutique hotel, or a signature home, this space empowers you to make informed, confident choices—guided by our team of design experts.</p>
 					</div>
 					<div className='flex justify-start item-start mt-[10px]'>
-						<Link href="" className='px-2  hover:bg-[#DDDDDD33] hover:border-[1px] hover:border-[#89898933]  py-2 border-[1px] border-black text-black uppercase'>VIEW VIDEO</Link>
+						<Link href="" className='px-2  hover:bg-[#FFF1EA80] hover:border-[1px] hover:border-[#2F3435]   py-2 border-[1px] border-black text-black uppercase'>VIEW VIDEO</Link>
 					</div>
 				</div>
 				<div className='lg:w-[60%] w-full'>

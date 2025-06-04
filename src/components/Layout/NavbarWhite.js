@@ -89,7 +89,7 @@ export default function Navbar() {
 
 							{/* Dropdown */}
 							{hasChildren && openDropdown === item.label && (
-								<div className="absolute left-0 mt-1 z-20 w-48">
+								<div className="absolute left-0 mt-1 z-20 w-[150px]">
 									{item.children.map((child, i) => (
 										<Link key={i} href={child.href}>
 											<div
@@ -158,7 +158,7 @@ export default function Navbar() {
 				className={`w-full px-4 lg:px-0 py-4 lg:py-0 transition-all  duration-300 ${scrolling ? "!backdrop-blur-3xl bg-[#eeeeee40] " : ""
 					}`}
 			>
-				<div className={`w-full ${scrolling ? "lg:pt-[35px] lg:pl-[35px] lg:pb-[44px]" : "lg:pt-[30px] lg:pl-[35px] lg:pb-[30px]"} flex items-center justify-between`}>
+				<div className={`w-full ${scrolling ? "lg:pt-[3%] lg:pl-[3%] lg:pb-[3%]" : "lg:pt-[3%] lg:pl-[3%] lg:pb-[3%]"} flex items-center justify-between`}>
 					{/* Logo */}
 					<Link href="/"
 					>

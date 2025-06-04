@@ -89,7 +89,7 @@ export default function NavbarBrandStory() {
 
 							{/* Dropdown */}
 							{hasChildren && openDropdown === item.label && (
-								<div className="absolute left-0 mt-1 z-20 shadow-lg w-48">
+								<div className="absolute left-0 mt-1 z-20 shadow-lg w-[150px]">
 									{item.children.map((child, i) => (
 										<Link key={i} href={child.href}>
 											<div
@@ -157,7 +157,7 @@ export default function NavbarBrandStory() {
 			<div
 				className={`w-full px-4 lg:px-0 py-4 lg:py-0 transition-all duration-300 bg-[#eeeeee40] !backdrop-blur-3xl`}
 			>
-				<div className="w-full lg:pt-[30px] lg:pl-[35px] lg:pb-[20px] flex items-center justify-between">
+				<div className="w-full lg:pt-[3%] lg:pl-[3%] lg:pb-[3%] flex items-center justify-between">
 					{/* Logo */}
 					<Link href="/"
 					>

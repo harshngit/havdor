@@ -8,26 +8,31 @@ const AccordionAbout = () => {
 			id: "01",
 			title: 'Standardization and Quality Control',
 			description: 'We can standardize their production processes, ensuring consistent quality and reducing errors.',
+			img: "/asset/about/Standardization.png",
 		},
 		{
 			id: "02",
 			title: 'Efficiency and Speed',
 			description: 'Our production allows for faster assembly and installation, reducing project timelines.',
+			img: "/asset/about/Efficiency.png",
 		},
 		{
 			id: "03",
 			title: 'Cost-Effectiveness',
 			description: 'We can benefit from economies of scale, reducing costs through bulk purchasing and optimized production processes.',
+			img: "/asset/about/cost.png",
 		},
 		{
 			id: "04",
 			title: 'Design Expertise',
 			description: 'We employ experienced designers who can create functional and aesthetically pleasing designs.',
+			img: "/asset/about/designdefine.png",
 		},
 		{
 			id: "05",
 			title: 'Warranty and After-Sales Support',
 			description: 'We typically offer warranties and after-sales support, providing customers with peace of mind.',
+			img: "/asset/about/warranty.png",
 		},
 	]
 
@@ -73,7 +78,7 @@ const AccordionAbout = () => {
 							className="w-[380px] overflow-hidden opacity-0 transition-all duration-700 ease-in-out h-0"
 						>
 							<img
-								src="/asset/about/Rectangle18.png"
+								src={item.img}
 								alt="Preview"
 								className="w-full object-cover h-[250px] rounded shadow"
 							/>

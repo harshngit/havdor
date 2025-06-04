@@ -8,7 +8,7 @@ import Link from "next/link"
 import Image from 'next/image';
 const Footer = () => {
     return (
-        <footer className="bg-[#2b2f2f] text-white pl-10 py-10 relative overflow-hidden">
+        <footer className="bg-[#2b2f2f] text-[#FFF1EA] pl-10 py-10 h-[627px] relative overflow-hidden">
             <div className='flex w-full justify-between items-start'>
                 <div className="w-[100%] flex flex-col md:flex-row justify-start gap-10 z-10">
                     {/* Column 1 */}
@@ -41,7 +41,7 @@ const Footer = () => {
 
                     {/* Column 2 */}
                     <div className='flex lg:w-[20%] justify-between gap-5 items-start flex-col'>
-                        <div className="space-y-4 font-lightx lg:text-[20px] text-[18px]">
+                        <div className="flex justify-start items-start gap-[20px] flex-col font-light lg:text-[20px] text-[18px]">
                             <p>FAQS</p>
                             <p>TESTIMONIALS</p>
                             <p>WE WORK WITH</p>
@@ -95,7 +95,7 @@ const Footer = () => {
                             <li><Link href="/privacy-policy">Privacy Policy</Link></li>
                         </ul>
                     </div>
-                    <div className="w-[20%] absolute right-2 lg:flex hidden justify-end">
+                    <div className="w-[30%] absolute right-2 lg:flex hidden justify-end">
                         <img className='lg:w-[20%] h-[35rem]' src="/asset/footer/footernav.png" alt="" />
                     </div>
 

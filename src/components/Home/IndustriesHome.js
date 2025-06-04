@@ -34,8 +34,8 @@ const IndustriesHome = () => {
 						{item.content && (
 							<div className="absolute bottom-0 left-0 w-full h-full bg-[#2F3435CC] text-[#FFF1EA] px-4 py-5 translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out z-10">
 								<div className='flex justify-between flex-col h-full'>
-									<p className="text-sm">{item.content}</p>
-									<h3 className="text-base text-[#FFF1EA] font-normal ">{item.title}</h3>
+									<p className="text-[20px] font-helvetica font-normal">{item.content}</p>
+									<h3 className="text-[24px] text-[#FFF1EA] font-normal ">{item.title}</h3>
 								</div>
 							</div>
 						)}
@@ -43,7 +43,7 @@ const IndustriesHome = () => {
 						{/* Always visible title */}
 						<div className="absolute bottom-0 left-0 w-full ">
 							<div className=" h-[150px] bg-gradient-to-t from-[#FFF1EA] via-[#fff1ea77] to-transparent px-4 pt-10 pb-4 flex justify-start item-end">
-								<h3 className="absolute bottom-5 text-[#2F3435] font-normal ">{item.title}</h3>
+								<h3 className="absolute bottom-5 text-[#2F3435] text-[24px] font-normal ">{item.title}</h3>
 							</div>
 						</div>
 
