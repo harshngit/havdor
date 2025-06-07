@@ -67,7 +67,7 @@ export default function NavbarBrandStory() {
 
 
 	const navList = (
-		<ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-3 lg:gap-3 text-white uppercase font-medium !text-sm tracking-wide">
+		<ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-3 lg:gap-3 text-white  font-medium !text-sm tracking-wide">
 			{navItems.map((item, idx) => {
 				const hasChildren = item.children && item.children.length > 0;
 				const isParentActive =
@@ -94,7 +94,7 @@ export default function NavbarBrandStory() {
 										<Link key={i} href={child.href}>
 											<div
 												className={`px-4 py-2 transition cursor-pointer ${isActive(child.href)
-													? "bg-[#89898933] text-lightgrey"
+													? "bg-[#DDDDDD33] text-lightgrey"
 													: "bg-[#DDDDDD33] hover:bg-[#DDDDDD33] hover:border-[1px] text-lightgrey border-[#89898933]"
 													}`}
 											>
@@ -249,7 +249,7 @@ export default function NavbarBrandStory() {
 					</Link>
 				</div>
 				<div className="flex justify-center item-center">
-					<img className="w-screen h-[134px]" src="/asset/navbar/havdorblack.png" alt="" />
+					<img className="w-screen h-[134px]" src="/asset/navbar/blacklogo.png" alt="" />
 				</div>
 			</div>
 		</div>

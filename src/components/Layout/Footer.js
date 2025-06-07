@@ -13,15 +13,15 @@ const Footer = () => {
                 <div className="w-[100%] flex flex-col md:flex-row justify-start gap-10 z-10">
                     {/* Column 1 */}
                     <div className="flex lg:w-[30%] justify-between gap-5 items-start flex-col">
-                        <ul className="space-y-4 lg:text-[36px] font-normal text-[26px]">
-                            <li>
+                        <ul className="space-y-4 lg:text-[36px] font-normal  text-[26px]">
+                            <li className='hover:text-[#CA622A] transition-colors duration-300 ease-in-out'>
                                 <Link href="/about">About Us</Link>
                             </li>
-                            <li>Doors</li>
-                            <li>
+                            <li className='hover:text-[#CA622A] transition-colors duration-300 ease-in-out'>Doors</li>
+                            <li className='hover:text-[#CA622A] transition-colors duration-300 ease-in-out'>
                                 <Link href="/experience-centre">Experience Centre</Link>
                             </li>
-                            <li><Link href="/contact">Contact</Link></li>
+                            <li className='hover:text-[#CA622A] transition-colors duration-300 ease-in-out'><Link href="/contact">Contact</Link></li>
                         </ul>
                         <div className="lg:flex hidden gap-[30px] pt-4">
                             <Link href="">

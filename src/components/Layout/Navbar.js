@@ -68,7 +68,7 @@ export default function NavbarTwo() {
 
 
   const navList = (
-    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-3 lg:gap-3 text-white uppercase font-medium !text-sm tracking-wide">
+    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-3 lg:gap-3 text-white  font-medium !text-sm tracking-wide">
       {navItems.map((item, idx) => {
         const hasChildren = item.children && item.children.length > 0;
         const isParentActive =
@@ -82,7 +82,7 @@ export default function NavbarTwo() {
             >
               <Link
                 href={item.href}
-                className={`group px-3 py-2 transition block ${isParentActive ? "bg-[#91431A]" : "bg-[#C24E1F] hover:border-[1px] border-[#91431A]"
+                className={`group px-3 py-2 transition block ${isParentActive ? "bg-[#91431A]" : "bg-[#C24E1F] hover:border-[1px] hover:shadow-[inset_0_0_0_1px_#91431A] border-[#91431A] "
                   }`}
               >
                 {item.label === "About" ? (
@@ -102,7 +102,7 @@ export default function NavbarTwo() {
                       <div
                         className={`px-4 py-2 transition cursor-pointer text-white ${isActive(child.href)
                           ? "bg-[#91431A]"
-                          : " hover:border-[1px] border-[#91431A]"
+                          : "hover:shadow-[inset_0_0_0_1px_#91431A] hover:border-[1px] border-[#91431A]"
                           }`}
                       >
                         {child.label}
@@ -307,7 +307,7 @@ export default function NavbarTwo() {
           </Link>
         </div>
         <div className="flex justify-center item-center">
-          <img className="w-screen h-[134px]" src="/asset/navbar/havdorblack.png" alt="" />
+          <img className="w-screen h-[134px]" src="/asset/navbar/blacklogo.png" alt="" />
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ const About = () => {
 			<MissionVission />
 			<DefineSec />
 			<KeyPoints />
-			<Reviews />
+			{/* <Reviews /> */}
 			<AboutHome2 />
 			<Footer />
 			{/* </ThemeProvider> */}

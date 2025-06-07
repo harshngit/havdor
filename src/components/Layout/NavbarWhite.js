@@ -67,7 +67,7 @@ export default function Navbar() {
 
 
 	const navList = (
-		<ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-3 lg:gap-3 text-white uppercase font-medium !text-sm tracking-wide">
+		<ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-3 lg:gap-3 text-white font-medium !text-sm tracking-wide">
 			{navItems.map((item, idx) => {
 				const hasChildren = item.children && item.children.length > 0;
 				const isParentActive =
@@ -250,7 +250,7 @@ export default function Navbar() {
 					</Link>
 				</div>
 				<div className="flex justify-center item-center">
-					<img className="w-screen h-[134px]" src="/asset/navbar/havdorblack.png" alt="" />
+					<img className="w-screen h-[134px]" src="/asset/navbar/blacklogo.png" alt="" />
 				</div>
 			</div>
 		</div>

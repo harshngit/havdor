@@ -68,19 +68,19 @@ const AccordionAbout = () => {
 					{/* Main row */}
 					<div className="flex items-center gap-6 py-4 px-2 transition-all duration-700 ease-in-out">
 						{/* Number */}
-						<h3 className="font-thin font-helvetica lg:text-[24px] text-[18px] w-[12%] group-hover:w-[5%] transition-all duration-700 ease-in-out">
+						<h3 className="font-thin font-helvetica lg:text-[24px] text-[18px] w-[46%] group-hover:w-[5%] transition-all duration-700 ease-in-out">
 							{item.id}
 						</h3>
 
 						{/* Image: Smooth height animation with JS */}
 						<div
 							ref={(el) => (imageRefs.current[index] = el)}
-							className="w-[380px] overflow-hidden opacity-0 transition-all duration-700 ease-in-out h-0"
+							className="group-hover:w-[50%] overflow-hidden opacity-0 flex justify-center item-center transition-all duration-700 ease-in-out h-0"
 						>
 							<img
 								src={item.img}
 								alt="Preview"
-								className="w-full object-cover h-[250px] rounded shadow"
+								className="w-[400px] object-cover h-[250px] rounded shadow"
 							/>
 						</div>
 
