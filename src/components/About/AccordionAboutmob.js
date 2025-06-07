@@ -8,26 +8,31 @@ const AccordionAboutmob = () => {
 			id: "01",
 			title: 'Standardization and Quality Control',
 			description: 'We can standardize their production processes, ensuring consistent quality and reducing errors.',
+			img: "/asset/about/Standardization.png",
 		},
 		{
 			id: "02",
 			title: 'Efficiency and Speed',
 			description: 'Our production allows for faster assembly and installation, reducing project timelines.',
+			img: "/asset/about/Efficiency.png",
 		},
 		{
 			id: "03",
 			title: 'Cost-Effectiveness',
 			description: 'We can benefit from economies of scale, reducing costs through bulk purchasing and optimized production processes.',
+			img: "/asset/about/cost.png",
 		},
 		{
 			id: "04",
 			title: 'Design Expertise',
 			description: 'We employ experienced designers who can create functional and aesthetically pleasing designs.',
+			img: "/asset/about/designdefine.png",
 		},
 		{
 			id: "05",
 			title: 'Warranty and After-Sales Support',
 			description: 'We typically offer warranties and after-sales support, providing customers with peace of mind.',
+			img: "/asset/about/warranty.png",
 		},
 	]
 	const [openIndex, setOpenIndex] = useState(null)
@@ -54,7 +59,7 @@ const AccordionAboutmob = () => {
 						{/* Mobile: Expanded Content */}
 						{openIndex === index && (
 							<div className="md:hidden px-4 space-y-3 animate-fade-in">
-								<img src="/asset/about/Rectangle18.png" alt="Preview" className="w-full object-cover h-full rounded shadow" />
+								<img src={item.img} alt="Preview" className="w-full object-cover h-full rounded shadow" />
 								<h4 className="text-[20px] text-lightgrey font-helvetica font-normal">{item.title}</h4>
 								<p className="text-[18px] text-lightgrey font-helvetica font-thin">{item.description}</p>
 							</div>

@@ -16,6 +16,28 @@
     background-repeat: no-repeat;
 }
 
+.banner_EC {
+    background: url('/asset/experience_center/experiment_center.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* globals.css */
+.sidebar-transition {
+    will-change: transform;
+}
+
+@media screen and (max-width:500px) {
+    .banner_EC {
+        background: url('/asset/experience_center/ec_mobile.png');
+        background-size: cover;
+        background-position: center;
+        height: 118vh;
+        background-repeat: no-repeat;
+    }
+}
+
 /* Add in global CSS or a Tailwind plugin setup */
 .custom-pagination .swiper-pagination-bullet {
     width: 10px;

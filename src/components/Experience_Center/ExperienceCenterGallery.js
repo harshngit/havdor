@@ -32,6 +32,9 @@ const ExperienceCenterGallery = () => {
 				</Swiper>
 			</div>
 			<div className='lg:hidden w-full py-5'>
+				<p className='text-[#2F3435] text-[18px] px-5 py-5'>
+					The HAV’DOR Experience Centre is thoughtfully created for those who appreciate the finer details—where you can see, feel, and explore our premium quality doors up close. From rich materials to precision finishes, discover how each door is a testament to timeless luxury, modern innovation, and personalized artistry.
+				</p>
 				<Swiper
 					autoplay={2000}
 					spaceBetween={20}

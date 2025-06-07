@@ -16,7 +16,7 @@ const CTA = ({
 						<p className='font-helvetica font-thin tracking-wider lg:text-[20px] text-[18px]'>At HAV’DOR, we don’t just build doors—we shape experiences that embody luxury, warmth, and lasting strength.Explore our curated collections up close and witness the artistry behind India's finest handcrafted entrances.</p>
 					</div>
 					<div className='flex justify-start item-start mt-[10px]'>
-						<Link href="https://forms.gle/v7BbgT77nydN6Wu1A" target='_blank'
+						<Link href="https://forms.gle/a242JP24gPfsH7yG8" target='_blank'
 							// onClick={onOpenSidebar}
 							className="px-2 tracking-[.25em] font-thin py-2 border-[1px] border-white hover: hover:bg-[#FFF1EA1A] hover:border-[1px] hover:border-[#FFF1EA] text-white uppercase"
 						>
