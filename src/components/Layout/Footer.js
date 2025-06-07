@@ -8,7 +8,7 @@ import Link from "next/link"
 import Image from 'next/image';
 const Footer = () => {
     return (
-        <footer className="bg-[#2b2f2f] text-[#FFF1EA] pl-10 py-10 h-[627px] relative overflow-hidden">
+        <footer className="bg-[#2b2f2f] text-[#FFF1EA] pl-10 py-10 lg:h-[627px] h-auto relative overflow-hidden">
             <div className='flex w-full justify-between items-start'>
                 <div className="w-[100%] flex flex-col md:flex-row justify-start gap-10 z-10">
                     {/* Column 1 */}
@@ -71,7 +71,7 @@ const Footer = () => {
                         </div>
                         <div className='lg:flex hidden justify-start items-end mt-[116px]'>
                             <Link href="/privacy-policy">
-                                <p className='text-[#ACACAC] font-helvetica text-[20px]'>Privacy Policy</p>
+                                <p className='text-[#ACACAC] font-helvetica text-[20px] hover:text-[#CA622A] transition-colors duration-300 ease-in-out'>Privacy Policy</p>
                             </Link>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ const Footer = () => {
                                 All rights reserved
                             </li>
                             <li>Terms & Conditions</li>
-                            <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+                            <li className='hover:text-[#CA622A] transition-colors duration-300 ease-in-out'><Link href="/privacy-policy">Privacy Policy</Link></li>
                         </ul>
                     </div>
                     <div className="w-[30%] absolute right-2 lg:flex hidden justify-end">
