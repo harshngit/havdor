@@ -1,23 +1,26 @@
 "use client";
 
 import React from "react";
+import DoorTapBar from "./DoorTopBar";
 
-const DoorGrid = ({ doors }) => {
+const DoorGrid = ({ resetFilters, openCategory, setOpenCategory, openType, setOpenType, selectedCategory, setSelectedCategory, selectedType, setSelectedType, optionsCategory, optionsType, optionsTypeMansion, filteredDoors, doors }) => {
 	if (doors.length === 0) {
 		return <p className="text-center text-gray-500 mt-8">No doors found.</p>;
 	}
 
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
-			{doors.map((door) => (
-				<div key={door.id} className="border border-gray-300 rounded-lg p-4 bg-white shadow-sm">
-					<img src={door.img} alt={door.name} className="w-full h-[250px] object-cover rounded" />
-					<h2 className="text-xl font-semibold mt-4">{door.name}</h2>
-					<p className="text-sm text-gray-500 mt-1">Type: {door.type}</p>
-					<p className="text-sm text-gray-500">Category: {door.category}</p>
-				</div>
-			))}
-		</div>
+		<>
+			<DoorTapBar resetFilters={resetFilters} openCategory={openCategory} setOpenCategory={setOpenCategory} openType={openType} setOpenType={setOpenType} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} selectedType={selectedType} setSelectedType={setSelectedType} optionsCategory={optionsCategory} optionsType={optionsType} optionsTypeMansion={optionsTypeMansion} filteredDoors={filteredDoors} />
+			<div className="grid grid-cols-1 font-helvetica md:grid-cols-2 gap-[26px] p-6">
+				{doors.map((door) => (
+					<div key={door.id} className=" bg-white">
+						<img src={door.img} alt={door.name} className="lg:w-[811px] w-full lg:h-[412px] object-cover" />
+						<h2 className="text-[28px] font-bold mt-[20px]">{door.doorcode}</h2>
+						<p className="text-[28px] text-lightgrey font-light mt-1">{door.category} | {door.type}</p>
+					</div>
+				))}
+			</div>
+		</>
 	);
 };
 

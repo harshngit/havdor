@@ -15,8 +15,8 @@ const DoorMain = () => {
 	const [selectedCategory, setSelectedCategory] = useState("");
 	const [selectedType, setSelectedType] = useState("");
 	const optionsCategory = ["Mansion", "Premium"];
-	const optionsType = ["Premium Wooden Door", "Aluminium Wooden Door", "Glass Door", "Glass Wooden Door"];
-	const optionsTypeMansion = ["Aluminium Wooden Door"];
+	const optionsType = ["Premium Wooden Door", "Aluminium Wooden Door", "Glass Wooden Door"];
+	const optionsTypeMansion = ["Aluminium Door"];
 	const filteredDoors = doors.filter((door) => {
 		if (!selectedCategory && !selectedType) return true;
 		if (selectedCategory && !selectedType) return door.category === selectedCategory;
@@ -26,9 +26,9 @@ const DoorMain = () => {
 	return (
 		<div className='h-screen flex flex-col'>
 
-			<DoorTapBar resetFilters={resetFilters} openCategory={openCategory} setOpenCategory={setOpenCategory} openType={openType} setOpenType={setOpenType} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} selectedType={selectedType} setSelectedType={setSelectedType} optionsCategory={optionsCategory} optionsType={optionsType} optionsTypeMansion={optionsTypeMansion} filteredDoors={filteredDoors} />
+
 			<div className="overflow-y-scroll scroll-smooth flex-1">
-				<DoorGrid doors={filteredDoors} />
+				<DoorGrid resetFilters={resetFilters} openCategory={openCategory} setOpenCategory={setOpenCategory} openType={openType} setOpenType={setOpenType} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} selectedType={selectedType} setSelectedType={setSelectedType} optionsCategory={optionsCategory} optionsType={optionsType} optionsTypeMansion={optionsTypeMansion} filteredDoors={filteredDoors} doors={filteredDoors} />
 			</div>
 		</div>
 	)
