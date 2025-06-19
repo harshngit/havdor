@@ -106,10 +106,10 @@ const DoorTapBar = ({ resetFilters, openCategory, setOpenCategory, openType, set
 
 			{/* Right buttons */}
 			<div className="flex gap-[30px] lg:flex-nowrap flex-wrap justify-center items-center ">
-				<button className="border hover:bg-[#FFF1EA80] font-helvetica font-normal text-[20px] text-lightgrey border-lightgrey p-[15px] lg:w-auto w-full">
+				<button className="border h-[45px] hover:bg-[#FFF1EA80] font-helvetica font-normal text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full">
 					DOWNLOAD BROCHURE
 				</button>
-				<button className="border font-helvetica hover:bg-[#FFF1EA80] font-normal text-[20px] text-lightgrey border-lightgrey w-full lg:w-auto	 p-[15px]">
+				<button className="border h-[45px] hover:bg-[#FFF1EA80] font-helvetica font-normal text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full">
 					REQUEST CONSULTATION
 				</button>
 			</div>
