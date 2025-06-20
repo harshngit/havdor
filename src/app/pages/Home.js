@@ -23,10 +23,16 @@ const Home = () => {
         <NavbarTwo />
         <BannerHome onOpenSidebar={() => setIsSidebarOpen(true)} />
         <AboutHome />
-        <IndustriesHome />
-        <Reviews />
+        <section id='we-work-with'>
+          <IndustriesHome />
+        </section>
+        <section id='testimonials'>
+          <Reviews />
+        </section>
         <AboutHome2 />
-        <CTA onOpenSidebar={() => setIsSidebarOpen(true)} />
+        <section id='send-inquiry'>
+          <CTA onOpenSidebar={() => setIsSidebarOpen(true)} />
+        </section>
         <Footer />
         {/* </ThemeProvider> */}
       </div>

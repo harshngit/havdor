@@ -6,6 +6,8 @@ import { PiInstagramLogo } from "react-icons/pi";
 import { PiYoutubeLogo } from "react-icons/pi";
 import Link from "next/link"
 import Image from 'next/image';
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { IoLogoFacebook } from "react-icons/io";
 const Footer = () => {
     return (
         <footer className="bg-[#2b2f2f] text-[#FFF1EA] pl-10 py-10 lg:h-[627px] h-auto relative overflow-hidden">
@@ -25,13 +27,15 @@ const Footer = () => {
                         </ul>
                         <div className="lg:flex hidden gap-[30px] pt-4">
                             <Link href="">
-                                <img className="w-[24px]" src="/asset/footer/Facebookp.png" alt="" />
+                                {/* <img className="w-[24px]" src="/asset/footer/Facebookp.png" alt="" /> */}
+                                <IoLogoFacebook className='text-[30px] hover:text-primary' />
                             </Link>
                             <Link href="">
-                                <img className="w-[24px]" src="/asset/footer/Instagramp.png" alt="" />
+                                {/* <img className="w-[24px]" src="/asset/footer/Instagramp.png" alt="" /> */}
+                                <FaInstagram className='text-[28px] hover:text-primary' />
                             </Link>
                             <Link href="">
-                                <img className="w-[24px]" src="/asset/footer/Linkedinp.png" alt="" />
+                                <FaLinkedin className='text-[28px] hover:text-primary' />
                             </Link>
                         </div>
                         <div className='lg:flex hidden justify-start items-end mt-[116px]'>
@@ -42,11 +46,21 @@ const Footer = () => {
                     {/* Column 2 */}
                     <div className='flex lg:w-[20%] justify-between gap-5 items-start flex-col'>
                         <div className="flex justify-start items-start gap-[20px] flex-col font-light lg:text-[20px] text-[18px]">
-                            <p>FAQS</p>
-                            <p>TESTIMONIALS</p>
-                            <p>WE WORK WITH</p>
-                            <p>SEND INQUIRY</p>
-                            <p>BOOK YOUR VISIT</p>
+                            <Link href="contact/#FAQ">
+                                <p className='hover:text-primary cursor-pointer'>FAQS</p>
+                            </Link>
+                            <Link href="/#testimonials">
+                                <p className='hover:text-primary cursor-pointer'>TESTIMONIALS</p>
+                            </Link>
+                            <Link href="/#we-work-with">
+                                <p className='hover:text-primary cursor-pointer'>WE WORK WITH</p>
+                            </Link>
+                            <Link href="/#send-inquiry">
+                                <p className='hover:text-primary cursor-pointer'>SEND INQUIRY</p>
+                            </Link>
+                            <Link href="/#send-inquiry">
+                                <p className='hover:text-primary cursor-pointer'>BOOK YOUR VISIT</p>
+                            </Link>
                         </div>
                         <div className='lg:flex hidden justify-start items-end mt-[116px]'>
                             <p className='text-[#ACACAC] font-helvetica text-[20px]'>Terms & Conditions</p>

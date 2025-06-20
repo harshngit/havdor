@@ -1,5 +1,7 @@
+import BenefitsSection from '@/components/Door/BenefitsSection'
 import DoorBanner from '@/components/Door/DoorBanner'
 import DoorMain from '@/components/Door/DoorMain'
+import ExtraProduct from '@/components/Door/ExtraProduct'
 import Footer from '@/components/Layout/Footer'
 import NavbarBrandStory from '@/components/Layout/NavbarBrandStory'
 import Navbar from '@/components/Layout/NavbarWhite'
@@ -11,6 +13,8 @@ const Door = () => {
 			<NavbarBrandStory />
 			<DoorBanner />
 			<DoorMain />
+			<ExtraProduct />
+			<BenefitsSection />
 			<Footer />
 		</div>
 	)

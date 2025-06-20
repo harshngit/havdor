@@ -64,7 +64,7 @@ const FAQ = () => {
 	}
 
 	return (
-		<div className='w-full lg:mt-[80px] lg:px-10 lg:py-10 px-5 py-5 flex justify-center items-center '>
+		<div className='w-full lg:mt-[80px] lg:px-10 lg:py-10 px-5 py-5 flex justify-center items-center ' id='FAQ'>
 			<div className='flex justify-start items-start flex-col lg:w-[60%] w-full gap-6 transition-all ease-in-out duration-500'>
 				<h2 className='font-normal font-helvetica lg:text-[36px] text-[26px]'>
 					Frequently Asked Questions
