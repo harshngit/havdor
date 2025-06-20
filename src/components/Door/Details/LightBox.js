@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const LightBox = ({ product }) => {
-	const images = [product.mainimg, product.img2, product.img3].filter(Boolean);
+	const images = [product.mainimg, product.img2, product.img3, product.img4].filter(Boolean);
 	const [selectedImage, setSelectedImage] = useState(images[0]);
 
 	useEffect(() => {
