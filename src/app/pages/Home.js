@@ -10,13 +10,14 @@ import AboutHome2 from '@/components/Home/AboutHome2.js'
 import CTA from '@/components/CTA.js'
 import Footer from '@/components/Layout/Footer.js'
 import ConsultationSidebar from '@/components/ConsultationSidebar.js';
+import NavbarBrandStory from '@/components/Layout/NavbarBrandStory'
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
     <>
       <ConsultationSidebar open={isSidebarOpen} setOpen={setIsSidebarOpen} />
       <div className=' overflow-hidden'>
-        <NavbarTwo />
+        <NavbarBrandStory />
         <BannerHome onOpenSidebar={() => setIsSidebarOpen(true)} />
         <AboutHome />
         <section id='we-work-with'>
