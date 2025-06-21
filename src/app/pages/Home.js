@@ -19,10 +19,10 @@ const Home = () => {
     <>
       <ConsultationSidebar open={isSidebarOpen} setOpen={setIsSidebarOpen} />
       <div className=' overflow-hidden'>
-        <NavbarTwo />
+        {/* <NavbarTwo />
         <BannerHome onOpenSidebar={() => setIsSidebarOpen(true)} />
-        <AboutHome />
-        {/* <section id='we-work-with'>
+        <AboutHome /> */}
+        <section id='we-work-with'>
           <IndustriesHome />
         </section>
         <section id='testimonials'>
@@ -31,7 +31,7 @@ const Home = () => {
         <AboutHome2 />
         <section id='send-inquiry'>
           <CTA onOpenSidebar={() => setIsSidebarOpen(true)} />
-        </section> */}
+        </section>
         <Footer />
       </div>
     </>
