@@ -14,7 +14,7 @@ const ExperienceCenter = () => {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 	return (
 		<>
-			<ConsultationSidebar open={isSidebarOpen} setOpen={setIsSidebarOpen} />
+			{/* <ConsultationSidebar open={isSidebarOpen} setOpen={setIsSidebarOpen} /> */}
 			<div className='overflow-hidden'>
 				<Navbar />
 				<BannerEC />
