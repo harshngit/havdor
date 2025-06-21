@@ -19,8 +19,8 @@ const Home = () => {
     <>
       <ConsultationSidebar open={isSidebarOpen} setOpen={setIsSidebarOpen} />
       <div className=' overflow-hidden'>
-        {/* <NavbarTwo />
-        <BannerHome onOpenSidebar={() => setIsSidebarOpen(true)} /> */}
+        <NavbarTwo />
+        {/* <BannerHome onOpenSidebar={() => setIsSidebarOpen(true)} /> */}
         <AboutHome />
         <section id='we-work-with'>
           <IndustriesHome />
