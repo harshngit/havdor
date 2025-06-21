@@ -41,12 +41,12 @@ const Reviews = () => {
 		<div className="w-full lg:pl-10 lg:pr-0 lg:py-10 mb-10	 py-10 px-5 font-helvetica" >
 			<h2 className="lg:text-[36px] text-[24px] lg:font-light font-light font-helvetica mb-10 lg:ml-[41%]">Our Proud Supporters Say</h2>
 
-			<div className="flex relative justify-center lg:flex-row flex-col gap-10 lg:items-start items-center ">
+			<div className="flex relative justify-center lg:flex-row flex-col-reverse gap-10 lg:items-start items-center ">
 				<div className="absolute lg:left-4 left-[30%] lg:bottom-[32rem] bottom-[31rem] z-10 lg:flex justify-center items-center gap-5 hidden">
-					<button className="swiper-button-prev !bg-[#fceae5] text-black hover:border-[1px] hover:border-lightgrey cursor-pointer transition-all duration-100 ease-in  !shadow-none !rounded-sm ">
+					<button className="swiper-button-prev hover:bg-[#fceae5] text-black border-[1px] border-lightgrey cursor-pointer transition-all duration-100 ease-in  !shadow-none !rounded-sm ">
 						<img className='!w-[24px]' src="/asset/Back.png" alt="" />
 					</button>
-					<button className="swiper-button-next !bg-[#fceae5] hover:border-[1px] hover:border-lightgrey cursor-pointer transition-all duration-100 ease-in   !shadow-none !rounded-sm ">
+					<button className="swiper-button-next hover:bg-[#fceae5] text-black border-[1px] border-lightgrey cursor-pointer transition-all duration-100 ease-in  !shadow-none !rounded-sm">
 						<img className='!w-[24px]' src="/asset/front.png" alt="" />
 					</button>
 				</div>
@@ -98,11 +98,11 @@ const Reviews = () => {
 						className="h-full w-full "
 					>
 						{testimonials.map((item, index) => (
-							<SwiperSlide key={index} className='flex justify-start  items-start lg:!w-[90%] w-full'>
+							<SwiperSlide key={index} className='flex justify-start  items-start lg:!w-[90%] !w-[90%] lg:gap-0 !gap-[15px] lg:mr-[0px] !mr-[15px]'>
 								<img
 									src={item.image}
 									alt={item.name}
-									className="w-[97%] h-[300px] rounded-lg"
+									className="lg:w-[97%]  h-[300px] rounded-lg"
 								/>
 							</SwiperSlide>
 						))}

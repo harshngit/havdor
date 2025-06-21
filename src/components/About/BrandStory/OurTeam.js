@@ -3,13 +3,13 @@ import React from 'react'
 const OurTeam = () => {
 	const categories = [
 		{
-			title: 'NEERAJ GUPTA', desgination: "Director", img: '/asset/home/industries/1.png', content: "As Director at Hav’Dor, my focus is clear: to drive innovation that elevates both form and function.We’re not just offering doors—we’re delivering high- performance solutions that set new industry benchmarks.At Hav’Dor we ensure every door of ours is a statement of quality, craftsmanship, and lasting value. "
+			title: 'NEERAJ GUPTA', desgination: "Director", img: '/asset/brand-story/team/1.png', content: "As Director at Hav’Dor, my focus is clear: to drive innovation that elevates both form and function.We’re not just offering doors—we’re delivering high- performance solutions that set new industry benchmarks.At Hav’Dor we ensure every door of ours is a statement of quality, craftsmanship, and lasting value. "
 		},
 		{
-			title: 'SEEMA GUPTA', desgination: "CEO", img: '/asset/home/industries/2.png', content: "At Hav’dor, we set out with a clear purpose—to change how people experience doors. Our mission is to create strong, stylish, and fully customizable engineered wooden doors that stand the test of time. With our signature double-step soundproof design, we’ve solved the age-old problems of conventional doors—offering a smoother, quieter, and more reliable experience for every customer. Looking ahead, our vision is to become the most trusted name in engineered wooden doors across India. we’re working towards a future where there’s a Hav’dor door in every Indian home."
+			title: 'SEEMA GUPTA', desgination: "CEO", img: '/asset/brand-story/team/2.png', content: "At Hav’dor, we set out with a clear purpose—to change how people experience doors. Our mission is to create strong, stylish, and fully customizable engineered wooden doors that stand the test of time. With our signature double-step soundproof design, we’ve solved the age-old problems of conventional doors—offering a smoother, quieter, and more reliable experience for every customer. Looking ahead, our vision is to become the most trusted name in engineered wooden doors across India. we’re working towards a future where there’s a Hav’dor door in every Indian home."
 		},
 		{
-			title: 'RUCHIR ANGAD GUPTA', desgination: "Director", img: '/asset/home/industries/3.png', content: "At Hav’Dor, we’re not here to sell just another door.We’re here to change what people expect from one.As Director of Hav’Dor, my goal is simple: to offer a premium, fully customizable door solution that outperforms traditional doors in every way.Our engineered wood doors combine the strength of solid wood with advanced resistance to moisture, termites, warping, and wear.If you’re building for quality, longevity, and detail—Hav’Dor is the door partner you’ve been waiting for."
+			title: 'RUCHIR ANGAD GUPTA', desgination: "Director", img: '/asset/brand-story/team/3.png', content: "At Hav’Dor, we’re not here to sell just another door.We’re here to change what people expect from one.As Director of Hav’Dor, my goal is simple: to offer a premium, fully customizable door solution that outperforms traditional doors in every way.Our engineered wood doors combine the strength of solid wood with advanced resistance to moisture, termites, warping, and wear.If you’re building for quality, longevity, and detail—Hav’Dor is the door partner you’ve been waiting for."
 		},
 	];
 	return (
@@ -18,11 +18,11 @@ const OurTeam = () => {
 				<h2 className="lg:text-[36px] text-[24px] font-helvetica font-normal">Meet our Directors</h2>
 			</div>
 
-			<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+			<div className="grid grid-cols-1 items-center justify-center md:grid-cols-3 lg:grid-cols-3 gap-4">
 				{categories.map((item, i) => (
 					<div
 						key={i}
-						className="relative group overflow-hidden h-[400px] rounded-md"
+						className="relative group overflow-hidden h-[588px] lg:w-[526px] w-full rounded-md"
 					>
 						<img
 							src={item.img}

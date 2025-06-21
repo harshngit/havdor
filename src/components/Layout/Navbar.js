@@ -118,7 +118,7 @@ export default function NavbarTwo() {
     </ul>
   );
   const navListMobile = (
-    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-[40px] lg:gap-4 text-white uppercase font-medium !text-sm tracking-wide">
+    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-[40px] lg:gap-4 text-white  font-medium !text-sm hover:text-primary tracking-wide">
 
       <div className="flex flex-col items-center relative">
         <div className="flex justify-center items-center gap-2">
@@ -257,7 +257,7 @@ export default function NavbarTwo() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 w-screen h-screen bg-[#FFFFFF] z-[9998] px-6 pt-6 transform transition-transform duration-300 ${openDrawer ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 right-0 w-screen h-screen bg-[#FFFFFF] z-[9998] px-6 pt-6 transform transition-transform duration-700 ${openDrawer ? "translate-x-0" : "translate-x-full"
           }`}
       >
         <div className="flex justify-end items-center mb-4">

@@ -22,7 +22,7 @@ const IndustriesHome = () => {
 				{categories.map((item, i) => (
 					<div
 						key={i}
-						className="relative group overflow-hidden h-[400px] rounded-md"
+						className="relative group overflow-hidden h-[588px] rounded-md"
 					>
 						<img
 							src={item.img}

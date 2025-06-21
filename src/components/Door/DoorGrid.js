@@ -32,21 +32,7 @@ const DoorGrid = ({
 
 	return (
 		<>
-			<DoorTapBar
-				resetFilters={resetFilters}
-				openCategory={openCategory}
-				setOpenCategory={setOpenCategory}
-				openType={openType}
-				setOpenType={setOpenType}
-				selectedCategory={selectedCategory}
-				setSelectedCategory={setSelectedCategory}
-				selectedType={selectedType}
-				setSelectedType={setSelectedType}
-				optionsCategory={optionsCategory}
-				optionsType={optionsType}
-				optionsTypeMansion={optionsTypeMansion}
-				filteredDoors={filteredDoors}
-			/>
+
 
 			<div className="grid grid-cols-1 font-helvetica md:grid-cols-2 gap-[26px] p-6">
 				{doors.slice(0, visibleCount).map((door) => (

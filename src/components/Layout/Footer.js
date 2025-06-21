@@ -10,7 +10,7 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoLogoFacebook } from "react-icons/io";
 const Footer = () => {
     return (
-        <footer className="bg-[#2b2f2f] text-[#FFF1EA] pl-10 py-10 lg:h-[627px] h-auto relative overflow-hidden">
+        <footer className="bg-[#2b2f2f] text-[#FFF1EA] pl-[15px] py-10 lg:h-[627px] h-auto relative overflow-hidden">
             <div className='flex w-full justify-between items-start'>
                 <div className="w-[100%] flex flex-col md:flex-row justify-start gap-10 z-10">
                     {/* Column 1 */}

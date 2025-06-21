@@ -73,7 +73,6 @@
     position: absolute;
     color: white !important;
     font-size: 20px !important;
-    background: #565449;
     border-radius: 100%;
 
     width: 40px !important;
@@ -93,8 +92,7 @@
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-    font-family: swiper-icons;
-    font-size: 22px !important;
+    /* font-size: 22px !important; */
     text-transform: none !important;
     letter-spacing: 0;
     font-variant: initial;

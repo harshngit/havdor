@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutHome = () => {
 	return (
-		<div className='w-full lg:h-[516px] h-auto py-5 px-5 flex justify-center items-center gap-[38px] flex-col'>
+		<div className='w-full lg:h-[516px] h-auto py-5 mt-[20px] lg:mt-0 px-5 flex justify-center items-center lg:gap-[38px] flex-col gap-[15px]'>
 			<div className=''>
 				<h2 className='font-helvetica font-normal lg:text-[36px] text-[22px] text-lightgrey'> We are the guardians of your homes & hearts </h2>
 			</div>

@@ -29,7 +29,7 @@ const ConsultationSidebar = ({ open, setOpen }) => {
 					<div className="flex flex-col gap-8">
 						<div className="flex flex-col gap-5">
 							<h2 className="text-[20px] text-lightgrey">Your personalised door consultation</h2>
-							<p className="text-[14px] text-lightgrey">To help you find the perfect fit, we offer a personalized consultation experience tailored to your specific needs.</p>
+							<p className="text-[14px] font-light text-lightgrey">To help you find the perfect fit, we offer a personalized consultation experience tailored to your specific needs.</p>
 						</div>
 
 						<div className="flex gap-2 justify-center items-center">
@@ -86,7 +86,7 @@ const ConsultationSidebar = ({ open, setOpen }) => {
 					<div className="flex flex-col gap-4">
 						<div className="flex flex-col gap-5">
 							<h2 className="text-[36px] text-lightgrey">Your personalised door consultation</h2>
-							<p className="text-[18px] text-lightgrey">To help you find the perfect fit, we offer a personalized consultation experience tailored to your specific needs.</p>
+							<p className="text-[18px] font-light text-lightgrey">To help you find the perfect fit, we offer a personalized consultation experience tailored to your specific needs.</p>
 						</div>
 
 						<div className="bg-[#FFF1EA] w-full px-8 py-10 mt-10 mb-10">

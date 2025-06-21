@@ -53,7 +53,7 @@ const BannerHome = ({ onOpenSidebar }) => {
 					</div>
 
 				</div>
-				<div className='lg:w-[40%] w-full bg-primary lg:h-screen h-[50%] flex justify-end items-start px-[1.6%] py-[5%] gap-5 flex-col'>
+				<div className='lg:w-[40%] w-full bg-primary lg:h-screen h-[50%] flex justify-end items-start lg:px-[1.6%] lg:py-[5%] pl-[15px] py-[50px] gap-5 flex-col'>
 					<h1 className='text-[26px] w-[80%] text-left font-helvetica font-thin text-white'>
 						Inspired by our work? <br />
 						We would be delighted to give your space a dream entrance!

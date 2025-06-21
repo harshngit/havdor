@@ -14,7 +14,8 @@ const DoorTapBar = ({
 	optionsCategory,
 	optionsType,
 	optionsTypeMansion,
-	filteredDoors
+	filteredDoors,
+	onOpenSidebar
 }) => {
 	const [isScrolled, setIsScrolled] = useState(false);
 
@@ -28,7 +29,7 @@ const DoorTapBar = ({
 
 	return (
 		<div
-			className={`font-helvetica py-4 px-[40px] flex flex-wrap justify-between items-center border-b border-gray-300 sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "backdrop-blur-sm bg-white/70" : "bg-[#fef8f4]"
+			className={`font-helvetica py-4 px-[40px] flex flex-wrap justify-between items-center border-b border-gray-300 sticky top-0 left-0 right-0 z-0 transition-all duration-300 ${isScrolled ? "backdrop-blur-sm bg-white/70" : "bg-[#fef8f4]"
 				}`}
 		>
 			{/* Filter Section */}
@@ -128,7 +129,7 @@ const DoorTapBar = ({
 				<button className="border h-[45px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full">
 					DOWNLOAD BROCHURE
 				</button>
-				<button className="border h-[45px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full">
+				<button className="border h-[45px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full" onClick={onOpenSidebar}>
 					REQUEST CONSULTATION
 				</button>
 			</div>
