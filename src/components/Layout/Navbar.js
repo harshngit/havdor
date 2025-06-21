@@ -1,14 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import {
-  IconButton,
-  Menu,
-  MenuHandler,
-  MenuItem,
-  MenuList,
-  Navbar,
-  Typography,
-} from "@material-tailwind/react";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 const navItems = [
@@ -292,7 +283,7 @@ export default function NavbarTwo() {
         </div>
         <div className="mt-5 px-6">
           <ul className="flex flex-col justify-start items-start gap-[15px]">
-            <Link href="contact/#FAQ">
+            <Link href="/contact/#FAQ">
               <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">FAQS</li>
             </Link>
             <Link href="/#testimonials">
