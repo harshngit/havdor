@@ -19,8 +19,7 @@ const Home = () => {
     <>
       <ConsultationSidebar open={isSidebarOpen} setOpen={setIsSidebarOpen} />
       <div className=' overflow-hidden'>
-        {/* <ThemeProvider> */}
-        <NavbarTwo />
+        {/* <NavbarTwo />
         <BannerHome onOpenSidebar={() => setIsSidebarOpen(true)} />
         <AboutHome />
         <section id='we-work-with'>
@@ -33,8 +32,7 @@ const Home = () => {
         <section id='send-inquiry'>
           <CTA onOpenSidebar={() => setIsSidebarOpen(true)} />
         </section>
-        <Footer />
-        {/* </ThemeProvider> */}
+        <Footer /> */}
       </div>
     </>
   )

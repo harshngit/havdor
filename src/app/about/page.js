@@ -13,16 +13,13 @@ import React from 'react'
 const About = () => {
 	return (
 		<div className='relative'>
-			{/* <ThemeProvider> */}
 			<Navbar />
 			<AboutBanner />
 			<MissionVission />
 			<DefineSec />
 			<KeyPoints />
-			{/* <Reviews /> */}
 			<AboutHome2 />
 			<Footer />
-			{/* </ThemeProvider> */}
 		</div>
 	)
 }
