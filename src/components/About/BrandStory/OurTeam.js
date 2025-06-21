@@ -13,7 +13,7 @@ const OurTeam = () => {
 		},
 	];
 	return (
-		<div className="w-full py-[150px] px-5 font-helvetica tracker-wider">
+		<div className="w-full py-[80px] lg:py-[150px] px-5 font-helvetica tracker-wider">
 			<div className="flex justify-start items-center mb-6">
 				<h2 className="lg:text-[36px] text-[24px] font-helvetica font-normal">Meet our Directors</h2>
 			</div>

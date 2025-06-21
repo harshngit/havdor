@@ -1,13 +1,31 @@
+"use client"
+
 import React from 'react'
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const BSGallery = () => {
 	return (
 		<div className='bg-[#FFF1EA99] w-full lg:py-0 lg:px-0 py-5 px-5'>
-			<div className='flex lg:flex-row flex-col lg:mb-0 mb-2 w-full h-[800px] gap-5'>
-				<div className='lg:w-[40%] w-full h-[500px] bg-[#fbe1d5]  lg:h-[800px]'></div>
-				<div className='lg:w-[20%] w-full h-[500px] bg-[#fbe1d5] lg:h-[800px]'></div>
-				<div className='lg:w-[40%] w-full h-[500px] bg-[#fbe1d5] lg:h-[800px]'></div>
+			<div className='w-full lg:h-[800px] pb-[20px]'>
+				<div className='
+    flex 
+    flex-row 
+    gap-5 
+    overflow-x-auto 
+    lg:overflow-visible 
+    lg:flex-row 
+    lg:mb-0 
+    mb-2 
+    w-full 
+    lg:h-[800px]
+    scrollbar-hide
+  '>
+					<div className='min-w-[90%] lg:min-w-[30%] h-[277px] lg:h-[800px] bg-[#fbe1d5] rounded-md'></div>
+					<div className='min-w-[90%] lg:min-w-[20%] h-[277px] lg:h-[800px] bg-[#fbe1d5] rounded-md'></div>
+					<div className='min-w-[90%] lg:min-w-[30%] h-[277px] lg:h-[800px] bg-[#fbe1d5] rounded-md'></div>
+				</div>
 			</div>
+
 			<div className='flex lg:flex-row flex-col lg:px-10 gap-5 lg:py-16'>
 				<div className='lg:w-[50%] flex justify-end items-start'>
 					<p className='font-thin lg:w-[70%] font-helvetica text-lightgrey lg:text-[20px]'>

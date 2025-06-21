@@ -6,7 +6,7 @@ const AboutBanner = () => {
 			<div className="absolute inset-0 z-10" />
 
 
-			<div className="absolute bottom-10 lg:left-10 left-5 z-20  lg:px-4 flex lg:flex-row flex-col-reverse justify-start items-end">
+			<div className="absolute bottom-10 lg:left-10 left-5 z-20  lg:px-4 flex lg:flex-row flex-col-reverse justify-start items-end lg:gap-0 gap-[20px]">
 				<div className='flex justify-start items-end lg:w-[40%] w-[100%]'>
 					<h1 className="text-white font-helvetica xl:text-[64px]  text-[26px] font-normal ">
 						Our Philosophy

@@ -73,7 +73,7 @@ const FAQ = () => {
 				{(showAll ? items : items.slice(0, 5)).map((item, index) => (
 					<div key={index} className='w-full px-[0px] py-[40px] border-lightgrey border-b-[1px] transition-all ease-in-out duration-500'>
 						<div
-							className='flex justify-between items-center w-full cursor-pointer'
+							className='flex justify-between items-start w-full cursor-pointer lg:gap-0 gap-[15px]'
 							onClick={() => toggleIndex(index)}
 						>
 							<h3 className='font-thin font-helvetica lg:text-[24px] text-[18px]'>
@@ -100,7 +100,7 @@ const FAQ = () => {
 					<div>
 						<button
 							onClick={() => setShowAll(true)}
-							className='border-[1px] tracking-wider font-normal hover:border-[1px] hover:bg-[#FFF1EA80] hover:border-[#2F3435] text-[#2F3435] border-lightgrey p-[15px] w-[200px] font-helvetica text-[20px]'
+							className='border h-[45px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full'
 						>
 							VIEW ALL FAQS
 						</button>

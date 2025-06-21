@@ -4,7 +4,7 @@ const MissionVission = () => {
 	return (
 		<>
 			<div className='w-full lg:h-[432px] h-auto py-5 px-5 flex justify-center items-center gap-[38px] my-[5rem] flex-col'>
-				<div className='flex flex-col ml-[22%] justify-start items-start gap-5'>
+				<div className='flex flex-col lg:ml-[22%] ml-[15px] lg:mt-0 mt-[80px] justify-start items-start gap-5'>
 					<div className=''>
 						<h2 className='font-helvetica font-light lg:text-[36px] text-[22px] text-lightgrey'> Our Mission</h2>
 					</div>
@@ -12,8 +12,8 @@ const MissionVission = () => {
 						<p className='text-[20px] font-helvetica text-lightgrey font-thin tracking-wide'>At Hav’dor, our mission is to make strong, stylish and fully customizable engineered wooden doors that lasts for a lifetime. Our special double-step soundproof design solves all the problems of old conventional doors—giving every customer a better, worry-free experience.</p>
 					</div>
 				</div>
-				<div className='w-full lg:h-[432px] h-auto py-5 px-5 flex justify-center items-center gap-[38px] flex-col'>
-					<div className='flex flex-col ml-[22%] justify-start items-start gap-5'>
+				<div className='w-full lg:h-[432px] h-auto  flex justify-center items-center gap-[38px] flex-col'>
+					<div className='flex flex-col lg:ml-[22%] ml-[15px] lg:mt-0 mt-[80px] justify-start items-start gap-5'>
 						<div className=''>
 							<h2 className='font-helvetica font-light lg:text-[36px] text-[22px] text-lightgrey'> Our Vision</h2>
 						</div>

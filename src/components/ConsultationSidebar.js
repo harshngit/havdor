@@ -18,7 +18,7 @@ const ConsultationSidebar = ({ open, setOpen }) => {
           ${open ? "translate-y-0" : "translate-y-full"}
           rounded-t-2xl shadow-xl lg:hidden
         `}>
-				<div className="flex justify-between border-b border-[#2F3435] items-center p-4 mb-1">
+				<div className="flex sticky top-0 z-100 bg-white justify-between border-b border-[#2F3435] items-center p-4 mb-1">
 					<h2 className="font-normal w-[90%] text-center text-[20px] text-[#0F2837]">Request Consultation</h2>
 					<button onClick={() => setOpen(false)}>
 						<img className="w-6 transition hover:opacity-80" src="/asset/cross.png" alt="Close" />
@@ -27,12 +27,12 @@ const ConsultationSidebar = ({ open, setOpen }) => {
 
 				<div className="flex p-6 flex-col justify-start gap-8 items-start">
 					<div className="flex flex-col gap-8">
-						<div className="flex flex-col gap-5">
-							<h2 className="text-[20px] text-lightgrey">Your personalised door consultation</h2>
+						<div className="flex flex-col gap-[10px]">
+							<h2 className="text-[20px] font-light text-lightgrey">Your personalised door consultation</h2>
 							<p className="text-[14px] font-light text-lightgrey">To help you find the perfect fit, we offer a personalized consultation experience tailored to your specific needs.</p>
 						</div>
 
-						<div className="flex gap-2 justify-center items-center">
+						<div className="flex flex-wrap justify-start items-center gap-[20px]">
 							{[
 								{ img: "request.png", label: "Submit your request" },
 								{ img: "expert.png", label: "Get a call back from our expert" },
@@ -48,7 +48,7 @@ const ConsultationSidebar = ({ open, setOpen }) => {
 					</div>
 
 					<div>
-						<Link href="" className="px-3 py-2 text-[18px] border border-black text-[#2F3435] uppercase flex items-center gap-2 transition hover:opacity-80">
+						<Link href="" className="px-3 py-2 text-[18px] border border-black text-[#2F3435] uppercase flex items-center gap-2 transition hover:opacity-80 h-[48px]">
 							Submit request
 							<img className="w-6" src="/asset/right.png" alt="" />
 						</Link>
@@ -57,9 +57,9 @@ const ConsultationSidebar = ({ open, setOpen }) => {
 
 				<div className="flex justify-center">
 					<div className="bg-[#FFF1EA] w-[88%] mt-10 px-6 py-10">
-						<h3 className="text-[20px] font-normal mb-1">Why Book a HAV’DOR Consultation?</h3>
-						<p className="text-[12px] text-lightgrey mb-5">We believe in making right choices for you!</p>
-						<ul className="list-disc pl-5 space-y-2 text-[14px] text-lightgrey">
+						<h3 className="text-[20px] w-full font-normal mb-1">Why Book a HAV’DOR Consultation?</h3>
+						<p className="text-[16px] text-lightgrey mb-5">We believe in making right choices for you!</p>
+						<ul className="list-disc pl-5 space-y-2 text-[14px] font-light text-lightgrey">
 							<li>Get expert advice customized to your taste, space, and functionality.</li>
 							<li>Choose the perfect combination with guided support from our team.</li>
 							<li>Understand all the ways your door can be uniquely yours.</li>

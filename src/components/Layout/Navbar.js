@@ -48,7 +48,7 @@ export default function NavbarTwo() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const timeoutRef = useRef(null);
 
   const handleMouseEnter = (label) => {
@@ -118,15 +118,17 @@ export default function NavbarTwo() {
     </ul>
   );
   const navListMobile = (
-    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-[40px] lg:gap-4 text-white  font-medium !text-sm hover:text-primary tracking-wide">
+    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-[50px] lg:gap-4 text-white  font-medium !text-sm hover:text-primary tracking-wide">
 
       <div className="flex flex-col items-center relative">
-        <div className="flex justify-center items-center gap-2">
-          <li className="cursor-pointer text-[20px] text-[#2F3435] font-helvetica">
-            About Us
-          </li>
+        <div className="flex justify-center items-center gap-1">
+          <Link className="/about">
+            <li className="cursor-pointer text-[32px] text-[#2F3435] font-helvetica">
+              About Us
+            </li>
+          </Link>
           <div onClick={() => setIsOpen(!isOpen)} className="cursor-pointer">
-            {isOpen ? <img className="w-[20px]" src="asset/up.png" alt="dropdown icon" /> : <img className="w-[20px]" src="asset/down.png" alt="dropdown icon" />}
+            {/* {isOpen ? <img className="w-[20px]" src="asset/up.png" alt="dropdown icon" /> : <img className="w-[20px]" src="asset/down.png" alt="dropdown icon" />} */}
           </div>
         </div>
 
@@ -149,7 +151,7 @@ export default function NavbarTwo() {
         <li key={i} className="">
           <Link
             href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
-            className="cursor-pointer text-[20px] text-[#2F3435] font-helvetica  transition"
+            className="cursor-pointer text-[32px] text-[#2F3435] font-helvetica  transition"
           >
             {item}
           </Link>
@@ -257,10 +259,10 @@ export default function NavbarTwo() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 w-screen h-screen bg-[#FFFFFF] z-[9998] px-6 pt-6 transform transition-transform duration-700 ${openDrawer ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 right-0 w-screen h-screen bg-[#FFFFFF] z-[9998]  pt-6 transform transition-transform duration-700 ${openDrawer ? "translate-x-0" : "translate-x-full"
           }`}
       >
-        <div className="flex justify-end items-center mb-4">
+        <div className="flex justify-end items-center mb-4 px-6">
           {/* <Typography variant="h5" className="text-white">
             Menu
           </Typography> */}
@@ -285,17 +287,29 @@ export default function NavbarTwo() {
             <img className="w-[28px]" src="/asset/navbar/cancel.png" alt="" />
           </div>
         </div>
-        {navListMobile}
-        <div className="mt-5">
+        <div className="px-6">
+          {navListMobile}
+        </div>
+        <div className="mt-5 px-6">
           <ul className="flex flex-col justify-start items-start gap-[15px]">
-            <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">FAQS</li>
-            <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Testimonials</li>
-            <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">We work with</li>
-            <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Send Inquiry</li>
-            <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Book your visit</li>
+            <Link href="contact/#FAQ">
+              <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">FAQS</li>
+            </Link>
+            <Link href="/#testimonials">
+              <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Testimonials</li>
+            </Link>
+            <Link href="/#we-work-with">
+              <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">We work with</li>
+            </Link>
+            <Link href="/#send-inquiry">
+              <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Send Inquiry</li>
+            </Link>
+            <Link href="/#send-inquiry">
+              <li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Book your visit</li>
+            </Link>
           </ul>
         </div>
-        <div className="flex justify-start item-center gap-5 mt-5">
+        <div className="flex justify-start item-center gap-5 mt-5 px-6">
           <Link href="">
             <img className="w-[24px]" src="/asset/navbar/Facebook.png" alt="" />
           </Link>
@@ -306,8 +320,8 @@ export default function NavbarTwo() {
             <img className="w-[24px]" src="/asset/navbar/Linkedin.png" alt="" />
           </Link>
         </div>
-        <div className="flex justify-center item-center">
-          <img className="w-screen h-[134px]" src="/asset/navbar/blacklogo.png" alt="" />
+        <div className="flex w-full absolute bottom-0 full !px-0 !py-0 justify-end item-end">
+          <img className="w-full h-[72.5px]" src="/asset/navbar/blacklogo.png" alt="" />
         </div>
       </div>
     </div>

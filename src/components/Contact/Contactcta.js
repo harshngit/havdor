@@ -42,7 +42,7 @@ const Contactcta = ({ onOpenSidebar }) => {
 								<img
 									src={src}
 									alt={`Slide ${i}`}
-									className="w-full h-[640px] object-cover"
+									className="w-full h-[277px] object-cover"
 								/>
 							</SwiperSlide>
 						))}

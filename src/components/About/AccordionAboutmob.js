@@ -48,7 +48,7 @@ const AccordionAboutmob = () => {
 						{/* Mobile: title + plus icon */}
 						<div
 							onClick={() => toggleIndex(index)}
-							className="flex justify-between items-center cursor-pointer md:hidden px-2 py-3"
+							className="flex justify-between gap-[15px] items-center cursor-pointer md:hidden px-2 py-3"
 						>
 							{openIndex !== index && <h3 className=" text-[20px] text-lightgrey font-helvetica font-normal">{item.title}</h3>}
 							<span className="text-2xl">
@@ -59,7 +59,7 @@ const AccordionAboutmob = () => {
 						{/* Mobile: Expanded Content */}
 						{openIndex === index && (
 							<div className="md:hidden px-4 space-y-3 animate-fade-in">
-								<img src={item.img} alt="Preview" className="w-full object-cover h-full rounded shadow" />
+								<img src={item.img} alt="Preview" className="w-full object-cover h-full " />
 								<h4 className="text-[20px] text-lightgrey font-helvetica font-normal">{item.title}</h4>
 								<p className="text-[18px] text-lightgrey font-helvetica font-thin">{item.description}</p>
 							</div>
