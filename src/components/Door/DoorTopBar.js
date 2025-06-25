@@ -50,7 +50,7 @@ const DoorTapBar = ({
 						</div>
 
 						{openCategory && (
-							<div className="absolute top-[110%] w-full bg-[#DDDDDD33] shadow z-10">
+							<div className="absolute top-[110%] w-full bg-[#f4f4f4] shadow z-10">
 								{optionsCategory.map((option) => (
 									<div
 										key={option}
@@ -87,7 +87,7 @@ const DoorTapBar = ({
 						</div>
 
 						{openType && (
-							<div className="absolute top-[110%] w-full bg-[#DDDDDD33] shadow z-10">
+							<div className="absolute top-[110%] w-full bg-[#f4f4f4] shadow z-10">
 								{(selectedCategory === "Premium" ? optionsType : optionsTypeMansion).map(
 									(option) => (
 										<div
@@ -126,9 +126,13 @@ const DoorTapBar = ({
 
 			{/* Right Action Buttons */}
 			<div className="flex gap-[30px] lg:flex-nowrap flex-wrap justify-center items-center">
-				<button className="border h-[45px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full">
+				<a
+					href="/asset/Docs/havdoor.pdf" // Replace with your actual file path
+					download
+					className="border h-[45px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full flex items-center justify-center"
+				>
 					DOWNLOAD BROCHURE
-				</button>
+				</a>
 				<button className="border h-[45px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full" onClick={onOpenSidebar}>
 					REQUEST CONSULTATION
 				</button>

@@ -18,7 +18,7 @@ const CTA = ({
 					<div className='flex justify-start item-start mt-[10px]'>
 						<Link href="https://forms.gle/a242JP24gPfsH7yG8" target='_blank'
 							// onClick={onOpenSidebar}
-							className="px-2 tracking-[.25em] font-thin py-2 border-[1px] border-white hover: hover:bg-[#FFF1EA1A] hover:border-[1px] hover:border-[#FFF1EA] text-white uppercase"
+							className="px-2 tracking-widest font-thin py-2 border-[1px] border-white hover: hover:bg-[#FFF1EA1A] hover:border-[1px] hover:border-[#FFF1EA] text-white uppercase"
 						>
 							Book Your Visit
 						</Link>

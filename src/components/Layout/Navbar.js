@@ -66,9 +66,20 @@ export default function NavbarTwo() {
         return (
           <li key={idx} className="relative">
             <div onMouseEnter={() => handleMouseEnter(item.label)} onMouseLeave={handleMouseLeave}>
-              <Link href={item.href} className={`group px-3 py-2 transition block ${isParentActive ? "bg-[#91431A]" : "bg-[#C24E1F] hover:border-[1px] hover:shadow-[inset_0_0_0_1px_#91431A] border-[#91431A]"}`}>
-                {item.label}
-              </Link>
+
+              {item?.label === "About Us" ? (
+                <Link href={item.href} className={`group px-3 py-2 transition flex justify-center items-center gap-[10px] ${isParentActive ? "bg-[#91431A]" : "bg-[#C24E1F] hover:border-[1px] hover:shadow-[inset_0_0_0_1px_#91431A] border-[#91431A]"}`}>
+                  {item.label}
+                  <img src="/asset/PlusWhite.png" alt="" />
+                </Link>
+              ) :
+                (
+                  <Link href={item.href} className={`group px-3 py-2 transition block ${isParentActive ? "bg-[#91431A]" : "bg-[#C24E1F] hover:border-[1px] hover:shadow-[inset_0_0_0_1px_#91431A] border-[#91431A]"}`}>
+                    {item.label}
+                  </Link>
+                )
+              }
+
               {hasChildren && openDropdown === item.label && (
                 <div className="absolute left-0 mt-1 z-20 bg-[#C24E1F] w-[150px]">
                   {item.children.map((child, i) => (
@@ -114,16 +125,25 @@ export default function NavbarTwo() {
   );
 
   const navListScroll = (
-    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-3 lg:gap-3 text-white uppercase font-medium !text-sm tracking-wide">
+    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-3 lg:gap-3 text-white font-medium !text-sm tracking-wide">
       {navItems.map((item, idx) => {
         const hasChildren = item.children && item.children.length > 0;
         const isParentActive = isActive(item.href) || item.children?.some((child) => isActive(child.href));
         return (
           <li key={idx} className="relative">
             <div onMouseEnter={() => handleMouseEnter(item.label)} onMouseLeave={handleMouseLeave}>
-              <Link href={item.href} className={`group px-3 py-2 transition block ${isParentActive ? "bg-[#89898933] text-lightgrey" : "bg-[#DDDDDD33] hover:bg-[#DDDDDD33] hover:border-[1px] text-lightgrey border-[#89898933]"}`}>
-                {item.label}
-              </Link>
+              {item.label === "About Us" ? (
+                <Link href={item.href} className={`group px-3 py-2 gap-[10px] transition flex justify-center items-center ${isParentActive ? "bg-[#89898933] text-lightgrey" : "bg-[#DDDDDD33] hover:bg-[#DDDDDD33] hover:border-[1px] text-lightgrey border-[#89898933]"}`}>
+                  {item.label}
+                  <img src="/asset/PlusNavbar.png" alt="" />
+                </Link>
+              )
+                : (
+                  <Link href={item.href} className={`group px-3 py-2 transition block ${isParentActive ? "bg-[#89898933] text-lightgrey" : "bg-[#DDDDDD33] hover:bg-[#DDDDDD33] hover:border-[1px] text-lightgrey border-[#89898933]"}`}>
+                    {item.label}
+                  </Link>
+                )
+              }
               {hasChildren && openDropdown === item.label && (
                 <div className="absolute left-0 mt-1 z-20 w-[140px]">
                   {item.children.map((child, i) => (

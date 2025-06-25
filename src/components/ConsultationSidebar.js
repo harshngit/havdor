@@ -48,7 +48,7 @@ const ConsultationSidebar = ({ open, setOpen }) => {
 					</div>
 
 					<div>
-						<Link href="" className="px-3 py-2 text-[18px] border border-black text-[#2F3435] uppercase flex items-center gap-2 transition hover:opacity-80 h-[48px]">
+						<Link href="" className="px-3 py-2 text-[18px] !w-[37%] border border-black text-[#2F3435] uppercase flex items-center gap-2 transition hover:opacity-80 h-[48px]">
 							Submit request
 							<img className="w-6" src="/asset/right.png" alt="" />
 						</Link>
@@ -117,7 +117,7 @@ const ConsultationSidebar = ({ open, setOpen }) => {
 					</div>
 
 					<div>
-						<Link href="https://forms.gle/M1y3sWf9v42VvAkv9" target="_blank" className="px-3 py-2 w-[30%] mb-[40px] border hover:bg-[#FFF1EA80] hover:border-[1px] hover:border-[#2F3435]  border-black text-[#2F3435] uppercase flex items-center gap-2 transition hover:opacity-80">
+						<Link href="https://forms.gle/M1y3sWf9v42VvAkv9" target="_blank" className="px-3 py-2 w-[37%] mb-[40px] border hover:bg-[#FFF1EA80] hover:border-[1px] hover:border-[#2F3435]  border-black text-[#2F3435] uppercase flex items-center gap-2 transition hover:opacity-80">
 							Submit request
 							<img className="w-6" src="/asset/right.png" alt="" />
 						</Link>

@@ -11,7 +11,7 @@ import React from 'react'
 
 const BrandStory = () => {
 	return (
-		<div className='relative'>
+		<div className='relative overflow-hidden'>
 			<NavbarBrandStory />
 			<BSBanner />
 			<BSGallery />

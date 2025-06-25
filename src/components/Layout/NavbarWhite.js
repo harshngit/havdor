@@ -79,13 +79,25 @@ export default function Navbar() {
 							onMouseEnter={() => handleMouseEnter(item.label)}
 							onMouseLeave={handleMouseLeave}
 						>
-							<Link
-								href={item.href}
-								className={`group px-3 py-2 transition block ${isParentActive ? "bg-[#89898933] text-lightgrey" : "bg-[#DDDDDD33] hover:bg-[#DDDDDD33] hover:border-[1px] text-lightgrey border-[#89898933]"
-									}`}
-							>
-								{item.label}
-							</Link>
+							{item.label === "About Us" ?
+								(<Link
+									href={item.href}
+									className={`group px-3 py-2 flex justify-center items-center gap-[10px] transition  ${isParentActive ? "bg-[#89898933] text-lightgrey" : "bg-[#DDDDDD33] hover:bg-[#DDDDDD33] hover:border-[1px] text-lightgrey border-[#89898933]"
+										}`}
+								>
+									{item.label}
+									<img src="/asset/plusNavbar.png" className="w-[18px] h-[18px]" alt="" />
+								</Link>) : (
+									<Link
+										href={item.href}
+										className={`group px-3 py-2 transition block ${isParentActive ? "bg-[#89898933] text-lightgrey" : "bg-[#DDDDDD33] hover:bg-[#DDDDDD33] hover:border-[1px] text-lightgrey border-[#89898933]"
+											}`}
+									>
+										{item.label}
+									</Link>
+								)
+							}
+
 
 							{/* Dropdown */}
 							{hasChildren && openDropdown === item.label && (

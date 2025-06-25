@@ -64,7 +64,7 @@ const FAQ = () => {
 	}
 
 	return (
-		<div className='w-full lg:mt-[80px] lg:px-10 lg:py-10 px-5 py-5 flex justify-center items-center ' id='FAQ'>
+		<div className='w-full lg:mt-[50px] lg:px-10 lg:py-10 px-5 py-5 flex justify-center items-center ' id='FAQ'>
 			<div className='flex justify-start items-start flex-col lg:w-[60%] w-full gap-6 transition-all ease-in-out duration-500'>
 				<h2 className='font-normal font-helvetica lg:text-[36px] text-[26px]'>
 					Frequently Asked Questions
@@ -110,7 +110,7 @@ const FAQ = () => {
 					<div>
 						<button
 							onClick={() => setShowAll(false)}
-							className='border-[1px] tracking-wider font-normal hover:border-[1px] hover:bg-[#FFF1EA80] hover:border-[#2F3435] text-[#2F3435] border-lightgrey p-[15px] w-[200px] font-helvetica text-[20px]'
+							className='border h-[45px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full'
 						>
 							VIEW LESS
 						</button>

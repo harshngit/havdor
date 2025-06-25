@@ -33,8 +33,7 @@ const DoorGrid = ({
 	return (
 		<>
 
-
-			<div className="grid grid-cols-1 font-helvetica md:grid-cols-2 gap-[26px] p-6">
+			<div className="grid grid-cols-1 font-helvetica md:grid-cols-2 gap-[100px] p-6">
 				{doors.slice(0, visibleCount).map((door) => (
 					<Link href={`/door/${door.id}`} key={door.id}>
 						<div className="bg-white group transition-opacity duration-500 ease-in-out hover:opacity-90">
@@ -46,7 +45,7 @@ const DoorGrid = ({
 							<h2 className="text-[28px] hover:text-[#CA622A] font-bold mt-[20px]">
 								{door.doorcode}
 							</h2>
-							<p className="text-[28px] text-lightgrey font-light mt-1">
+							<p className="text-[22px] text-lightgrey font-light mt-1">
 								{door.category} | {door.type}
 							</p>
 						</div>

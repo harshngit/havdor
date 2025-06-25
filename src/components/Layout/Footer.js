@@ -63,7 +63,7 @@ const Footer = () => {
                             </Link>
                         </div>
                         <div className='lg:flex hidden justify-start items-end mt-[116px]'>
-                            <p className='text-[#ACACAC] font-helvetica text-[20px]'>Terms & Conditions</p>
+                            <p className='text-[#ACACAC] font-helvetica font-light text-[20px]'>Terms & Conditions</p>
                         </div>
                     </div>
 
@@ -85,7 +85,7 @@ const Footer = () => {
                         </div>
                         <div className='lg:flex hidden justify-start items-end mt-[116px]'>
                             <Link href="/privacy-policy">
-                                <p className='text-[#ACACAC] font-helvetica text-[20px] hover:text-[#CA622A] transition-colors duration-300 ease-in-out'>Privacy Policy</p>
+                                <p className='text-[#ACACAC] font-helvetica font-light text-[20px] hover:text-[#CA622A] transition-colors duration-300 ease-in-out'>Privacy Policy</p>
                             </Link>
                         </div>
                     </div>
