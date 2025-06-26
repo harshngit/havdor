@@ -17,7 +17,7 @@ const Contactcta = ({ onOpenSidebar }) => {
 		'/asset/home/6.png',
 	];
 	return (
-		<div className='w-full font-helvetica lg:h-[40rem]  mt-10'>
+		<div className='w-full font-helvetica lg:h-[700px]  mt-10'>
 			<div className='flex justify-center items-center lg:flex-row flex-col'>
 				<div className='lg:w-[50%] w-full relative'>
 					<Swiper
@@ -42,7 +42,7 @@ const Contactcta = ({ onOpenSidebar }) => {
 								<img
 									src={src}
 									alt={`Slide ${i}`}
-									className="w-full h-[640px] object-cover"
+									className="w-full h-[700px] object-cover"
 								/>
 							</SwiperSlide>
 						))}
@@ -51,14 +51,12 @@ const Contactcta = ({ onOpenSidebar }) => {
 					{/* Custom Pagination */}
 					<div className="custom-pagination absolute !bottom-[2%] !left-[5%] z-10 flex gap-2"></div>
 				</div>
-				<div className='lg:w-[50%] lg:h-[40rem] h-auto lg:px-16 px-5 py-5 w-full bg-primary text-white flex justify-end items-start  gap-[20px] flex-col'>
-					<div className='flex justify-end items-start flex-col gap-[50px]'>
-						<p className='font-helvetica font-thin tracking-wider lg:text-[36px] text-[18px]'>Inspired by our work?<br />
-							We would be delighted to give your space a dream entrance!</p>
-					</div>
-					<div className='flex justify-start item-start lg:mb-[5rem]'>
-						<button onClick={onOpenSidebar} className='px-2 py-2 tracking-wider lg:text-[20px] text-[18px] border-[1px] border-[#FFF1EA] text-[#FFF1EA] uppercase  hover:bg-[#FFF1EA1A] hover:border-[1px] hover:border-[#FFF1EA] '>REQUEST CONSULTATION</button>
-					</div>
+				<div className='lg:w-[50%]  w-full bg-primary lg:h-[700px] h-[50%] flex justify-end items-start lg:px-[1.6%] lg:py-[5%] pl-[15px] py-[50px] gap-5 flex-col'>
+					<h1 className='text-[26px] w-[80%] text-left font-helvetica font-thin text-white'>
+						Inspired by our work? <br />
+						We would be delighted to give your space a dream entrance!
+					</h1>
+					<button onClick={onOpenSidebar} className='px-2 py-2 border-[1px] border-white text-white hover:bg-[#FFF1EA1A] hover:border-[1px] hover:border-[#FFF1EA] '>REQUEST CONSULTATION</button>
 				</div>
 			</div>
 		</div>
