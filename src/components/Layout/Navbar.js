@@ -70,7 +70,7 @@ export default function NavbarTwo() {
               {item?.label === "About Us" ? (
                 <Link href={item.href} className={`group px-3 py-2 transition flex justify-center items-center gap-[10px] ${isParentActive ? "bg-[#91431A]" : "bg-[#C24E1F] hover:border-[1px] hover:shadow-[inset_0_0_0_1px_#91431A] border-[#91431A]"}`}>
                   {item.label}
-                  <img src="/asset/PlusWhite.png" alt="" />
+                  <img src="/asset/PlusWhite.png" className="w-[12px]" alt="" />
                 </Link>
               ) :
                 (
@@ -135,7 +135,7 @@ export default function NavbarTwo() {
               {item.label === "About Us" ? (
                 <Link href={item.href} className={`group px-3 py-2 gap-[10px] transition flex justify-center items-center ${isParentActive ? "bg-[#89898933] text-lightgrey" : "bg-[#DDDDDD33] hover:bg-[#DDDDDD33] hover:border-[1px] text-lightgrey border-[#89898933]"}`}>
                   {item.label}
-                  <img src="/asset/PlusNavbar.png" alt="" />
+                  <img src="/asset/PlusNavbar.png" className="w-[10px]" alt="" />
                 </Link>
               )
                 : (

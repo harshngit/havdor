@@ -16,7 +16,7 @@ const ExperienceCenter = () => {
 		<>
 			<ConsultationSidebar open={isSidebarOpen} setOpen={setIsSidebarOpen} />
 			<div className='overflow-hidden'>
-				<Navbar />
+				<NavbarBrandStory />
 				<BannerEC />
 				<ExperienceCenterGallery />
 				<VideoSection />

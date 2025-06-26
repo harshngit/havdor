@@ -3,7 +3,7 @@ import React from 'react'
 
 const ContactBanner = () => {
 	return (
-		<div className='flex w-full lg:flex-row flex-col'>
+		<div className='flex w-full lg:flex-row flex-col mt-[100px]'>
 			<div className='lg:w-[60%] w-full object-cover'>
 				<img src="/asset/contact/contactimg.png" className='lg:h-[100vh] h-[367px] w-full ' alt="" />
 			</div>
