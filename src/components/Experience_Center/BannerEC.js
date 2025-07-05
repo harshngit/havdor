@@ -2,7 +2,7 @@ import React from 'react';
 
 const BannerEC = () => {
 	return (
-		<div className='w-full banner_EC h-[1000px] -mt-[10.25rem]'>
+		<div className='w-full banner_EC h-[1100px] lg:-mt-[5rem]'>
 			{/* <div className='h-[50%]'></div>
 
 			<div className='font-helvetica  hidden h-[50%] text-[#fff1ea] lg:px-10 px-4 py-5 lg:flex flex-col lg:justify-end lg:items-end relative'>

@@ -23,7 +23,7 @@ const navItems = [
 		href: "/door",
 	},
 	{
-		label: "Experience Centre",
+		label: "X'perience Centre",
 		href: "/experience-centre",
 	},
 	{
@@ -152,7 +152,7 @@ export default function Navbar() {
 			</div>
 
 
-			{["Door", "Experience Centre", "Contact"].map((item, i) => (
+			{["Door", "X'perience Centre", "Contact"].map((item, i) => (
 				<li key={i} className="">
 					<Link
 						href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}

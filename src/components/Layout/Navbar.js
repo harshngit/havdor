@@ -16,7 +16,7 @@ const navItems = [
     href: "/door",
   },
   {
-    label: "Experience Centre",
+    label: "X'perience Centre",
     href: "/experience-centre",
   },
   {
@@ -114,7 +114,7 @@ export default function NavbarTwo() {
           </div>
         )}
       </div>
-      {["Door", "Experience Centre", "Contact"].map((item, i) => (
+      {["Door", "X'perience Centre", "Contact"].map((item, i) => (
         <li key={i}>
           <Link href={`/${item.toLowerCase().replace(/\s+/g, "-")}`} className="cursor-pointer text-[32px] text-[#2F3435] font-helvetica transition">
             {item}

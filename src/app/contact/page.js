@@ -16,7 +16,7 @@ const Contact = () => {
 		<>
 			<ConsultationSidebar open={isSidebarOpen} setOpen={setIsSidebarOpen} />
 			<div className='overflow-hidden'>
-				<NavbarBrandStory />
+				<Navbar />
 				<ContactBanner />
 				<FAQ />
 				<Contactcta onOpenSidebar={() => setIsSidebarOpen(true)} />

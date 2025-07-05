@@ -17,10 +17,19 @@
 }
 
 .banner_EC {
-    background: url('/asset/experience_center/expbanner.png');
+    background: url('/asset/experience_center/xperienceCenter.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.swiper-button-next:after {
+    font-family: swiper-icons;
+    font-size: 0px;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
 }
 
 /* globals.css */

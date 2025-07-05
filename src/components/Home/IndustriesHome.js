@@ -2,11 +2,31 @@ import React from 'react';
 
 const IndustriesHome = () => {
 	const categories = [
-		{ title: 'Corporates', img: '/asset/home/industries/1.png', content: "We help corporate spaces  to make the right ,first impression. Whether it’s modern office entrances or sleek meeting room partitions, our doors bring a touch of sophistication and long-lasting performance. We understand the importance of function, security, and design in high-traffic business environments." },
-		{ title: 'Real Estate', img: '/asset/home/industries/2.png', content: "We work closely with real estate developers and builders to offer door solutions that adds value to their property. From upscale apartments to gated communities, Hav’Dor delivers quality, consistency, and customization that aligns with modern housing standards and buyer expectations." },
-		{ title: 'Hospitality', img: '/asset/home/industries/3.png', content: "In the hospitality industry, every detail matters. Hav’Dor delivers doors that blend luxury with performance—beautiful to look at, built to last, and designed to offer quiet, private spaces for your guests. We help create memorable stays through thoughtful craftsmanship." },
-		{ title: 'Brands', img: '/asset/home/industries/4.png', content: "For retail chains, showrooms, and brand-driven spaces, we create statement doors that align with your visual identity. Our team ensures that every design detail supports your brand’s personality while delivering quality that lasts through every season and every sale." },
-		{ title: 'Architecture', img: '/asset/home/industries/1.png', content: "We collaborate with architects to turn bold ideas into beautiful realities. With our expertise in engineered wood, finishes, and customization, we bring creative freedom without compromising on strength, structure, or longevity—helping designers push the boundaries of what’s possible." },
+		{
+			title: 'Corporates',
+			img: '/asset/home/industries/1.png',
+			content: "We help corporate spaces  to make the right ,first impression. Whether it’s modern office entrances or sleek meeting room partitions, our doors bring a touch of sophistication and long-lasting performance. We understand the importance of function, security, and design in high-traffic business environments."
+		},
+		{
+			title: 'Real Estate',
+			img: '/asset/home/industries/2.png',
+			content: "We work closely with real estate developers and builders to offer door solutions that adds value to their property. From upscale apartments to gated communities, Hav’Dor delivers quality, consistency, and customization that aligns with modern housing standards and buyer expectations."
+		},
+		{
+			title: 'Hospitality',
+			img: '/asset/home/industries/3.png',
+			content: "In the hospitality industry, every detail matters. Hav’Dor delivers doors that blend luxury with performance—beautiful to look at, built to last, and designed to offer quiet, private spaces for your guests. We help create memorable stays through thoughtful craftsmanship."
+		},
+		{
+			title: 'Brands',
+			img: '/asset/home/industries/4.png',
+			content: "For retail chains, showrooms, and brand-driven spaces, we create statement doors that align with your visual identity. Our team ensures that every design detail supports your brand’s personality while delivering quality that lasts through every season and every sale."
+		},
+		{
+			title: 'Architecture',
+			img: '/asset/home/industries/1.png',
+			content: "We collaborate with architects to turn bold ideas into beautiful realities. With our expertise in engineered wood, finishes, and customization, we bring creative freedom without compromising on strength, structure, or longevity—helping designers push the boundaries of what’s possible."
+		},
 	];
 
 	return (

@@ -36,18 +36,25 @@ const Reviews = () => {
 	const imageSwiperRef = useRef(null);
 	const [textSwiper, setTextSwiper] = useState(null);
 	const [imageSwiper, setImageSwiper] = useState(null);
-
+	const prevRef = useRef(null);
+	const nextRef = useRef(null);
 	return (
 		<div className="w-full lg:pl-10 lg:pr-0 lg:py-10 mb-10	 py-10 px-5 font-helvetica" >
 			<h2 className="lg:text-[36px] text-[24px] lg:font-light font-light font-helvetica mb-10 lg:ml-[41%]">Our Proud Supporters Say</h2>
 
 			<div className="flex relative justify-center lg:flex-row flex-col-reverse gap-10 lg:items-start items-center ">
-				<div className="absolute lg:left-4 left-[30%] lg:bottom-[32rem] bottom-[31rem] z-10 lg:flex justify-center items-center gap-5 hidden">
-					<button className="swiper-button-prev hover:bg-[#fceae5] text-black border-[1px] border-lightgrey cursor-pointer transition-all duration-100 ease-in  !shadow-none !rounded-sm ">
-						<img className='!w-[24px]' src="/asset/Back.png" alt="" />
+				<div className="absolute lg:left-4 left-[30%] lg:bottom-[1rem] bottom-[1rem] z-10 lg:flex justify-center items-center gap-5 hidden">
+					<button
+						ref={prevRef}
+						className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex justify-center items-center border-[1px] border-[#2F3435] hover:bg-[#f9e3d8] transition"
+					>
+						<img src="/asset/right.png" className="rotate-180 w-[16px]" alt="Previous" />
 					</button>
-					<button className="swiper-button-next hover:bg-[#fceae5] text-black border-[1px] border-lightgrey cursor-pointer transition-all duration-100 ease-in  !shadow-none !rounded-sm">
-						<img className='!w-[24px]' src="/asset/front.png" alt="" />
+					<button
+						ref={nextRef}
+						className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex justify-center items-center border-[1px] border-[#2F3435]  hover:bg-[#f9e3d8] transition"
+					>
+						<img src="/asset/right.png" className="w-[16px]" alt="Next" />
 					</button>
 				</div>
 				{/* Text Swiper */}
@@ -87,8 +94,12 @@ const Reviews = () => {
 						onSwiper={setImageSwiper}
 						controller={{ control: textSwiper }}
 						navigation={{
-							nextEl: ".swiper-button-next",
-							prevEl: ".swiper-button-prev",
+							prevEl: prevRef.current,
+							nextEl: nextRef.current,
+						}}
+						onBeforeInit={(swiper) => {
+							swiper.params.navigation.prevEl = prevRef.current;
+							swiper.params.navigation.nextEl = nextRef.current;
 						}}
 						// speed={700}
 						// autoplay={{
