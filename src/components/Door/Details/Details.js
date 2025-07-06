@@ -12,11 +12,11 @@ const Details = ({ product, onOpenSidebar }) => {
 			</div>
 			<div className='mt-[9%] flex lg:flex-row flex-col gap-[30px] lg:justify-start justify-center items-start'>
 				<a href="">
-					<button className="border h-[45px] hover:bg-[#FFF1EA80] font-helvetica font-normal lg:text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full">
+					<button className="border lg:h-[40px] h-[35px] hover:bg-[#FFF1EA80] font-helvetica font-normal lg:text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full">
 						DOWNLOAD BROCHURE
 					</button>
 				</a>
-				<button onClick={onOpenSidebar} className="border h-[45px] hover:bg-[#FFF1EA80] font-helvetica font-normal lg:text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full">
+				<button onClick={onOpenSidebar} className="border lg:h-[40px] h-[35px] hover:bg-[#FFF1EA80] font-helvetica font-normal lg:text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full">
 					REQUEST CONSULTATION
 				</button>
 			</div>

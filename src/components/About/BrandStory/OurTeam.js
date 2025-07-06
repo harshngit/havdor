@@ -43,7 +43,7 @@ const OurTeam = () => {
 						{item.content && (
 							<div className="absolute bottom-0 left-0 w-full h-full bg-[#2F3435CC] text-[#FFF1EA] px-4 py-5 translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out z-10">
 								<div className='flex justify-between flex-col h-full'>
-									<p className="text-[20px] font-thin font-helvetica">{item.content}</p>
+									<p className="lg:text-[20px] text-[13px] font-thin font-helvetica">{item.content}</p>
 									<div className='absolute flex-col bottom-5 flex justify-start items-start'>
 										<h3 className="font-helvetica font-normal text-[24px]">{item.title}</h3>
 										<p className='font-helvetica font-thin italic text-[20px]'>{item.desgination}</p>
@@ -56,7 +56,7 @@ const OurTeam = () => {
 						<div className="absolute bottom-0 left-0 w-full ">
 							<div className=" h-[150px] bg-gradient-to-t from-[#FFF1EA] via-[#fff1ea77] to-transparent px-4 pt-10 pb-4 flex justify-start item-end">
 								<div className='absolute flex-col bottom-5 flex justify-start items-start'>
-									<h3 className="text-lightgrey font-helvetica font-normal text-[24px]">{item.title}</h3>
+									<h3 className="text-lightgrey font-helvetica font-normal text-[24px] ">{item.title}</h3>
 									<p className='text-lightgrey font-helvetica font-thin italic text-[20px]'>{item.desgination}</p>
 								</div>
 							</div>

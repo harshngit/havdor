@@ -38,7 +38,7 @@ const DoorTapBar = ({
 					{/* Door Category */}
 					<div className="relative lg:w-[200px] w-full">
 						<div
-							className="flex items-center justify-between px-[15px] py-[15px] bg-[#DDDDDD33] cursor-pointer gap-[10px] h-[45px]"
+							className="flex items-center justify-between px-[15px] py-[15px] bg-[#DDDDDD33] cursor-pointer gap-[10px]  lg:h-[40px] h-[35px]"
 							onClick={() => setOpenCategory(!openCategory)}
 						>
 							<span className="text-[18px] font-light text-black">Door Category</span>
@@ -73,7 +73,7 @@ const DoorTapBar = ({
 					{/* Door Type */}
 					<div className="relative lg:w-[250px] w-full">
 						<div
-							className="flex items-center justify-between px-[15px] py-[15px] bg-[#DDDDDD33] cursor-pointer gap-[10px] h-[45px]"
+							className="flex items-center justify-between px-[15px] py-[15px] bg-[#DDDDDD33] cursor-pointer gap-[10px]  lg:h-[40px] h-[35px]"
 							onClick={() => setOpenType(!openType)}
 						>
 							<span className="text-[18px] font-light text-black">
@@ -92,25 +92,31 @@ const DoorTapBar = ({
 
 						{openType && (
 							<div className="absolute top-[110%] w-full bg-[#f4f4f4] shadow z-10">
-								{(selectedCategory === "Premium" ? optionsType : optionsTypeMansion).map(
-									(option) => (
-										<div
-											key={option}
-											className={`px-[15px] py-[15px] text-[15px] cursor-pointer transition-all duration-300 ${option === selectedType
-												? "text-[#C14B1A] border-b-2 border-[#C14B1A] font-light"
-												: "text-[#2F3435] border-b-2 border-lightgrey hover:bg-[#DDDDDD66]"
-												}`}
-											onClick={() => {
-												setSelectedType(option);
-												setOpenType(false);
-											}}
-										>
-											{option}
-										</div>
+								{[
+									...(selectedCategory === "Premium"
+										? optionsType
+										: selectedCategory === "Mansion"
+											? optionsTypeMansion
+											: [...optionsType, ...optionsTypeMansion] // default case: show both
 									)
-								)}
+								].map((option) => (
+									<div
+										key={option}
+										className={`px-[15px] py-[15px] text-[15px] cursor-pointer transition-all duration-300 ${option === selectedType
+											? "text-[#C14B1A] border-b-2 border-[#C14B1A] font-light"
+											: "text-[#2F3435] border-b-2 border-lightgrey hover:bg-[#DDDDDD66]"
+											}`}
+										onClick={() => {
+											setSelectedType(option);
+											setOpenType(false);
+										}}
+									>
+										{option}
+									</div>
+								))}
 							</div>
 						)}
+
 					</div>
 				</div>
 
@@ -133,11 +139,11 @@ const DoorTapBar = ({
 				<a
 					href="/asset/Docs/havdoor.pdf" // Replace with your actual file path
 					download
-					className="border h-[45px] font-light hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full flex items-center justify-center"
+					className="border  lg:h-[40px] h-[35px] font-light hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full flex items-center justify-center"
 				>
 					DOWNLOAD BROCHURE
 				</a>
-				<button className="border h-[45px] font-light hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full" onClick={onOpenSidebar}>
+				<button className="border  lg:h-[40px] h-[35px] font-light hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full" onClick={onOpenSidebar}>
 					REQUEST CONSULTATION
 				</button>
 			</div>

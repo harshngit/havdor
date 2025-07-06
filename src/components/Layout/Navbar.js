@@ -2,6 +2,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { IoLogoFacebook } from "react-icons/io";
 
 const navItems = [
   {
@@ -99,15 +101,18 @@ export default function NavbarTwo() {
   const navListMobile = (
     <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-[40px] text-white font-medium !text-sm hover:text-primary tracking-wide">
       <div className="flex flex-col items-center relative">
-        <div className="flex justify-center items-center gap-1">
+        <div className="flex justify-center items-center gap-3">
           <Link href="/about">
             <li className="cursor-pointer text-[32px] text-[#2F3435] font-helvetica">About Us</li>
           </Link>
         </div>
         {isOpen && (
-          <div className="absolute top-4 mt-2 left-0 rounded w-[200px] z-10">
+          <div className="absolute top-4 mt-2 left-5 rounded w-[200px] h-[32px] z-10">
             <li>
-              <Link href="/brand-story" className="block px-4 py-2 text-[15px] text-[#2F3435] hover:bg-gray-100 font-helvetica">
+              <Link
+                href="/brand-story"
+                className="block px-4 py-2 mb-5 text-[15px] text-[#2F3435] hover:bg-gray-100 font-helvetica"
+              >
                 Brand Story
               </Link>
             </li>
@@ -193,11 +198,17 @@ export default function NavbarTwo() {
           </ul>
         </div>
         <div className="flex justify-start items-center gap-5 mt-5 px-6">
-          {['Facebook', 'Instagram', 'Linkedin'].map((social, i) => (
-            <Link key={i} href="">
-              <img className="w-[24px]" src={`/asset/navbar/${social}.png`} alt={social} />
-            </Link>
-          ))}
+          <Link href="https://www.facebook.com/share/1Ejfnddk9n/?mibextid=wwXIfr" target='_blank'>
+            {/* <img className="w-[24px]" src="/asset/footer/Facebookp.png" alt="" /> */}
+            <IoLogoFacebook className='text-[30px] hover:text-primary' />
+          </Link>
+          <Link href="https://www.instagram.com/havdorindia?igsh=MXF4YWZ4dmVuYTFsbg==" target='_blank'>
+            {/* <img className="w-[24px]" src="/asset/footer/Instagramp.png" alt="" /> */}
+            <FaInstagram className='text-[28px] hover:text-primary' />
+          </Link>
+          <Link href="https://www.linkedin.com/company/hav-dor-india/" target='_blank'>
+            <FaLinkedin className='text-[28px] hover:text-primary' />
+          </Link>
         </div>
         <div className="flex w-full absolute bottom-0 justify-end items-end">
           <img className="w-full h-[72.5px]" src="/asset/navbar/blacklogo.png" alt="logo bottom" />

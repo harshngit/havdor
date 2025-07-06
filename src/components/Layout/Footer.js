@@ -26,7 +26,7 @@ const Footer = () => {
                             <li className='hover:text-[#CA622A] transition-colors duration-300 ease-in-out'><Link href="/contact">Contact</Link></li>
                         </ul>
                         <div className="lg:flex hidden gap-[30px] pt-4">
-                            <Link href="">
+                            <Link href="https://www.facebook.com/share/1Ejfnddk9n/?mibextid=wwXIfr" target='_blank'>
                                 {/* <img className="w-[24px]" src="/asset/footer/Facebookp.png" alt="" /> */}
                                 <IoLogoFacebook className='text-[30px] hover:text-primary' />
                             </Link>
@@ -34,7 +34,7 @@ const Footer = () => {
                                 {/* <img className="w-[24px]" src="/asset/footer/Instagramp.png" alt="" /> */}
                                 <FaInstagram className='text-[28px] hover:text-primary' />
                             </Link>
-                            <Link href="">
+                            <Link href="https://www.linkedin.com/company/hav-dor-india/" target='_blank'>
                                 <FaLinkedin className='text-[28px] hover:text-primary' />
                             </Link>
                         </div>
@@ -90,14 +90,16 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="lg:hidden flex gap-4 pt-4">
-                        <Link href="">
-                            <img className="w-[24px]" src="/asset/footer/Facebookp.png" alt="" />
+                        <Link href="https://www.facebook.com/share/1Ejfnddk9n/?mibextid=wwXIfr" target='_blank'>
+                            {/* <img className="w-[24px]" src="/asset/footer/Facebookp.png" alt="" /> */}
+                            <IoLogoFacebook className='text-[30px] hover:text-primary' />
                         </Link>
                         <Link href="https://www.instagram.com/havdorindia?igsh=MXF4YWZ4dmVuYTFsbg==" target='_blank'>
-                            <img className="w-[24px]" src="/asset/footer/Instagramp.png" alt="" />
+                            {/* <img className="w-[24px]" src="/asset/footer/Instagramp.png" alt="" /> */}
+                            <FaInstagram className='text-[28px] hover:text-primary' />
                         </Link>
-                        <Link href="">
-                            <img className="w-[24px]" src="/asset/footer/Linkedinp.png" alt="" />
+                        <Link href="https://www.linkedin.com/company/hav-dor-india/" target='_blank'>
+                            <FaLinkedin className='text-[28px] hover:text-primary' />
                         </Link>
                     </div>
                     <div className="lg:hidden flex lg:w-[30%] justify-between gap-5 items-start flex-col">

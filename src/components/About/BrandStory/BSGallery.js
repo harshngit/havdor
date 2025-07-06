@@ -6,14 +6,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const BSGallery = () => {
 	return (
 		<div className='bg-[#FFF1EA99] w-full lg:py-0 lg:px-0 py-5 px-5 '>
-			<div className='w-full lg:h-[800px] pb-[20px]'>
+			{/* <div className='w-full lg:h-[800px] pb-[20px]'>
 				<div className='flex flex-row gap-5 overflow-x-auto lg:overflow-hidden lg:flex-row lg:mb-0 mb-2 w-full lg:h-[800px] scrollbar-hide
   '>
 					<div className='w-[100%] lg:min-w-[30%] h-[277px] lg:h-[800px] bg-[#fbe1d5] rounded-md'></div>
 					<div className='w-[100%] lg:min-w-[20%] h-[277px] lg:h-[800px] bg-[#fbe1d5] rounded-md'></div>
 					<div className='w-[100%] lg:min-w-[30%] h-[277px] lg:h-[800px] bg-[#fbe1d5] rounded-md'></div>
 				</div>
-			</div>
+			</div> */}
 
 			<div className='flex lg:flex-row flex-col lg:px-10 gap-5 lg:py-16'>
 				<div className='lg:w-[50%] flex justify-end items-start'>

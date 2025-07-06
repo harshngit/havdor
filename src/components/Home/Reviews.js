@@ -9,27 +9,27 @@ const Reviews = () => {
 			name: "Rajesh S",
 			title: "Architect & Interior Designer",
 			text: "The quality of Hav'Dor doors is top-class and we loved picking our own style and finish. It was simple to select and our home now looks elegant and grand. Installation was clean and quick.",
-			image: "/asset/home/testinomial/testinomial.png",
+			image: "/asset/home/testinomial/Rajesh.png",
 		},
 		{
 			name: "Anjali Pal",
 			title: "Marketing Manager",
 			text: "Hav'Dor made our dream door so easy with their clear options and support. The doors are sturdy, stylish, and make our new house feel like a luxury Villa.",
-			image: "/asset/home/testinomial/testinomial.png",
+			image: "/asset/home/testinomial/Anjali.png",
 		},
 
 		{
 			name: "Vikram R.",
 			title: "Government Officer",
 			text: "Hav'Dor’s doors are superbly crafted and add a rich, classy vibe to our home. Customizing was hassle-free, and the quality makes every paisa worth it.",
-			image: "/asset/home/testinomial/testinomial.png",
+			image: "/asset/home/testinomial/Vikram.png",
 		},
 
 		{
 			name: "Neha K.",
 			title: "Charted Accountant",
 			text: "We picked Hav'Dor for their amazing quality and easy customization process. The doors look so luxurious, our guests can’t stop praising our home’s new look!",
-			image: "/asset/home/testinomial/testinomial.png",
+			image: "/asset/home/testinomial/Neha.png",
 		},
 	];
 	const textSwiperRef = useRef(null);
@@ -43,7 +43,7 @@ const Reviews = () => {
 			<h2 className="lg:text-[36px] text-[24px] lg:font-light font-light font-helvetica mb-10 lg:ml-[41%]">Our Proud Supporters Say</h2>
 
 			<div className="flex relative justify-center lg:flex-row flex-col-reverse gap-10 lg:items-start items-center ">
-				<div className="absolute lg:left-4 left-[30%] lg:bottom-[1rem] bottom-[1rem] z-10 lg:flex justify-center items-center gap-5 hidden">
+				<div className="absolute lg:left-[4.5rem] left-[30%] lg:bottom-[1rem] bottom-[1rem] z-10 lg:flex justify-center items-center gap-5 hidden">
 					<button
 						ref={prevRef}
 						className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex justify-center items-center border-[1px] border-[#2F3435] hover:bg-[#f9e3d8] transition"
@@ -88,7 +88,7 @@ const Reviews = () => {
 				</Swiper>
 
 				{/* Image Swiper */}
-				<div className="lg:w-[60%] w-full">
+				<div className="lg:w-[50%] w-full">
 					<Swiper
 						modules={[Controller, Navigation]}
 						onSwiper={setImageSwiper}
@@ -109,11 +109,11 @@ const Reviews = () => {
 						className="h-full w-full "
 					>
 						{testimonials.map((item, index) => (
-							<SwiperSlide key={index} className='flex justify-start  items-start lg:!w-[90%] !w-[90%] lg:gap-0 !gap-[15px] lg:mr-[0px] !mr-[15px]'>
+							<SwiperSlide key={index} className='flex justify-start  items-start lg:!w-[96%] !w-[96%] lg:gap-0 !gap-[15px] lg:mr-[0px] !mr-[15px]'>
 								<img
 									src={item.image}
 									alt={item.name}
-									className="lg:w-[97%]  h-[300px] rounded-lg"
+									className="lg:w-[96%] w-[96%]  lg:h-[400px]"
 								/>
 							</SwiperSlide>
 						))}

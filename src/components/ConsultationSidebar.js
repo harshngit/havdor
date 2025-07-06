@@ -48,7 +48,7 @@ const ConsultationSidebar = ({ open, setOpen }) => {
 					</div>
 
 					<div>
-						<Link href="" className="px-3 py-2 text-[18px] !w-[37%] border border-black text-[#2F3435] uppercase flex items-center gap-2 transition hover:opacity-80 h-[48px]">
+						<Link href="" className="px-3 py-2 text-[14px]  border border-black text-[#2F3435] uppercase flex items-center gap-2 transition hover:opacity-80 h-[48px]">
 							Submit request
 							<img className="w-6" src="/asset/right.png" alt="" />
 						</Link>

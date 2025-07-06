@@ -10,6 +10,8 @@ import {
 } from "@material-tailwind/react";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
+import { IoLogoFacebook } from "react-icons/io";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 const navItems = [
 	{
 		label: "About Us",
@@ -138,11 +140,11 @@ export default function Navbar() {
 				</div>
 
 				{isOpen && (
-					<div className="absolute top-4 mt-2 left-0 rounded w-[200px] z-10">
+					<div className="absolute top-4 mt-2 left-5 rounded w-[200px] h-[32px]  z-10">
 						<li>
 							<Link
 								href="/brand-story"
-								className="block px-4 py-2 text-[15px] text-[#2F3435] hover:bg-gray-100 font-helvetica"
+								className="block px-4 py-2 mb-5 text-[15px] text-[#2F3435] hover:bg-gray-100 font-helvetica"
 							>
 								Brand Story
 							</Link>
@@ -265,14 +267,16 @@ export default function Navbar() {
 					</ul>
 				</div>
 				<div className="flex justify-start item-center gap-5 mt-5 px-6">
-					<Link href="">
-						<img className="w-[24px]" src="/asset/navbar/Facebook.png" alt="" />
+					<Link href="https://www.facebook.com/share/1Ejfnddk9n/?mibextid=wwXIfr" target='_blank'>
+						{/* <img className="w-[24px]" src="/asset/footer/Facebookp.png" alt="" /> */}
+						<IoLogoFacebook className='text-[30px] hover:text-primary' />
 					</Link>
-					<Link href="">
-						<img className="w-[24px]" src="/asset/navbar/Instagram.png" alt="" />
+					<Link href="https://www.instagram.com/havdorindia?igsh=MXF4YWZ4dmVuYTFsbg==" target='_blank'>
+						{/* <img className="w-[24px]" src="/asset/footer/Instagramp.png" alt="" /> */}
+						<FaInstagram className='text-[28px] hover:text-primary' />
 					</Link>
-					<Link href="">
-						<img className="w-[24px]" src="/asset/navbar/Linkedin.png" alt="" />
+					<Link href="https://www.linkedin.com/company/hav-dor-india/" target='_blank'>
+						<FaLinkedin className='text-[28px] hover:text-primary' />
 					</Link>
 				</div>
 				<div className="flex w-full absolute bottom-0 full !px-0 !py-0 justify-end item-end">

@@ -100,7 +100,7 @@ const FAQ = () => {
 					<div>
 						<button
 							onClick={() => setShowAll(true)}
-							className='border h-[45px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full'
+							className='border lg:h-[40px] h-[35px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full'
 						>
 							VIEW ALL FAQS
 						</button>
@@ -110,7 +110,7 @@ const FAQ = () => {
 					<div>
 						<button
 							onClick={() => setShowAll(false)}
-							className='border h-[45px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full'
+							className='border  lg:h-[40px] h-[35px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full'
 						>
 							VIEW LESS
 						</button>

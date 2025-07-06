@@ -18,7 +18,7 @@ const AboutHome2 = () => {
 							Discover how we turned a gap into a movement—and why a door, when crafted right, becomes so much more than just a barrier.</p>
 					</div>
 					<div className='flex justify-start item-start mt-[10px]'>
-						<Link href="/brand-story" className='px-2 py-2 border-[1px] border-black text-[#2F3435] hover:bg-[#FFF1EA80] hover:border-[1px] hover:border-[#2F3435] font-normal uppercase'>Explore the brand story</Link>
+						<Link href="/brand-story" className='px-2 py-2 border-[1px] border-black text-[#2F3435] hover:bg-[#FFF1EA80] hover:border-[1px]  lg:h-[40px] h-[35px] hover:border-[#2F3435] font-normal uppercase'>Explore the brand story</Link>
 					</div>
 				</div>
 			</div>

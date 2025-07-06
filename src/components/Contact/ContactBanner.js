@@ -33,13 +33,15 @@ const ContactBanner = () => {
 					</div>
 				</div>
 				<div className="flex justify-start item-center gap-5 mt-[5%]">
-					<Link href="">
+					<Link href="https://www.facebook.com/share/1Ejfnddk9n/?mibextid=wwXIfr" target='_blank'>
+						{/* <img className="w-[24px]" src="/asset/footer/Facebookp.png" alt="" /> */}
 						<IoLogoFacebook className='text-[30px] hover:text-primary' />
 					</Link>
 					<Link href="https://www.instagram.com/havdorindia?igsh=MXF4YWZ4dmVuYTFsbg==" target='_blank'>
+						{/* <img className="w-[24px]" src="/asset/footer/Instagramp.png" alt="" /> */}
 						<FaInstagram className='text-[28px] hover:text-primary' />
 					</Link>
-					<Link href="">
+					<Link href="https://www.linkedin.com/company/hav-dor-india/" target='_blank'>
 						<FaLinkedin className='text-[28px] hover:text-primary' />
 					</Link>
 				</div>
