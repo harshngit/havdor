@@ -26,12 +26,17 @@ const navItems = [
 	},
 	{
 		label: "X'perience Centre",
-		href: "/experience-centre",
+		href: "/x'perience-centre",
 	},
 	{
 		label: "Contact",
 		href: "/contact",
 	},
+];
+const navItemsMobile = [
+	{ label: "Door", path: "/door" },
+	{ label: "X'perience Centre", path: "/experience-centre" },
+	{ label: "Contact", path: "/contact" },
 ];
 export default function Navbar() {
 	const [scrolling, setScrolling] = useState(false);
@@ -154,13 +159,13 @@ export default function Navbar() {
 			</div>
 
 
-			{["Door", "X'perience Centre", "Contact"].map((item, i) => (
-				<li key={i} className="">
+			{navItemsMobile.map((item, i) => (
+				<li key={i}>
 					<Link
-						href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
-						className="cursor-pointer text-[20px] text-[#2F3435] font-helvetica  transition"
+						href={item.path}
+						className="cursor-pointer text-[20px] text-[#2F3435] font-helvetica transition"
 					>
-						{item}
+						{item.label}
 					</Link>
 				</li>
 			))}

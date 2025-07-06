@@ -27,6 +27,12 @@ const navItems = [
   },
 ];
 
+const navItemsMobile = [
+  { label: "Door", path: "/door" },
+  { label: "X'perience Centre", path: "/experience-centre" },
+  { label: "Contact", path: "/contact" },
+];
+
 export default function NavbarTwo() {
   const [scrolling, setScrolling] = useState(false);
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -107,7 +113,7 @@ export default function NavbarTwo() {
           </Link>
         </div>
         {isOpen && (
-          <div className="absolute top-4 mt-2 left-5 rounded w-[200px] h-[32px] z-10">
+          <div className="absolute top-4 mt-2 left-5 rounded w-[200px] h-[32px]z-10">
             <li>
               <Link
                 href="/brand-story"
@@ -119,10 +125,13 @@ export default function NavbarTwo() {
           </div>
         )}
       </div>
-      {["Door", "X'perience Centre", "Contact"].map((item, i) => (
+      {navItemsMobile.map((item, i) => (
         <li key={i}>
-          <Link href={`/${item.toLowerCase().replace(/\s+/g, "-")}`} className="cursor-pointer text-[32px] text-[#2F3435] font-helvetica transition">
-            {item}
+          <Link
+            href={item.path}
+            className="cursor-pointer text-[32px] text-[#2F3435] font-helvetica transition"
+          >
+            {item.label}
           </Link>
         </li>
       ))}

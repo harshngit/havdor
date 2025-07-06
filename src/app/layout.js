@@ -6,45 +6,49 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Hav'dor",
-  // description: "Experience the best coliving spaces in Mumbai, Pune and Navi Mumbai. Fully furnished PG rooms with top-notch amenities for boys, girls and couples (students and professionals).",
-  // keywords: ['Union Living','Union Living Mumbai','Community Living in Mumbai', 'Community Living in Pune', 'Community Living in Thane','Community Living in Navi Mumbai', "Premium Co-living",'Best Community'],
-  // verification: {
-  //   google: 'd2t3dmGtRE5YMyQqUbiHFM-lWvnz9mpRbS7Wwmb8uS0',
-  // },
-  // openGraph: {
-  //   title: 'Luxury Coliving Spaces in Mumbai, Pune & Navi Mumbai | Best PG -  Union Living',
-  //   description: 'Experience the best coliving spaces in Mumbai, Pune and Navi Mumbai. Fully furnished PG rooms with top-notch amenities for boys, girls and couples (students and professionals).',
-  //   url: 'https://unionliving.in',
-  //   siteName: 'Union Living',
-  //   images: [
-  //     {
-  //       url: 'https://firebasestorage.googleapis.com/v0/b/union-living.appspot.com/o/files%2Ffavicon.png?alt=media&token=63384a08-8830-4c2b-82b0-0355cf50bbff', // Must be an absolute URL
-  //       width: 800,
-  //       height: 600,
-  //     },
-  //     {
-  //       url: 'https://firebasestorage.googleapis.com/v0/b/union-living.appspot.com/o/files%2Ffavicon.png?alt=media&token=63384a08-8830-4c2b-82b0-0355cf50bbff', // Must be an absolute URL
-  //       width: 1800,
-  //       height: 1600,
-  //       alt: 'Luxury Coliving Spaces in Mumbai, Pune & Navi Mumbai | Best PG -  Union Living',
-  //     },
-  //   ],
 
-  // },
-  // alternates: {
-  //   canonical: 'https://unionliving.in/',
-  // },
+  description: "Experience precision-engineered doors with durability, aesthetics, and performance.",
+  keywords: [
+    "Hav'dor",
+    "Premium Doors",
+    "Designer Doors",
+    "Moisture Resistant Doors",
+    "Termite Proof Doors",
+    "Luxury Door Manufacturer"
+  ],
 
-  // icons: {
-  //   icon: 'https://firebasestorage.googleapis.com/v0/b/union-living.appspot.com/o/files%2Ffavicon.png?alt=media&token=63384a08-8830-4c2b-82b0-0355cf50bbff',
-  //   shortcut: 'https://firebasestorage.googleapis.com/v0/b/union-living.appspot.com/o/files%2Ffavicon.png?alt=media&token=63384a08-8830-4c2b-82b0-0355cf50bbff',
-  //   apple: 'https://firebasestorage.googleapis.com/v0/b/union-living.appspot.com/o/files%2Ffavicon.png?alt=media&token=63384a08-8830-4c2b-82b0-0355cf50bbff',
-  //   other: {
-  //     rel: 'apple-touch-icon-precomposed',
-  //     url: 'https://firebasestorage.googleapis.com/v0/b/union-living.appspot.com/o/files%2Ffavicon.png?alt=media&token=63384a08-8830-4c2b-82b0-0355cf50bbff',
-  //   },
-  // },
-}
+  openGraph: {
+    title: "Hav'dor | Premium & Durable Designer Doors",
+    description:
+      "Every Hav'dor door is engineered for lasting strength, sound insulation, and contemporary aesthetics. Discover the modern standard in door technology.",
+    url: "https://havdor.com/",
+    siteName: "Hav'dor",
+    images: [
+      {
+        url: "/asset/favicon.png", // use your logo or preview image here
+        width: 800,
+        height: 600,
+        alt: "Hav'dor Doors",
+      },
+    ],
+    type: "website",
+  },
+
+  alternates: {
+    canonical: "https://havdor.com/",
+  },
+
+  icons: {
+    icon: "/asset/favicon.png",         // Favicon for all browsers
+    shortcut: "/asset/favicon.png",     // Shortcut icon for legacy support
+    apple: "/asset/favicon.png",        // iOS home screen
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "/asset/favicon.png",
+    },
+  },
+};
+
 
 export default function RootLayout({ children }) {
 

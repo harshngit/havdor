@@ -33,6 +33,11 @@ const navItems = [
 		href: "/contact",
 	},
 ];
+const navItemsMobile = [
+	{ label: "Door", path: "/door" },
+	{ label: "X'perience Centre", path: "/experience-centre" },
+	{ label: "Contact", path: "/contact" },
+];
 export default function NavbarBrandStory() {
 	const [scrolling, setScrolling] = useState(false);
 	const [openDrawer, setOpenDrawer] = useState(false);
@@ -154,17 +159,16 @@ export default function NavbarBrandStory() {
 			</div>
 
 
-			{["Door", "X'perience Centre", "Contact"].map((item, i) => (
-				<li key={i} className="">
+			{navItemsMobile.map((item, i) => (
+				<li key={i}>
 					<Link
-						href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
-						className="cursor-pointer text-[20px] text-[#2F3435] font-helvetica  transition"
+						href={item.path}
+						className="cursor-pointer text-[20px] text-[#2F3435] font-helvetica transition"
 					>
-						{item}
+						{item.label}
 					</Link>
 				</li>
 			))}
-
 
 		</ul>
 	);
