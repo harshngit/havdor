@@ -2,8 +2,8 @@ import React from 'react'
 
 const BSBanner = () => {
 	return (
-		<div className='banner_BS w-full lg:px-10 lg:pb-10 lg:pt-[12%] pt-[30%] px-5 py-5 lg:h-[200vh] h-[200vh]  bg-[#FFF1EA99]'>
-			<div className='flex flex-col lg:w-[70%] lg:gap-16 gap-5 justify-start items-start'>
+		<div className='banner_BS lg:h-[180vh] h-[127vh]'>
+			{/* <div className='flex flex-col lg:w-[70%] lg:gap-16 gap-5 justify-start items-start'>
 				<div className=''>
 					<h2 className='font-normal font-helvetica text-lightgrey lg:text-[64px] text-[26px]'>
 						The HAV’DOR Story
@@ -16,7 +16,7 @@ const BSBanner = () => {
 						Over the years, we witnessed the evolution of nearly every aspect of the construction industry. From highly mechanized building techniques to modern plumbing, lighting, and modular woodwork—innovation has touched every corner of a project. But there was one critical element that remained overlooked:<span className='font-medium'> doors.</span>
 					</p>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	)
 }

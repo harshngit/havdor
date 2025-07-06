@@ -43,7 +43,7 @@ const Reviews = () => {
 			<h2 className="lg:text-[36px] text-[24px] lg:font-light font-light font-helvetica mb-10 lg:ml-[41%]">Our Proud Supporters Say</h2>
 
 			<div className="flex relative justify-center lg:flex-row flex-col-reverse gap-10 lg:items-start items-center ">
-				<div className="absolute lg:left-[4.5rem] left-[30%] lg:bottom-[1rem] bottom-[1rem] z-10 lg:flex justify-center items-center gap-5 hidden">
+				<div className="absolute lg:left-[4.5rem] left-[30%] lg:bottom-[1rem] -bottom-[3rem] z-10 flex justify-center items-center gap-5">
 					<button
 						ref={prevRef}
 						className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex justify-center items-center border-[1px] border-[#2F3435] hover:bg-[#f9e3d8] transition"
