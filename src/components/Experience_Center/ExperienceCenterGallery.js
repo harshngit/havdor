@@ -14,9 +14,6 @@ const ExperienceCenterGallery = () => {
 	return (
 		<div>
 			<div className='w-full bg-white lg:flex hidden justify-center mt-10 lg:py-10 items-center gap-5'>
-				{/* <div className='lg:w-[40%] w-full h-[800px] bg-[#FFF1EA]'></div>
-				<div className='w-[40%] h-[800px] bg-[#FFF1EA]'></div>
-				<div className='w-[20%] h-[800px] bg-[#FFF1EA]'></div> */}
 				<Swiper
 					spaceBetween={20}
 					slidesPerView={3} // adjust as needed
@@ -42,8 +39,8 @@ const ExperienceCenterGallery = () => {
 					className='px-4'
 				>
 					{img.map((slide) => (
-						<SwiperSlide className='flex justify-center items-center'>
-							<div className='w-full h-[350px] bg-[#FFF1EA] '>
+						<SwiperSlide className='flex justify-center !w-[85%] items-center'>
+							<div className='w-[100%] h-[350px] bg-[#FFF1EA] '>
 								<img src={slide} alt="" />
 							</div>
 						</SwiperSlide>
