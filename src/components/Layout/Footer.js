@@ -21,7 +21,7 @@ const Footer = () => {
                             </li>
                             <li className='hover:text-[#CA622A] transition-colors duration-300 ease-in-out'>Doors</li>
                             <li className='hover:text-[#CA622A] transition-colors duration-300 ease-in-out'>
-                                <Link href="/experience-centre">Experience Centre</Link>
+                                <Link href="/experience-centre">X'perience Centre</Link>
                             </li>
                             <li className='hover:text-[#CA622A] transition-colors duration-300 ease-in-out'><Link href="/contact">Contact</Link></li>
                         </ul>
@@ -30,7 +30,7 @@ const Footer = () => {
                                 {/* <img className="w-[24px]" src="/asset/footer/Facebookp.png" alt="" /> */}
                                 <IoLogoFacebook className='text-[30px] hover:text-primary' />
                             </Link>
-                            <Link href="">
+                            <Link href="https://www.instagram.com/havdorindia?igsh=MXF4YWZ4dmVuYTFsbg==" target='_blank'>
                                 {/* <img className="w-[24px]" src="/asset/footer/Instagramp.png" alt="" /> */}
                                 <FaInstagram className='text-[28px] hover:text-primary' />
                             </Link>
@@ -93,7 +93,7 @@ const Footer = () => {
                         <Link href="">
                             <img className="w-[24px]" src="/asset/footer/Facebookp.png" alt="" />
                         </Link>
-                        <Link href="">
+                        <Link href="https://www.instagram.com/havdorindia?igsh=MXF4YWZ4dmVuYTFsbg==" target='_blank'>
                             <img className="w-[24px]" src="/asset/footer/Instagramp.png" alt="" />
                         </Link>
                         <Link href="">

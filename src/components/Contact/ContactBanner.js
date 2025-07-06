@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
+import { FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { IoLogoFacebook } from 'react-icons/io'
 
 const ContactBanner = () => {
 	return (
@@ -32,13 +34,13 @@ const ContactBanner = () => {
 				</div>
 				<div className="flex justify-start item-center gap-5 mt-[5%]">
 					<Link href="">
-						<img className="w-[24px]" src="/asset/navbar/Facebook.png" alt="" />
+						<IoLogoFacebook className='text-[30px] hover:text-primary' />
+					</Link>
+					<Link href="https://www.instagram.com/havdorindia?igsh=MXF4YWZ4dmVuYTFsbg==" target='_blank'>
+						<FaInstagram className='text-[28px] hover:text-primary' />
 					</Link>
 					<Link href="">
-						<img className="w-[24px]" src="/asset/navbar/Instagram.png" alt="" />
-					</Link>
-					<Link href="">
-						<img className="w-[24px]" src="/asset/navbar/Linkedin.png" alt="" />
+						<FaLinkedin className='text-[28px] hover:text-primary' />
 					</Link>
 				</div>
 			</div>

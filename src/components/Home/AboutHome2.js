@@ -6,7 +6,7 @@ const AboutHome2 = () => {
 		<div className='w-full lg:px-10  lg:py-10 font-helvetica mt-10'>
 			<div className='flex justify-center items-center lg:flex-row flex-col gap-10'>
 				<div className='lg:w-[40%] w-full'>
-					<img className='w-[647px] h-[570px]' src="/asset/home/testinomial/testinomial.png" alt="" />
+					<img className='w-[647px] h-[570px]' src="/asset/brand-story/brand_story.png" alt="" />
 				</div>
 				<div className='lg:w-[60%] px-5 py-5 w-full flex gap-[50px] flex-col'>
 					<div className='flex justify-start items-start flex-col gap-[50px]'>

@@ -77,7 +77,11 @@ const DoorTapBar = ({
 							onClick={() => setOpenType(!openType)}
 						>
 							<span className="text-[18px] font-light text-black">
-								{selectedCategory === "Premium" ? "Premium Door Type" : "Mansion Door Type"}
+								{selectedCategory === "Premium"
+									? "Premium Door Type"
+									: selectedCategory === "Mansion"
+										? "Mansion Door Type"
+										: "Door Type"}
 							</span>
 							<img
 								src="/asset/down.png"
@@ -129,11 +133,11 @@ const DoorTapBar = ({
 				<a
 					href="/asset/Docs/havdoor.pdf" // Replace with your actual file path
 					download
-					className="border h-[45px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full flex items-center justify-center"
+					className="border h-[45px] font-light hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full flex items-center justify-center"
 				>
 					DOWNLOAD BROCHURE
 				</a>
-				<button className="border h-[45px] hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full" onClick={onOpenSidebar}>
+				<button className="border h-[45px] font-light hover:bg-[#FFF1EA80] text-[20px] text-lightgrey border-lightgrey px-[15px] lg:w-auto w-full" onClick={onOpenSidebar}>
 					REQUEST CONSULTATION
 				</button>
 			</div>

@@ -31,7 +31,7 @@ const OurTeam = () => {
 				{categories.map((item, i) => (
 					<div
 						key={i}
-						className="relative group overflow-hidden h-[588px] w-full rounded-md"
+						className="relative group overflow-hidden lg:h-[588px] w-full rounded-md"
 					>
 						<img
 							src={item.img}

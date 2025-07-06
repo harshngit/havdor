@@ -4,7 +4,7 @@ const IndustriesHome = () => {
 	const categories = [
 		{
 			title: 'Corporates',
-			img: '/asset/home/industries/1.png',
+			img: '/asset/home/industries/5.png',
 			content: "We help corporate spaces  to make the right ,first impression. Whether it’s modern office entrances or sleek meeting room partitions, our doors bring a touch of sophistication and long-lasting performance. We understand the importance of function, security, and design in high-traffic business environments."
 		},
 		{
