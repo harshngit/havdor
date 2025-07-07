@@ -106,7 +106,7 @@ export default function NavbarTwo() {
   );
 
   const navListMobile = (
-    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-[25px] text-white font-medium !text-sm hover:text-primary tracking-wide">
+    <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-[27px] text-white font-medium !text-sm hover:text-primary tracking-wide">
       <div className="flex flex-col items-center relative">
         <div className="flex justify-center items-center gap-3">
           <Link href="/about">
