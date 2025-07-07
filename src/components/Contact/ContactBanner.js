@@ -14,18 +14,24 @@ const ContactBanner = () => {
 				<div className='flex lg:flex-col flex-col mt-5 justify-center items-start lg:gap-10 gap-5 w-full'>
 					<div className='lg:w-[50%] w-full'>
 						<h3 className='font-thin font-helvetica lg:text-[20px] pb-[5px] text-[16px]'>CALL US</h3>
-						<p className='font-light font-helvetica lg:text-[24px] text-[16px]'>702 702 9188</p>
+						<Link href="tel:+917027029188" target='_blank'>
+							<p className='font-light font-helvetica hover:underline lg:text-[24px] text-[16px]'>702 702 9188</p>
+						</Link>
 					</div>
 					<div className='lg:w-[50%] w-full'>
 						<h3 className='font-thin font-helvetica lg:text-[20px] pb-[5px] text-[16px]'>EMAIL US</h3>
-						<p className='font-light font-helvetica lg:text-[24px] text-[16px]'>contact@havdor.com</p>
+						<Link href="mailto:contact@havdor.com">
+							<p className='font-light hover:underline font-helvetica lg:text-[24px] text-[16px]'>contact@havdor.com</p>
+						</Link>
 					</div>
 				</div>
 				<div className='flex lg:flex-col flex-col mt-7 justify-center items-start lg:gap-10 gap-5 w-full'>
 					<div className='lg:w-[50%] w-full'>
 						<h3 className='font-thin font-helvetica lg:text-[20px] pb-[5px] text-[16px]'>VISIT US</h3>
-						<p className='font-light font-helvetica lg:text-[24px] text-[16px]'>254/255, 3rd floor, MCC-2,
-							Airport Road, Mohali, Punjab</p>
+						<Link href="https://maps.google.com/?q=30.635426,76.760468" target='_blank'>
+							<p className='font-light font-helvetica hover:underline lg:text-[24px] text-[16px]'>254/255, 3rd floor, MCC-2,
+								Airport Road, Mohali, Punjab</p>
+						</Link>
 					</div>
 					<div className='lg:w-[50%] w-full'>
 						<h3 className='font-thin font-helvetica lg:text-[20px] pb-[5px] text-[16px]'>EXPERIENCE CENTRE TIME</h3>

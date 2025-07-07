@@ -20,7 +20,7 @@ const DoorGrid = ({
 	filteredDoors,
 	doors
 }) => {
-	const [visibleCount, setVisibleCount] = useState(6);
+	const [visibleCount, setVisibleCount] = useState(20);
 
 	const loadMore = () => {
 		setVisibleCount((prev) => prev + 2);
@@ -53,7 +53,7 @@ const DoorGrid = ({
 				))}
 			</div>
 
-			{visibleCount < doors.length && (
+			{/* {visibleCount < doors.length && (
 				<div className="flex justify-start my-2 p-6">
 					<button
 						onClick={loadMore}
@@ -62,7 +62,7 @@ const DoorGrid = ({
 						Load More <img src="/asset/down.png" alt="" />
 					</button>
 				</div>
-			)}
+			)} */}
 		</>
 	);
 };

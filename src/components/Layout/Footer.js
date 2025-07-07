@@ -56,7 +56,7 @@ const Footer = () => {
                                 <p className='hover:text-primary cursor-pointer'>WE WORK WITH</p>
                             </Link>
                             <Link href="/#send-inquiry">
-                                <p className='hover:text-primary cursor-pointer'>SEND INQUIRY</p>
+                                <p className='hover:text-primary cursor-pointer'>REQUEST CONSULTATION</p>
                             </Link>
                             <Link href="/#send-inquiry">
                                 <p className='hover:text-primary cursor-pointer'>BOOK YOUR VISIT</p>
@@ -70,19 +70,28 @@ const Footer = () => {
                     {/* Column 3 */}
                     <div className="flex lg:w-[20%] items-start flex-col gap-[30px] ">
                         <h3 className="uppercase font-normal lg:text-[24px] text-[18px]">Get in touch</h3>
-                        <div className=' font-helvetica'>
+                        <div className='font-helvetica'>
                             <p className="uppercase font-light text-[16px] text-[#FFF1EA]">Call us</p>
-                            <p className="text-[#FFF1EA] font-light text-[24px]">702 702 9188</p>
+                            <Link href="tel:+917027029188" target='_blank' className="text-[#FFF1EA] font-light text-[24px] hover:underline">
+                                702 702 9188
+                            </Link>
                         </div>
-                        <div className=' font-helvetica'>
-                            <p className="uppercase text-[16px]  font-light  text-[#FFF1EA]">Email us</p>
-                            <p className="text-[#FFF1EA] font-light text-[24px]">contact@havdor.com</p>
+
+                        <div className='font-helvetica'>
+                            <p className="uppercase text-[16px] font-light text-[#FFF1EA]">Email us</p>
+                            <Link href="mailto:contact@havdor.com" target='_blank' className="text-[#FFF1EA] font-light text-[24px] hover:underline">
+                                contact@havdor.com
+                            </Link>
                         </div>
-                        <div className=' font-helvetica'>
+
+                        <div className='font-helvetica'>
                             <p className="uppercase text-[16px] font-thin text-[#FFF1EA]">Visit us</p>
-                            <p className="text-[#FFF1EA] font-light text-[24px]">254/255, 3rd floor, MCC-2,
-                                <br /> Airport Road, Mohali, Punjab</p>
+                            <Link href="https://maps.google.com/?q=30.635426,76.760468" target='_blank' className="text-[#FFF1EA] font-light text-[24px] hover:underline">
+                                254/255, 3rd floor, MCC-2,<br />
+                                Airport Road, Mohali, Punjab
+                            </Link>
                         </div>
+
                         <div className='lg:flex hidden justify-start items-end mt-[116px]'>
                             <Link href="/privacy-policy">
                                 <p className='text-[#ACACAC] font-helvetica font-light text-[20px] hover:text-[#CA622A] transition-colors duration-300 ease-in-out'>Privacy Policy</p>

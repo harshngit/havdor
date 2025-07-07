@@ -34,6 +34,7 @@ const navItems = [
 	},
 ];
 const navItemsMobile = [
+	{ label: "Brand Story", path: "/brand-story" },
 	{ label: "Door", path: "/door" },
 	{ label: "X'perience Centre", path: "/experience-centre" },
 	{ label: "Contact", path: "/contact" },
@@ -130,7 +131,7 @@ export default function NavbarBrandStory() {
 		</ul>
 	);
 	const navListMobile = (
-		<ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-[40px] lg:gap-4 text-white uppercase font-medium !text-sm tracking-wide">
+		<ul className="flex flex-col lg:flex-row items-start lg:items-center lg:flex-wrap gap-[25px] lg:gap-4 text-white uppercase font-medium !text-sm tracking-wide">
 
 			<div className="flex flex-col items-center relative">
 				<div className="flex justify-center items-center gap-3">
@@ -143,19 +144,6 @@ export default function NavbarBrandStory() {
 						{/* {isOpen ? <img className="w-[20px]" src="asset/up.png" alt="dropdown icon" /> : <img className="w-[20px]" src="asset/down.png" alt="dropdown icon" />} */}
 					</div>
 				</div>
-
-				{isOpen && (
-					<div className="absolute top-4 mt-2 left-5 rounded w-[200px] h-[32px] z-10">
-						<li>
-							<Link
-								href="/brand-story"
-								className="block px-4 py-2 mb-5 text-[15px] text-[#2F3435] hover:bg-gray-100 font-helvetica"
-							>
-								Brand Story
-							</Link>
-						</li>
-					</div>
-				)}
 			</div>
 
 

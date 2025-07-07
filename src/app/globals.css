@@ -55,7 +55,8 @@
 
     .banner_BS {
         background: url('/asset/brand-story/brandstorybgmob.png');
-        background-size: contain;
+        background-size: cover;
+        height: 140vh;
         background-position: center;
         background-repeat: no-repeat;
     }

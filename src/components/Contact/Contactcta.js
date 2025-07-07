@@ -9,6 +9,14 @@ import 'swiper/css/effect-fade';
 
 const Contactcta = ({ onOpenSidebar }) => {
 	const images = [
+		'/asset/home/1.png',
+		'/asset/home/2.png',
+		'/asset/home/3.png',
+		'/asset/home/4.png',
+		'/asset/home/5.png',
+		'/asset/home/6.png',
+	];
+	const imagesMobile = [
 		'/asset/home/mobile/1.png',
 		'/asset/home/mobile/2.png',
 		'/asset/home/mobile/3.png',
@@ -19,7 +27,7 @@ const Contactcta = ({ onOpenSidebar }) => {
 	return (
 		<div className='w-full font-helvetica lg:h-[700px]  mt-10'>
 			<div className='flex justify-center items-center lg:flex-row flex-col'>
-				<div className='lg:w-[50%] w-full relative'>
+				<div className='lg:w-[50%] lg:block hidden w-full relative'>
 					<Swiper
 						modules={[Pagination, Autoplay]}
 						pagination={{
@@ -38,6 +46,38 @@ const Contactcta = ({ onOpenSidebar }) => {
 						className="h-full w-full"
 					>
 						{images.map((src, i) => (
+							<SwiperSlide key={i}>
+								<img
+									src={src}
+									alt={`Slide ${i}`}
+									className="w-full h-[700px] object-cover"
+								/>
+							</SwiperSlide>
+						))}
+					</Swiper>
+
+					{/* Custom Pagination */}
+					<div className="custom-pagination absolute !bottom-[2%] !left-[5%] z-10 flex gap-2"></div>
+				</div>
+				<div className='lg:w-[50%] block lg:hidden w-full relative'>
+					<Swiper
+						modules={[Pagination, Autoplay]}
+						pagination={{
+							clickable: true,
+							el: '.custom-pagination', // This MUST match the className below
+						}}
+						effect="fade"
+						fadeEffect={{ crossFade: true }} // Smooth transition
+						loop
+						speed={2000}
+						direction="horizontal"
+						autoplay={{
+							delay: 2000,
+							disableOnInteraction: false,
+						}}
+						className="h-full w-full"
+					>
+						{imagesMobile.map((src, i) => (
 							<SwiperSlide key={i}>
 								<img
 									src={src}
