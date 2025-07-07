@@ -26,7 +26,7 @@ const navItems = [
 	},
 	{
 		label: "X'perience Centre",
-		href: "/x'perience-centre",
+		href: "/experience-centre",
 	},
 	{
 		label: "Contact",

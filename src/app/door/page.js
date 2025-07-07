@@ -1,30 +1,46 @@
-"use client"
+export const metadata = {
+	title: "Hav'dor - Door",
+	description: "Experience precision-engineered doors with durability, aesthetics, and performance.",
+	keywords: [
+		"Hav'dor",
+		"Premium Doors",
+		"Designer Doors",
+		"Moisture Resistant Doors",
+		"Termite Proof Doors",
+		"Luxury Door Manufacturer"
+	],
+	openGraph: {
+		title: "Hav'dor | Premium & Durable Designer Doors",
+		description:
+			"Every Hav'dor door is engineered for lasting strength, sound insulation, and contemporary aesthetics. Discover the modern standard in door technology.",
+		url: "https://havdor.com/",
+		siteName: "Hav'dor",
+		images: [
+			{
+				url: "/asset/favicon.png",
+				width: 800,
+				height: 600,
+				alt: "Hav'dor Doors",
+			},
+		],
+		type: "website",
+	},
+	alternates: {
+		canonical: "https://havdor.com/",
+	},
+	icons: {
+		icon: "/asset/favicon.png",
+		shortcut: "/asset/favicon.png",
+		apple: "/asset/favicon.png",
+		other: {
+			rel: "apple-touch-icon-precomposed",
+			url: "/asset/favicon.png",
+		},
+	},
+};
 
-import ConsultationSidebar from '@/components/ConsultationSidebar'
-import BenefitsSection from '@/components/Door/BenefitsSection'
-import DoorBanner from '@/components/Door/DoorBanner'
-import DoorMain from '@/components/Door/DoorMain'
-import ExtraProduct from '@/components/Door/ExtraProduct'
-import Footer from '@/components/Layout/Footer'
-import NavbarBrandStory from '@/components/Layout/NavbarBrandStory'
-import Navbar from '@/components/Layout/NavbarWhite'
-import React, { useState } from 'react'
+import Door from '@/components/Door/DoorWrapper';
 
-const Door = () => {
-	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-	return (
-		<>
-			<ConsultationSidebar open={isSidebarOpen} setOpen={setIsSidebarOpen} />
-			<div className='overflow-hidden'>
-				<NavbarBrandStory />
-				<DoorBanner />
-				<DoorMain onOpenSidebar={() => setIsSidebarOpen(true)} />
-				<ExtraProduct />
-				<BenefitsSection />
-				<Footer />
-			</div>
-		</>
-	)
+export default function ExperienceCenterPage() {
+	return <Door />;
 }
-
-export default Door

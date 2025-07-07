@@ -24,25 +24,45 @@ const DoorMain = ({ onOpenSidebar }) => {
 		return door.category === selectedCategory && door.type === selectedType;
 	});
 	return (
-		<div className='h-screen flex flex-col'>
-			<DoorTapBar
-				onOpenSidebar={onOpenSidebar}
-				resetFilters={resetFilters}
-				openCategory={openCategory}
-				setOpenCategory={setOpenCategory}
-				openType={openType}
-				setOpenType={setOpenType}
-				selectedCategory={selectedCategory}
-				setSelectedCategory={setSelectedCategory}
-				selectedType={selectedType}
-				setSelectedType={setSelectedType}
-				optionsCategory={optionsCategory}
-				optionsType={optionsType}
-				optionsTypeMansion={optionsTypeMansion}
-				filteredDoors={filteredDoors}
-			/>
+		<div className=' lg:h-screen h-[200vh] flex flex-col'>
+			<div className='lg:block hidden'>
+				<DoorTapBar
+					onOpenSidebar={onOpenSidebar}
+					resetFilters={resetFilters}
+					openCategory={openCategory}
+					setOpenCategory={setOpenCategory}
+					openType={openType}
+					setOpenType={setOpenType}
+					selectedCategory={selectedCategory}
+					setSelectedCategory={setSelectedCategory}
+					selectedType={selectedType}
+					setSelectedType={setSelectedType}
+					optionsCategory={optionsCategory}
+					optionsType={optionsType}
+					optionsTypeMansion={optionsTypeMansion}
+					filteredDoors={filteredDoors}
+				/>
+			</div>
+			<div className='lg:hidden block'>
+				<DoorTapBar
+					onOpenSidebar={onOpenSidebar}
+					resetFilters={resetFilters}
+					openCategory={openCategory}
+					setOpenCategory={setOpenCategory}
+					openType={openType}
+					setOpenType={setOpenType}
+					selectedCategory={selectedCategory}
+					setSelectedCategory={setSelectedCategory}
+					selectedType={selectedType}
+					setSelectedType={setSelectedType}
+					optionsCategory={optionsCategory}
+					optionsType={optionsType}
+					optionsTypeMansion={optionsTypeMansion}
+					filteredDoors={filteredDoors}
+				/>
+			</div>
 
-			<div className="overflow-y-scroll scroll-smooth flex-1">
+			<div className="overflow-y-scroll scroll-smooth lg:h-auto h-[200vh] flex-1">
 				<DoorGrid resetFilters={resetFilters} openCategory={openCategory} setOpenCategory={setOpenCategory} openType={openType} setOpenType={setOpenType} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} selectedType={selectedType} setSelectedType={setSelectedType} optionsCategory={optionsCategory} optionsType={optionsType} optionsTypeMansion={optionsTypeMansion} filteredDoors={filteredDoors} doors={filteredDoors} />
 			</div>
 		</div>

@@ -29,16 +29,16 @@ const DoorTapBar = ({
 
 	return (
 		<div
-			className={`font-helvetica py-4 px-[40px] flex flex-wrap justify-between items-center border-b border-gray-300 sticky top-0 left-0 right-0 z-0 transition-all duration-300 ${isScrolled ? "backdrop-blur-sm bg-white/70" : "bg-[#fef8f4]"
+			className={`font-helvetica lg:py-4 lg:px-[40px] px-2 flex flex-wrap justify-between items-center border-b border-gray-300 lg:sticky top-0 left-0 right-0 z-0 transition-all bg-[#fef8f4] duration-300 ${isScrolled ? "lg:backdrop-blur-sm lg:bg-white/70" : "lg:bg-[#fef8f4]"
 				}`}
 		>
 			{/* Filter Section */}
-			<div className="flex flex-wrap justify-center items-center lg:gap-[62px] gap-[30px]">
+			<div className="flex flex-wrap lg:justify-start justify-center items-center lg:gap-[62px] gap-[30px]">
 				<div className="flex flex-wrap items-center gap-[30px]">
 					{/* Door Category */}
 					<div className="relative lg:w-[200px] w-full">
 						<div
-							className="flex items-center justify-between px-[15px] py-[15px] bg-[#DDDDDD33] cursor-pointer gap-[10px]  lg:h-[40px] h-[35px]"
+							className="flex items-center justify-between lg:px-[15px] px-[12px] py-[15px] lg:bg-[#DDDDDD33] bg-[#F4F4F4] cursor-pointer gap-[10px]  lg:h-[40px] h-[45px]"
 							onClick={() => setOpenCategory(!openCategory)}
 						>
 							<span className="text-[18px] font-light text-black">Door Category</span>
@@ -73,7 +73,7 @@ const DoorTapBar = ({
 					{/* Door Type */}
 					<div className="relative lg:w-[250px] w-full">
 						<div
-							className="flex items-center justify-between px-[15px] py-[15px] bg-[#DDDDDD33] cursor-pointer gap-[10px]  lg:h-[40px] h-[35px]"
+							className="flex items-center justify-between px-[15px] py-[15px] lg:bg-[#DDDDDD33] cursor-pointer gap-[10px] bg-[#F4F4F4] lg:h-[40px] h-[45px]"
 							onClick={() => setOpenType(!openType)}
 						>
 							<span className="text-[18px] font-light text-black">
@@ -121,7 +121,7 @@ const DoorTapBar = ({
 				</div>
 
 				{/* Filter Summary */}
-				<div className="flex justify-start items-start lg:mb-0 mb-5 gap-[30px]">
+				<div className="flex justify-between items-start lg:mb-0 mb-5 gap-[30px]">
 					<button
 						onClick={resetFilters}
 						className="text-lightgrey tracking-wide text-[20px] hover:underline transition"
@@ -135,7 +135,7 @@ const DoorTapBar = ({
 			</div>
 
 			{/* Right Action Buttons */}
-			<div className="flex gap-[30px] lg:flex-nowrap flex-wrap justify-center items-center">
+			<div className="lg:flex hidden gap-[30px] lg:flex-nowrap flex-wrap justify-center items-center">
 				<a
 					href="/asset/Docs/havdoor.pdf" // Replace with your actual file path
 					download
