@@ -243,19 +243,19 @@ export default function Navbar() {
 				<div className="mt-5 px-6">
 					<ul className="flex flex-col justify-start items-start gap-[15px]">
 						<Link href="contact/#FAQ">
-							<li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">FAQS</li>
+							<li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase hover:text-primary">FAQS</li>
 						</Link>
 						<Link href="/#testimonials">
-							<li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Testimonials</li>
+							<li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase hover:text-primary">Testimonials</li>
 						</Link>
 						<Link href="/#we-work-with">
-							<li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">We work with</li>
+							<li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase hover:text-primary">We work with</li>
 						</Link>
 						<Link href="/#send-inquiry">
-							<li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Send Inquiry</li>
+							<li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase hover:text-primary">REQUEST CONSULTATION</li>
 						</Link>
 						<Link href="/#send-inquiry">
-							<li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Book your visit</li>
+							<li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase hover:text-primary">Book your visit</li>
 						</Link>
 					</ul>
 				</div>

@@ -188,11 +188,11 @@ export default function NavbarTwo() {
         <div className="px-6">{navListMobile}</div>
         <div className="mt-5 px-6">
           <ul className="flex flex-col justify-start items-start gap-[15px]">
-            <Link href="/contact/#FAQ"><li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">FAQS</li></Link>
-            <Link href="/#testimonials"><li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Testimonials</li></Link>
-            <Link href="/#we-work-with"><li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">We work with</li></Link>
-            <Link href="/#send-inquiry"><li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Send Inquiry</li></Link>
-            <Link href="/#send-inquiry"><li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase">Book your visit</li></Link>
+            <Link href="/contact/#FAQ"><li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase hover:text-primary">FAQS</li></Link>
+            <Link href="/#testimonials "><li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase hover:text-primary">Testimonials</li></Link>
+            <Link href="/#we-work-with"><li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase hover:text-primary">We work with</li></Link>
+            <Link href="/#send-inquiry"><li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase hover:text-primary">REQUEST CONSULTATION</li></Link>
+            <Link href="/#send-inquiry"><li className="cursor-pointer text-[14px] text-[#2F3435] font-light font-helvetica uppercase hover:text-primary">Book your visit</li></Link>
           </ul>
         </div>
         <div className="flex justify-start items-center gap-5 mt-5 px-6">
