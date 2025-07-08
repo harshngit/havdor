@@ -62,7 +62,7 @@ const DoorMain = ({ onOpenSidebar }) => {
 				/>
 			</div>
 
-			<div className="overflow-y-scroll scroll-smooth lg:h-auto h-[200vh] flex-1">
+			<div className="overflow-y-scroll scroll-smooth lg:h-auto flex-1">
 				<DoorGrid resetFilters={resetFilters} openCategory={openCategory} setOpenCategory={setOpenCategory} openType={openType} setOpenType={setOpenType} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} selectedType={selectedType} setSelectedType={setSelectedType} optionsCategory={optionsCategory} optionsType={optionsType} optionsTypeMansion={optionsTypeMansion} filteredDoors={filteredDoors} doors={filteredDoors} />
 			</div>
 		</div>

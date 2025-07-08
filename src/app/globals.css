@@ -47,8 +47,8 @@
 @media screen and (max-width:500px) {
 
     .banner_BS {
-        background: url('/asset/brand-story/brandstorybgmob.png');
-        background-size: cover;
+        background: url('/asset/brand-story/brandstorymob.png');
+        background-size: contain;
         height: 140vh;
         background-position: center;
         background-repeat: no-repeat;

@@ -12,7 +12,8 @@ const DoorBanner = () => {
 			<div className='flex lg:hidden lg:mt-10 flex-col justify-start items-start gap-[45px] lg:w-[50%] w-full'>
 				<div className='flex justify-between w-full items-center'>
 					<h2 className=' font-helvetica font-light text-[26px]'>View All Doors</h2>
-					<a href="">
+					<a href="/asset/Docs/havdoor.pdf" // Replace with your actual file path
+						download>
 						<img src="/asset/Download.png" className='w-[24px] h-[24px]' alt="" />
 					</a>
 				</div>

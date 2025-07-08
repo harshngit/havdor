@@ -121,7 +121,7 @@ const DoorTapBar = ({
 				</div>
 
 				{/* Filter Summary */}
-				<div className="flex justify-between items-start lg:mb-0 mb-5 gap-[30px]">
+				<div className="flex justify-between lg:flex-row flex-row-reverse items-start lg:mb-0 mb-5 lg:gap-[30px] gap-[100px]">
 					<button
 						onClick={resetFilters}
 						className="text-lightgrey tracking-wide text-[20px] hover:underline transition"

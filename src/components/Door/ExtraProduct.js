@@ -71,7 +71,7 @@ const ExtraProduct = () => {
 			>
 				{products.map((item, index) => (
 					<SwiperSlide key={index}>
-						<div className="lg:w-[313px] w-full h-auto text-left px-[10%]"> {/* Added px-2 for spacing inside */}
+						<div className="lg:w-[313px] w-full h-auto text-left lg:px-[10%] px-[5%]"> {/* Added px-2 for spacing inside */}
 							<img
 								src={item.image}
 								alt={item.name}

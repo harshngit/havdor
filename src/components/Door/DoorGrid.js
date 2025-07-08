@@ -42,10 +42,10 @@ const DoorGrid = ({
 								alt={door.name}
 								className="lg:w-[811px] w-full lg:h-[412px] object-cover"
 							/>
-							<h2 className="text-[28px] hover:text-[#CA622A] font-bold mt-[20px]">
+							<h2 className="lg:text-[28px] text-[20px] hover:text-[#CA622A] font-bold mt-[20px]">
 								{door.doorcode}
 							</h2>
-							<p className="text-[22px] text-lightgrey font-light mt-1">
+							<p className="lg:text-[22px] text-[15px] text-lightgrey font-light mt-1">
 								{door.category} | {door.type}
 							</p>
 						</div>
