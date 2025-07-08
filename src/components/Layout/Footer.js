@@ -19,7 +19,9 @@ const Footer = () => {
                             <li className='hover:text-[#CA622A] transition-colors duration-300 ease-in-out'>
                                 <Link href="/about">About Us</Link>
                             </li>
-                            <li className='hover:text-[#CA622A] transition-colors duration-300 ease-in-out'>Doors</li>
+                            <li className='hover:text-[#CA622A] transition-colors duration-300 ease-in-out'>
+                                <Link href={"/door"} >Door</Link>
+                            </li>
                             <li className='hover:text-[#CA622A] transition-colors duration-300 ease-in-out'>
                                 <Link href="/experience-centre">X'perience Centre</Link>
                             </li>
@@ -123,7 +125,6 @@ const Footer = () => {
                     <div className="w-[30%] absolute right-2 lg:flex hidden justify-end">
                         <img className='lg:w-[20%] h-[35rem]' src="/asset/footer/footernav.png" alt="" />
                     </div>
-
                 </div>
             </div>
             <div className="w-[20%] lg:hidden absolute -right-[10%] top-[4%]">

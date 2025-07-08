@@ -45,19 +45,20 @@
 }
 
 @media screen and (max-width:500px) {
-    .banner_EC {
-        background: url('/asset/experience_center/ec_mobile.png');
-        background-size: cover;
-        background-position: center !important;
-        height: 100vh;
-        background-repeat: no-repeat;
-    }
 
     .banner_BS {
         background: url('/asset/brand-story/brandstorybgmob.png');
         background-size: cover;
         height: 140vh;
         background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .banner_EC {
+        background: url('/asset/experience_center/ec_mobile.png');
+        background-size: cover;
+        background-position: center !important;
+        height: 100vh;
         background-repeat: no-repeat;
     }
 }
