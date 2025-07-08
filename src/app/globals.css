@@ -49,7 +49,7 @@
     .banner_BS {
         background: url('/asset/brand-story/brandstorymob.png');
         background-size: contain;
-        height: 140vh;
+        height: 100vh;
         background-position: center;
         background-repeat: no-repeat;
     }
