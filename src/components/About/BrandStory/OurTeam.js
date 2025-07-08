@@ -31,19 +31,19 @@ const OurTeam = () => {
 				{categories.map((item, i) => (
 					<div
 						key={i}
-						className="relative group overflow-hidden lg:h-[588px] w-full rounded-md"
+						className="relative group overflow-hidden lg:h-[588px] h-[450px] w-full rounded-md"
 					>
 						<img
 							src={item.img}
 							alt={item.title}
-							className="w-full"
+							className="w-full lg:h-[588px] h-[450px]"
 						/>
 
 						{/* Overlay that slides up */}
 						{item.content && (
 							<div className="absolute bottom-0 left-0 w-full h-full bg-[#2F3435CC] text-[#FFF1EA] px-4 py-5 translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out z-10">
 								<div className='flex justify-between flex-col h-full'>
-									<p className="lg:text-[20px] text-[20px] font-thin font-helvetica">{item.content}</p>
+									<p className="lg:text-[20px] text-[15px] font-thin font-helvetica">{item.content}</p>
 									<div className='absolute flex-col bottom-5 flex justify-start items-start'>
 										<h3 className="font-helvetica font-normal text-[24px]">{item.title}</h3>
 										<p className='font-helvetica font-thin italic text-[20px]'>{item.desgination}</p>
