@@ -7,7 +7,7 @@ const ContactBanner = () => {
 	return (
 		<div className='flex w-full lg:flex-row flex-col mt-[0px]'>
 			<div className='lg:w-[60%] w-full object-cover'>
-				<img src="/asset/contact/contactimg.png" className='lg:h-[120vh] h-[367px] w-full ' alt="" />
+				<img src="/asset/contact/contactimg.png" className='lg:h-[1000px] h-[367px] w-full ' alt="" />
 			</div>
 			<div className='lg:w-[40%]  lg:px-6 lg:py-[80px] px-5 pb-[80px] pt-[20px]  w-full flex flex-col justify-center items-start'>
 				<h2 className='font-normal font-helvetica lg:text-[36px] text-[22px]'>Get in Touch</h2>
