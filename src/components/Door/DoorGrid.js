@@ -41,7 +41,7 @@ const DoorGrid = ({
 								<img
 									src={door.mainimg}
 									alt={door.name}
-									className="lg:w-[811px] h-full object-contain"
+									className="lg:w-[811px] lg:h-full object-contain"
 								/>
 							</div>
 							<h2 className="lg:text-[28px] text-[20px] hover:text-[#CA622A] font-bold mt-[20px]">
