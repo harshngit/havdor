@@ -65,13 +65,13 @@ const ExtraProduct = () => {
 					0: { slidesPerView: 1.3 },
 					500: { slidesPerView: 1 },
 					768: { slidesPerView: 3 },
-					1024: { slidesPerView: 4 },
-					1280: { slidesPerView: 5 },
+					1024: { slidesPerView: 3 },
+					1280: { slidesPerView: 4 },
 				}}
 			>
 				{products.map((item, index) => (
 					<SwiperSlide key={index}>
-						<div className="lg:w-[313px] w-full h-auto text-left lg:px-[10%] px-[5%]"> {/* Added px-2 for spacing inside */}
+						<div className="lg:w-[313px] w-full h-auto text-left px-[5%]"> {/* Added px-2 for spacing inside */}
 							<img
 								src={item.image}
 								alt={item.name}

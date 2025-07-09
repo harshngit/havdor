@@ -37,11 +37,13 @@ const DoorGrid = ({
 				{doors.slice(0, visibleCount).map((door) => (
 					<Link href={`/door/${door.id}`} key={door.id}>
 						<div className="bg-white group transition-opacity duration-500 ease-in-out hover:opacity-90">
-							<img
-								src={door.mainimg}
-								alt={door.name}
-								className="lg:w-[811px] w-full lg:h-[412px] object-cover"
-							/>
+							<div className=" lg:h-[412px] bg-gray-200">
+								<img
+									src={door.mainimg}
+									alt={door.name}
+									className="lg:w-[811px] h-full object-contain"
+								/>
+							</div>
 							<h2 className="lg:text-[28px] text-[20px] hover:text-[#CA622A] font-bold mt-[20px]">
 								{door.doorcode}
 							</h2>
