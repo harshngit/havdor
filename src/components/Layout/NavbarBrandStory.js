@@ -94,7 +94,7 @@ export default function NavbarBrandStory() {
 										}`}
 								>
 									{item.label}
-									<img src="/asset/plusNavbar.png" className="w-[12px]" alt="" />
+									<img src="/asset/PlusNavbar.png" className="w-[12px]" alt="" />
 								</Link>) : (
 									<Link
 										href={item.href}
