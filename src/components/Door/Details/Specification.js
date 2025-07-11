@@ -5,12 +5,12 @@ const Specification = ({ product }) => {
 		{
 			id: "01",
 			title: 'Benefits',
-			description: "/asset/door/Benefits.png",
+			description: "/asset/door/Benefits.webp",
 		},
 		{
 			id: "02",
 			title: 'Features',
-			description: "/asset/door/Features.png",
+			description: "/asset/door/Features.webp",
 		},
 		{
 			id: "03",
@@ -69,17 +69,17 @@ const Specification = ({ product }) => {
 		{
 			id: "01",
 			title: 'Benefits',
-			description: "/asset/door/B-mansion.png"
+			description: "/asset/door/B-mansion.webp"
 		},
 		{
 			id: "02",
 			title: 'Features',
-			description: "/asset/door/F-mansion.png",
+			description: "/asset/door/F-mansion.webp",
 		},
 		{
 			id: "03",
 			title: 'Scenarios',
-			description: "/asset/door/S-mansion.png"
+			description: "/asset/door/S-mansion.webp"
 		},
 		{
 			id: "04",

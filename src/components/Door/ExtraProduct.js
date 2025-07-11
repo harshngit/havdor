@@ -7,16 +7,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const products = [
-	{ name: "Door Lock | Black", code: "S26", image: "/asset/door/otherproducts/1.png" },
-	{ name: "Door Stopper | Gold", code: "", image: "/asset/door/otherproducts/2.png" },
-	{ name: "Hydraulic Buffer Hinge | Black", code: "", image: "/asset/door/otherproducts/3.png" },
-	{ name: "Door Hinge | Gold", code: "", image: "/asset/door/otherproducts/4.png" },
-	{ name: "Door Lock | Matt Gold", code: "S01", image: "/asset/door/otherproducts/5.png" },
-	{ name: "Door Stopper | Black", code: "", image: "/asset/door/otherproducts/6.png" },
-	{ name: "Hydraulic Buffer Hinge | Gold", code: "", image: "/asset/door/otherproducts/7.png" },
-	{ name: "Door Lock | Black", code: "S08", image: "/asset/door/otherproducts/8.png" },
-	{ name: "Door Stopper | Black", code: "", image: "/asset/door/otherproducts/9.png" },
-	{ name: "Door Lock | Gold", code: "S08", image: "/asset/door/otherproducts/10.png" },
+	{ name: "Door Lock | Black", code: "S26", image: "/asset/door/otherproducts/1.webp" },
+	{ name: "Door Stopper | Gold", code: "", image: "/asset/door/otherproducts/2.webp" },
+	{ name: "Hydraulic Buffer Hinge | Black", code: "", image: "/asset/door/otherproducts/3.webp" },
+	{ name: "Door Hinge | Gold", code: "", image: "/asset/door/otherproducts/4.webp" },
+	{ name: "Door Lock | Matt Gold", code: "S01", image: "/asset/door/otherproducts/5.webp" },
+	{ name: "Door Stopper | Black", code: "", image: "/asset/door/otherproducts/6.webp" },
+	{ name: "Hydraulic Buffer Hinge | Gold", code: "", image: "/asset/door/otherproducts/7.webp" },
+	{ name: "Door Lock | Black", code: "S08", image: "/asset/door/otherproducts/8.webp" },
+	{ name: "Door Stopper | Black", code: "", image: "/asset/door/otherproducts/9.webp" },
+	{ name: "Door Lock | Gold", code: "S08", image: "/asset/door/otherproducts/10.webp" },
 ];
 
 const ExtraProduct = () => {
