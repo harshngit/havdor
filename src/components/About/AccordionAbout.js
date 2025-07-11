@@ -24,7 +24,7 @@ const AccordionAbout = () => {
 					</p>
 				</>
 			),
-			img: "/asset/about/Standardization.png",
+			img: "/asset/about/Standardization.webp",
 		},
 		{
 			id: "02",
@@ -44,7 +44,7 @@ const AccordionAbout = () => {
 					</p>
 				</>
 			),
-			img: "/asset/about/Efficiency.png",
+			img: "/asset/about/Efficiency.webp",
 		},
 		{
 			id: "03",
@@ -64,7 +64,7 @@ const AccordionAbout = () => {
 					</p>
 				</>
 			),
-			img: "/asset/about/cost.png",
+			img: "/asset/about/cost.webp",
 		},
 		{
 			id: "04",
@@ -76,7 +76,7 @@ const AccordionAbout = () => {
 					</p>
 				</>
 			),
-			img: "/asset/about/designdefine.png",
+			img: "/asset/about/designdefine.webp",
 		},
 		{
 			id: "05",
@@ -97,7 +97,7 @@ const AccordionAbout = () => {
 					</p>
 				</>
 			),
-			img: "/asset/about/warranty.png",
+			img: "/asset/about/warranty.webp",
 		},
 	]
 

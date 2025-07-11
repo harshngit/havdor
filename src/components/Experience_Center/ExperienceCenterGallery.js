@@ -6,10 +6,10 @@ import 'swiper/css';
 
 const ExperienceCenterGallery = () => {
 	const img = [
-		"/asset/experience_center/img/1.png",
-		"/asset/experience_center/img/2.png",
-		"/asset/experience_center/img/3.png",
-		"/asset/experience_center/img/4.png",
+		"/asset/experience_center/img/1.webp",
+		"/asset/experience_center/img/2.webp",
+		"/asset/experience_center/img/3.webp",
+		"/asset/experience_center/img/4.webp",
 	]
 	return (
 		<div>

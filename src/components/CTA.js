@@ -8,7 +8,7 @@ const CTA = ({
 		<div className='w-full font-helvetica  mt-10'>
 			<div className='flex justify-center items-center lg:flex-row flex-col'>
 				<div className='lg:w-[50%] w-full h-full'>
-					<img className='w-full lg:h-[664px]' src="/asset/home/ctaimg.png" alt="" />
+					<img className='w-full lg:h-[664px]' src="/asset/home/ctaimg.webp" alt="" />
 				</div>
 				<div className='lg:w-[50%] lg:h-[664px] h-auto lg:pt-[100px] lg:pb-[100px] lg:pl-[60px] lg:pr-[150px] pr-5 pl-5 pt-5 pb-5 w-full bg-primary text-white flex justify-start items-start  gap-[50px] flex-col'>
 					<div className='flex justify-start items-start flex-col lg:gap-[50px] gap-[20px]'>

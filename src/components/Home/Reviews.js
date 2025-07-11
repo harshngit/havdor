@@ -9,27 +9,27 @@ const Reviews = () => {
 			name: "Rajesh S",
 			title: "Architect & Interior Designer",
 			text: "The quality of Hav'Dor doors is top-class and we loved picking our own style and finish. It was simple to select and our home now looks elegant and grand. Installation was clean and quick.",
-			image: "/asset/home/testinomial/Rajesh.png",
+			image: "/asset/home/testinomial/Rajesh.webp",
 		},
 		{
 			name: "Anjali Pal",
 			title: "Marketing Manager",
 			text: "Hav'Dor made our dream door so easy with their clear options and support. The doors are sturdy, stylish, and make our new house feel like a luxury Villa.",
-			image: "/asset/home/testinomial/Anjali.png",
+			image: "/asset/home/testinomial/Anjali.webp",
 		},
 
 		{
 			name: "Vikram R.",
 			title: "Government Officer",
 			text: "Hav'Dor’s doors are superbly crafted and add a rich, classy vibe to our home. Customizing was hassle-free, and the quality makes every paisa worth it.",
-			image: "/asset/home/testinomial/Vikram.png",
+			image: "/asset/home/testinomial/Vikram.webp",
 		},
 
 		{
 			name: "Neha K.",
 			title: "Charted Accountant",
 			text: "We picked Hav'Dor for their amazing quality and easy customization process. The doors look so luxurious, our guests can’t stop praising our home’s new look!",
-			image: "/asset/home/testinomial/Neha.png",
+			image: "/asset/home/testinomial/Neha.webp",
 		},
 	];
 	const textSwiperRef = useRef(null);

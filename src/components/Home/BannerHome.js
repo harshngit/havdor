@@ -7,20 +7,20 @@ import 'swiper/css/effect-fade';
 
 const BannerHome = ({ onOpenSidebar }) => {
 	const images = [
-		'/asset/home/1.png',
-		'/asset/home/2.png',
-		'/asset/home/3.png',
-		'/asset/home/4.png',
-		'/asset/home/5.png',
-		'/asset/home/6.png',
+		'/asset/home/1.webp',
+		'/asset/home/2.webp',
+		'/asset/home/3.webp',
+		'/asset/home/4.webp',
+		'/asset/home/5.webp',
+		'/asset/home/6.webp',
 	];
 	const imagesmobile = [
-		'/asset/home/mobile/1.png',
-		'/asset/home/mobile/2.png',
-		'/asset/home/mobile/3.png',
-		'/asset/home/mobile/4.png',
-		'/asset/home/mobile/5.png',
-		'/asset/home/mobile/6.png',
+		'/asset/home/mobile/1.webp',
+		'/asset/home/mobile/2.webp',
+		'/asset/home/mobile/3.webp',
+		'/asset/home/mobile/4.webp',
+		'/asset/home/mobile/5.webp',
+		'/asset/home/mobile/6.webp',
 	];
 
 	return (

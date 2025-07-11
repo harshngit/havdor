@@ -13,7 +13,7 @@ const KeyPoints = () => {
 					{/* 1 */}
 					<div className='flex flex-col justify-start items-start gap-12'>
 						<div>
-							<img className='w-[70px]' src="asset/about/keypoints/qualityvariability.png" alt="" />
+							<img className='w-[70px]' src="asset/about/keypoints/qualityvariability.webp" alt="" />
 						</div>
 						<div className='flex justify-start flex-col items-start gap-5'>
 							<h4 className='font-normal font-helvetica text-[20px] text-[#FFF1EA]'>Quality Variability</h4>
@@ -25,7 +25,7 @@ const KeyPoints = () => {
 					{/* 2 */}
 					<div className='flex justify-start flex-col items-start gap-12'>
 						<div>
-							<img className='w-[70px]' src="asset/about/keypoints/Timeconsuming.png" alt="" />
+							<img className='w-[70px]' src="asset/about/keypoints/Timeconsuming.webp" alt="" />
 						</div>
 						<div className='flex justify-start flex-col items-start gap-5'>
 							<h4 className='font-normal font-helvetica text-[20px] text-[#FFF1EA]'>Time-Consuming</h4>
@@ -36,7 +36,7 @@ const KeyPoints = () => {
 					{/* 3 */}
 					<div className='flex justify-start flex-col items-start gap-12'>
 						<div>
-							<img className='w-[70px]' src="asset/about/keypoints/highlabourcost.png" alt="" />
+							<img className='w-[70px]' src="asset/about/keypoints/highlabourcost.webp" alt="" />
 						</div>
 						<div className='flex justify-start flex-col items-start gap-5'>
 							<h4 className='font-normal font-helvetica text-[20px] text-[#FFF1EA]'>Higher Labor Costs</h4>
@@ -48,7 +48,7 @@ const KeyPoints = () => {
 					{/* 4 */}
 					<div className='flex justify-start flex-col items-start gap-12'>
 						<div>
-							<img className='w-[70px]' src="asset/about/keypoints/designlimitations.png" alt="" />
+							<img className='w-[70px]' src="asset/about/keypoints/designlimitations.webp" alt="" />
 						</div>
 						<div className='flex justify-start flex-col items-start gap-5'>
 							<h4 className='font-normal font-helvetica text-[20px] text-[#FFF1EA]'>Design Limitations</h4>
@@ -61,7 +61,7 @@ const KeyPoints = () => {
 					{/* 1 */}
 					<div className='flex flex-col justify-start items-start gap-5'>
 						<div className='flex justify-center items-center gap-5'>
-							<img className='w-[70px]' src="asset/about/keypoints/qualityvariability.png" alt="" />
+							<img className='w-[70px]' src="asset/about/keypoints/qualityvariability.webp" alt="" />
 							<h4 className='font-normal font-helvetica text-[20px] text-[#FFF1EA]'>Quality Variability</h4>
 						</div>
 						<div className='flex justify-start flex-col items-start gap-12'>
@@ -73,7 +73,7 @@ const KeyPoints = () => {
 					{/* 2 */}
 					<div className='flex justify-start flex-col items-start gap-12'>
 						<div className='flex justify-center items-center gap-5'>
-							<img className='w-[70px]' src="asset/about/keypoints/Timeconsuming.png" alt="" />
+							<img className='w-[70px]' src="asset/about/keypoints/Timeconsuming.webp" alt="" />
 							<h4 className='font-normal font-helvetica text-[20px] text-[#FFF1EA]'>Time-Consuming</h4>
 						</div>
 						<div className='flex justify-start flex-col items-start gap-12'>
@@ -85,7 +85,7 @@ const KeyPoints = () => {
 					{/* 3 */}
 					<div className='flex justify-start flex-col items-start gap-12'>
 						<div className='flex justify-center items-center gap-5'>
-							<img className='w-[70px]' src="asset/about/keypoints/highlabourcost.png" alt="" />
+							<img className='w-[70px]' src="asset/about/keypoints/highlabourcost.webp" alt="" />
 							<h4 className='font-normal font-helvetica text-[20px] text-[#FFF1EA]'>Higher Labor Costs</h4>
 						</div>
 						<div className='flex justify-start flex-col items-start gap-5'>
@@ -98,7 +98,7 @@ const KeyPoints = () => {
 					{/* 4 */}
 					<div className='flex justify-start flex-col items-start gap-12'>
 						<div className='flex justify-center items-center gap-5'>
-							<img className='w-[70px]' src="asset/about/keypoints/designlimitations.png" alt="" />
+							<img className='w-[70px]' src="asset/about/keypoints/designlimitations.webp" alt="" />
 							<h4 className='font-normal font-helvetica text-[20px] text-[#FFF1EA]'>Design Limitations</h4>
 						</div>
 						<div className='flex justify-start flex-col items-start gap-5'>
@@ -110,7 +110,7 @@ const KeyPoints = () => {
 				</div>
 			</div>
 			<div className='lg:block hidden absolute -bottom-[5%] -right-[65px] w-[400px]'>
-				<img src="/asset/about/logoa.png" className=' opacity-[10%]' alt="logoa" />
+				<img src="/asset/about/logoa.webp" className=' opacity-[10%]' alt="logoa" />
 			</div>
 		</div>
 	)
